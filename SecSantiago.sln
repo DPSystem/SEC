@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecSantiago", "entrega_cupones\SecSantiago.csproj", "{AC445C03-2056-436A-BA9F-584D13CA8D57}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "InstaladorSECx64", "InstaladorSECx64\InstaladorSECx64.vdproj", "{52A37DA4-7B72-43B1-8E1E-BA834135C0B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC445C03-2056-436A-BA9F-584D13CA8D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC445C03-2056-436A-BA9F-584D13CA8D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC445C03-2056-436A-BA9F-584D13CA8D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC445C03-2056-436A-BA9F-584D13CA8D57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52A37DA4-7B72-43B1-8E1E-BA834135C0B0}.Debug|Any CPU.ActiveCfg = Debug
+		{52A37DA4-7B72-43B1-8E1E-BA834135C0B0}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10C63AFD-B2ED-45ED-B58F-4B04E4779A18}
+	EndGlobalSection
+EndGlobal
