@@ -20,7 +20,8 @@ namespace entrega_cupones.Formularios
     List<EstadoDDJJ> _ddjj = new List<EstadoDDJJ>();
     List<mdlCuadroAmortizacion> _PlanDePago = new List<mdlCuadroAmortizacion>();
     List<EmpleadoAportePorPeriodo> _AporteEstadoSocio = new List<EmpleadoAportePorPeriodo>();
-
+    public int _UserId;
+    public int _VDId = 0;
     public VerificarDeuda()
     {
       InitializeComponent();
@@ -88,6 +89,11 @@ namespace entrega_cupones.Formularios
     }
     private void btn_CalcularDeuda_Click(object sender, EventArgs e)
     {
+      CalcularDeuda();
+    }
+
+    private void CalcularDeuda()
+    {
       _ddjj.Clear();
       _ddjj = mtdEmpresas.ListadoDDJJT(
               txt_CUIT.Text,
@@ -113,6 +119,7 @@ namespace entrega_cupones.Formularios
         txt_DeudaInicial.Text = txt_Total.Text;
       }
     }
+
     private void CalcularTotales()
     {
       txt_Total.Text = Math.Round(_ddjj.Where(x => x.Acta == "").Sum(x => x.Total), 2).ToString("N2");
@@ -165,6 +172,7 @@ namespace entrega_cupones.Formularios
       btn_CopiarAnterior.Enabled = true;
       btn_CopiarSiguiente.Enabled = true;
       btn_EmitirActa.Enabled = true;
+      btn_ConfirmAsignacion.Enabled = true;
     }
     private void DesactivarBotones()
     {
@@ -172,6 +180,7 @@ namespace entrega_cupones.Formularios
       btn_CopiarAnterior.Enabled = false;
       btn_CopiarSiguiente.Enabled = false;
       btn_EmitirActa.Enabled = false;
+      btn_ConfirmAsignacion.Enabled = false;
     }
     private void btn_CopiarAnterior_Click(object sender, EventArgs e)
     {
@@ -240,7 +249,17 @@ namespace entrega_cupones.Formularios
       btn_CopiarAnterior.Enabled = dgv_ddjj.CurrentRow.Index == 0 ? false : true;
       btn_CopiarSiguiente.Enabled = dgv_ddjj.CurrentRow.Index == dgv_ddjj.Rows.Count - 1 ? false : true;
       btn_IngresoManual.Enabled = Convert.ToInt32(dgv_ddjj.CurrentRow.Cells["PerNoDec"].Value) == 1 ? true : false; // dgv_ddjj.CurrentRow.Cells["PerNoDec"].Value.ToString() == "1";
-      //MostrarEmpleados();
+      _VDId = 0;
+      if (dgv_ddjj.CurrentRow.Cells["VerificacionDeuda"].Value != null) // || dgv_ddjj.CurrentRow.Cells["VerificacionDeuda"].Value == "")
+      {
+        if (dgv_ddjj.CurrentRow.Cells["VerificacionDeuda"].Value.ToString() != "")
+        {
+          _VDId = Convert.ToInt32(dgv_ddjj.CurrentRow.Cells["VerificacionDeuda"].Value);
+        }
+      }
+
+      txt_InspectorAsignado.Text = _VDId > 0 ? mtdInspectores.Get_Inspector(mtdVDInspector.Get_InspectorId(_VDId)).Nombre : "";
+
     }
     private void btn_CopiarSiguiente_Click(object sender, EventArgs e)
     {
@@ -592,43 +611,54 @@ namespace entrega_cupones.Formularios
     private void btn_ConfirmAsignacion_Click(object sender, EventArgs e)
     {
       ConfirmarAsignacion();
-
+      CalcularDeuda();
     }
 
     private void ConfirmarAsignacion()
     {
-      //PREGUNTO SI YA ESTA ASIGNADA ESTA EMPRESA Y TIENE UNA VERIFICACION DE DEUDA SIN CERRAR/CANCELAR/ACTA
-      if (mtdVDCabecera.YaEstaAsignada(txt_CUIT.Text.Trim().ToString()) == 0)
+      int CantidadDeActas = _ddjj.Count(x => x.Acta != "");
+      if (CantidadDeActas == 0)
       {
-        int InspectorVDDId = mtdInspectorVerificacion.InsertInspectorVerificacion(Convert.ToInt32(cbx_Inspectores.SelectedValue), txt_CUIT.Text.Trim());
-        int CantidadEmpleados = _ddjj.Where(x => x.Periodo == _ddjj.Max(y => y.Periodo)).FirstOrDefault().Empleados;
+        //PREGUNTO SI YA ESTA ASIGNADA ESTA EMPRESA Y TIENE UNA VERIFICACION DE DEUDA SIN CERRAR/CANCELAR/ACTA
+        if (mtdVDInspector.YaEstaAsignada(txt_CUIT.Text.Trim().ToString()) == 0)
+        {
+          VD_Inspector VDInspector = new VD_Inspector
+          {
+            InspectorId = Convert.ToInt32(cbx_Inspectores.SelectedValue),
+            EmpresaId = 0,
+            CUIT = txt_CUIT.Text.Trim(),
+            FechaAsignacion = DateTime.Now,
+            Estado = 0,
+            FechaCierre = null,
+            Desde = Convert.ToDateTime(msk_Desde.Text),
+            Hasta = Convert.ToDateTime(msk_Hasta.Text),
+            FechaVenc = Convert.ToDateTime(msk_Vencimiento.Text),
+            TipoInteres = cbx_TipoDeInteres.SelectedIndex,
+            InteresMensual = Convert.ToDecimal(txt_Interes.Text),
+            InteresDiario = Convert.ToDecimal(txt_InteresDiario.Text),
+            Capital = Convert.ToDecimal(txt_Deuda.Text),         //Math.Round(_ddjj.Sum(x => x.Capital), 2)
+            Interes = Convert.ToDecimal(txt_TotalInteres.Text),
+            Total = Convert.ToDecimal(txt_Total.Text),
+            EmpleadosCantidad = _ddjj.Where(x => x.Periodo == _ddjj.Max(y => y.Periodo)).FirstOrDefault().Empleados,
+            UserId = _UserId
+          };
 
-        mtdVDCabecera.InsertVerificacionDeudaCabecera(
-          InspectorVDDId,
-          txt_CUIT.Text.Trim().ToString(),
-          DateTime.Now,
-          Convert.ToDateTime(msk_Desde.Text),
-          Convert.ToDateTime(msk_Hasta.Text),
-          Convert.ToDateTime(msk_Vencimiento.Text),
-          0,
-          Convert.ToDecimal(txt_Deuda.Text),         //Math.Round(_ddjj.Sum(x => x.Capital), 2)
-          Convert.ToDecimal(txt_TotalInteres.Text),
-          Convert.ToDecimal(txt_Total.Text),
-          0,
-         CantidadEmpleados,
-         Convert.ToDecimal(txt_Interes.Text),
-         Convert.ToDecimal(txt_InteresDiario.Text)
-          );
+          int VDDId = mtdVDInspector.Insert_VDInspector(VDInspector);
 
-        int VD_CaberecaId = mtdVDCabecera.GetVD_CabeceraId();
-
-        mtdVDDetalle.InsertVerificacionDetalle(_ddjj, VD_CaberecaId, true);
+          mtdVDDetalle.Insert_VDDetalle(_ddjj, VDDId, true); // true para insertar. No modificar
+        }
+        else
+        {
+          MessageBox.Show("Ya tiene asignada una verificacion de Deuda");
+        }
       }
       else
       {
-        MessageBox.Show("Ya tiene asignada una verificacion de Deuda");
+        MessageBox.Show("Debe Excluir los periodos que pertescan a un Acta ");
       }
     }
+
+
 
     private void btn_Actualizar_VD_Click(object sender, EventArgs e)
     {
@@ -640,12 +670,11 @@ namespace entrega_cupones.Formularios
       int CantidadDeActas = _ddjj.Count(x => x.Acta != "");
       if (CantidadDeActas == 0)
       {
-        int VD_CabeceraId = mtdVDCabecera.YaEstaAsignada(txt_CUIT.Text.Trim().ToString());
-        if (VD_CabeceraId > 0)
+        int VDInspectorId = mtdVDInspector.YaEstaAsignada(txt_CUIT.Text.Trim().ToString());
+        if (VDInspectorId > 0)
         {
-          //mtdEmpresas.GetNroVerifDeuda(txt_CUIT.Text.Trim().ToString(),)
-          mtdVDDetalle.InsertVerificacionDetalle(_ddjj, VD_CabeceraId, false);
-
+          Update_VDInspector(VDInspectorId);  // Modifico la ASignacion
+          mtdVDDetalle.Insert_VDDetalle(_ddjj, VDInspectorId, false); // Envio False para que modifique
         }
         else
         {
@@ -656,6 +685,49 @@ namespace entrega_cupones.Formularios
       {
         MessageBox.Show("Debe Excluir los periodos que pertescan a un Acta ");
       }
+    }
+
+    private void Update_VDInspector(int VDInspectorId)
+    {
+      using (var context = new lts_sindicatoDataContext())
+      {
+        VD_Inspector VDInspector = context.VD_Inspector.Where(x => x.Id == VDInspectorId).Single();
+
+        VDInspector.InspectorId = Convert.ToInt32(cbx_Inspectores.SelectedValue);
+        VDInspector.EmpresaId = 0;
+        VDInspector.CUIT = txt_CUIT.Text.Trim();
+        VDInspector.FechaAsignacion = DateTime.Now;
+        VDInspector.Estado = 0;
+        VDInspector.FechaCierre = null;
+        VDInspector.Desde = Convert.ToDateTime(msk_Desde.Text);
+        VDInspector.Hasta = Convert.ToDateTime(msk_Hasta.Text);
+        VDInspector.FechaVenc = Convert.ToDateTime(msk_Vencimiento.Text);
+        VDInspector.TipoInteres = cbx_TipoDeInteres.SelectedIndex;
+        VDInspector.InteresMensual = Convert.ToDecimal(txt_Interes.Text);
+        VDInspector.InteresDiario = Convert.ToDecimal(txt_InteresDiario.Text);
+        VDInspector.Capital = Convert.ToDecimal(txt_Deuda.Text);  //Math.Round(_ddjj.Sum(x => x.Capital), 2)
+        VDInspector.Interes = Convert.ToDecimal(txt_TotalInteres.Text);
+        VDInspector.Total = Convert.ToDecimal(txt_Total.Text);
+        VDInspector.EmpleadosCantidad = _ddjj.Where(x => x.Periodo == _ddjj.Max(y => y.Periodo)).FirstOrDefault().Empleados;
+        VDInspector.UserId = _UserId;
+        context.SubmitChanges();
+
+      }
+    }
+
+    private void btn_VerVD_Click(object sender, EventArgs e)
+    {
+      frm_VerVD f_VerVD = new frm_VerVD();
+      f_VerVD._VDId = _VDId; //Convert.ToInt32(dgv_ddjj.CurrentRow.Cells["VerificacionDeuda"].Value.ToString());
+      f_VerVD.txt_CUIT.Text = txt_CUIT.Text;
+      f_VerVD.txt_BuscarEmpesa.Text = txt_BuscarEmpesa.Text;
+      f_VerVD.msk_Desde.Text = msk_Desde.Text;
+      f_VerVD.msk_Hasta.Text = msk_Hasta.Text;
+      f_VerVD.msk_Vencimiento.Text = msk_Vencimiento.Text;
+      f_VerVD.cbx_TipoDeInteres.SelectedIndex = cbx_TipoDeInteres.SelectedIndex;
+      f_VerVD.txt_Interes.Text = txt_Interes.Text;
+      f_VerVD.txt_InteresDiario.Text = txt_InteresDiario.Text;
+      f_VerVD.Show();
     }
   }
 }

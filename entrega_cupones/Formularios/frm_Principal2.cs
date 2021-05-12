@@ -610,6 +610,7 @@ namespace entrega_cupones.Formularios
     private void menu_VerificarDeuda_Click(object sender, EventArgs e)
     {
       VerificarDeuda f_VerificarDeuda = new VerificarDeuda();
+      f_VerificarDeuda._UserId = _UserId;
       f_VerificarDeuda.ShowDialog();
     }
 

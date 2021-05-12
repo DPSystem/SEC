@@ -55,6 +55,9 @@
   <PropertyGroup>
     <ApplicationIcon>Logo_SecBanda_ICONO.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
@@ -234,6 +237,12 @@
     <Compile Include="Formularios\frm_VerRecibos.Designer.cs">
       <DependentUpon>frm_VerRecibos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frm_VerVD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_VerVD.Designer.cs">
+      <DependentUpon>frm_VerVD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Informes\PorInspector.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -380,9 +389,8 @@
     <Compile Include="Metodos\mtdConvertirImagen.cs" />
     <Compile Include="Metodos\mtdFilial.cs" />
     <Compile Include="Metodos\mtdInspectores.cs" />
-    <Compile Include="Metodos\mtdInspectorVerificacion.cs" />
+    <Compile Include="Metodos\mtdVDInspector.cs" />
     <Compile Include="Metodos\mtdSocios.cs" />
-    <Compile Include="Metodos\mtdVDCabecera.cs" />
     <Compile Include="Metodos\mtdVDDetalle.cs" />
     <Compile Include="Modelos\mdlCategoriaEmpleado.cs" />
     <Compile Include="Modelos\mdlDDJJpr.cs" />
@@ -410,7 +418,7 @@
     <Compile Include="Modelos\mdlCuadroAmortizacion.cs" />
     <Compile Include="Modelos\mdlEstadoPlanDePago.cs" />
     <Compile Include="Modelos\mdlInspector.cs" />
-    <Compile Include="Modelos\mdlInspectorVerificacion.cs" />
+    <Compile Include="Modelos\mdlVDInspector.cs" />
     <Compile Include="Modelos\mdlMochilasEntregadas.cs" />
     <Compile Include="Modelos\mdlRecibosReporte.cs" />
     <Compile Include="Modelos\mdlSocio.cs" />
@@ -483,6 +491,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_VerRecibos.resx">
       <DependentUpon>frm_VerRecibos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_VerVD.resx">
+      <DependentUpon>frm_VerVD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Informes\PorInspector.resx">
       <DependentUpon>PorInspector.cs</DependentUpon>
@@ -641,6 +652,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\entrega_cupones.Modelos.EstadoDDJJ.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

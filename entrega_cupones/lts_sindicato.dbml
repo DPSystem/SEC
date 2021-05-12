@@ -1030,59 +1030,6 @@
       <Column Name="MEEMP_CUIT_STR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.ActasDetalle" Member="ActasDetalle">
-    <Type Name="ActasDetalle">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Periodo" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
-      <Column Name="CantidadEmpleados" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CantidadSocios" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TotalSueldoEmpleados" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
-      <Column Name="TotalSueldoSocios" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
-      <Column Name="TotalAporteEmpleados" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
-      <Column Name="TotalAporteSocios" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
-      <Column Name="FechaDePago" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
-      <Column Name="ImporteDepositado" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
-      <Column Name="DiasDeMora" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="DeudaGenerada" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
-      <Column Name="InteresGenerado" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Total" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
-      <Column Name="PerNoDec" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ActaId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="NumeroDeActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.PlanesDePago" Member="PlanesDePago">
-    <Type Name="PlanesDePago">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="NroDePlan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CUIT" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
-      <Column Name="NroDeAsignacion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="DeudaInicial" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
-      <Column Name="ActaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Acta" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.PlanDetalle" Member="PlanDetalle">
-    <Type Name="PlanDetalle">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="PlanesDePagoID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="NroPlanDePago" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Cuota" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ImporteCuota" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
-      <Column Name="Interes" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
-      <Column Name="Amortizado" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
-      <Column Name="AAmortizar" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
-      <Column Name="FechaVenc" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="InteresResarcitorio" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
-      <Column Name="DiasDeMora" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ImporteCobrado" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
-      <Column Name="Cancelado" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="FechaCancela" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.Comprobantes" Member="Comprobantes">
     <Type Name="Comprobantes">
       <Column Name="ComprobanteId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -1090,23 +1037,6 @@
       <Column Name="Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Numero" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Importe" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.RecibosDetalle" Member="RecibosDetalle">
-    <Type Name="RecibosDetalle">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="CuotaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="NroCuota" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="NroAut" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="FechaAut" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="NroManual" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="FechaManual" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="TipoId" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ConceptoId" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ModoPagoId" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="UsuarioId" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Importe" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
-      <Column Name="Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.cheques" Member="cheques">
@@ -1247,22 +1177,6 @@
       <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Recibos" Member="Recibos">
-    <Type Name="Recibos">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="NroAutomatico" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="FechaAutomatica" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="NroManual" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="FechaManual" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="NroDeActa" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Importe" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
-      <Column Name="UsuarioId" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Aprobado" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="AprobadoUsuarioId" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="AprobadoFecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.eventos_cupones" Member="eventos_cupones">
     <Type Name="eventos_cupones">
       <Column Name="eventcupon_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -1319,46 +1233,14 @@
       <Column Name="InteresMensualAplicado" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
       <Column Name="InteresDiarioAplicado" Type="System.Decimal" DbType="Decimal(8,6) NOT NULL" CanBeNull="false" />
       <Column Name="Estado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Observaviones" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.VD_Cabecera" Member="VD_Cabecera">
-    <Type Name="VD_Cabecera">
+  <Table Name="dbo.ActasDetalle" Member="ActasDetalle">
+    <Type Name="ActasDetalle">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="VerificacionId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Numero" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Desde" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
-      <Column Name="Hasta" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
-      <Column Name="Vencimiento" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
-      <Column Name="EmpresaId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="EmpresaCuit" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Capital" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Interes" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Total" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
-      <Column Name="PlanDePago" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="EmpleadosCantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="InteresMensualAplicado" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
-      <Column Name="InteresDiarioAplicado" Type="System.Decimal" DbType="Decimal(8,6) NOT NULL" CanBeNull="false" />
-      <Column Name="Estado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.InspectorVerificacion" Member="InspectorVerificacion">
-    <Type Name="InspectorVerificacion">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="IdInspector" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="IdEmpresa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CUIT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="FechaAsignacion" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Estado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="FechaCierre" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.VD_Detalle" Member="VD_Detalle">
-    <Type Name="VD_Detalle">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="VD_CabeceraId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Periodo" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
-      <Column Name="Rectificacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="CantidadEmpleados" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="CantidadSocios" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="TotalSueldoEmpleados" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
@@ -1374,6 +1256,118 @@
       <Column Name="PerNoDec" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="ActaId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="NumeroDeActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PlanesDePago" Member="PlanesDePago">
+    <Type Name="PlanesDePago">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NroDePlan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CUIT" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="NroDeAsignacion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeudaInicial" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="ActaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Acta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PlanDetalle" Member="PlanDetalle">
+    <Type Name="PlanDetalle">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PlanesDePagoID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NroPlanDePago" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Cuota" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImporteCuota" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="Interes" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="Amortizado" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="AAmortizar" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="FechaVenc" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InteresResarcitorio" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DiasDeMora" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImporteCobrado" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="Cancelado" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="FechaCancela" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Recibos" Member="Recibos">
+    <Type Name="Recibos">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NroAutomatico" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaAutomatica" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NroManual" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="FechaManual" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NroDeActa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Importe" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="UsuarioId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Aprobado" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AprobadoUsuarioId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AprobadoFecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RecibosDetalle" Member="RecibosDetalle">
+    <Type Name="RecibosDetalle">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CuotaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NroCuota" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NroAut" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaAut" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NroManual" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaManual" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TipoId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ConceptoId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModoPagoId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UsuarioId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Importe" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VD_Inspector" Member="VD_Inspector">
+    <Type Name="VD_Inspector">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InspectorId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmpresaId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CUIT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="FechaAsignacion" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Estado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaCierre" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Desde" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Hasta" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FechaVenc" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TipoInteres" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InteresMensual" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="InteresDiario" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Capital" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Interes" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Total" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="EmpleadosCantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VD_Detalle" Member="VD_Detalle">
+    <Type Name="VD_Detalle">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VDInspectorId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Periodo" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Rectificacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CantidadEmpleados" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CantidadSocios" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TotalSueldoEmpleados" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="TotalSueldoSocios" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="TotalAporteEmpleados" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="TotalAporteSocios" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaDePago" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ImporteDepositado" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="DiasDeMora" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DeudaGenerada" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="InteresGenerado" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Total" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="PerNoDec" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ActaId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumeroDeActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
   <Function Name="dbo.limpiar_tabla_socios" Method="limpiar_tabla_socios">

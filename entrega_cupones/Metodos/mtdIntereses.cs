@@ -301,8 +301,6 @@ namespace entrega_cupones.Metodos
         interes = GetInteresAFIP(Periodo, Hasta, Importe, TipoInteres, FechaDeVencimientoDeActa,false);
       }
       //var interes = (dias * TazaDeInteres * Importe) / 100;
-      
-
       return interes;
     }
 

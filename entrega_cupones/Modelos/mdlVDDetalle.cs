@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace entrega_cupones.Modelos
 {
-  class mdlVDDetalle
+  public class mdlVDDetalle
   {
     public int Id { get; set; }
     public int VerificacionId { get; set; }
