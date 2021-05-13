@@ -367,5 +367,20 @@ namespace entrega_cupones.Metodos
       }
       return interes;
     }
+  
+    public static string CalcularInteresDiario(string InteresMensual)
+    {
+      string InteresDiario = "0";
+      if (InteresMensual == "")
+      {
+        InteresDiario = "0";
+      }
+      else
+      {
+        InteresDiario = Math.Round((Convert.ToDecimal(InteresMensual) / 30), 6).ToString();
+      }
+      return InteresDiario;
+    }
+    
   }
 }

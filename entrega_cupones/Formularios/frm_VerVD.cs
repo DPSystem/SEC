@@ -26,7 +26,7 @@ namespace entrega_cupones.Formularios
     {
       dgv_VD.AutoGenerateColumns = false;
       VD_Mostrar();
-      CalcularTotales();
+      
     }
 
     private void VD_Mostrar()
@@ -36,6 +36,7 @@ namespace entrega_cupones.Formularios
       BindingSource bindingSource = new BindingSource();
       bindingSource.DataSource = _VDDetalle;
       //dataGridView1.DataSource = bindingSource;
+      CalcularTotales();
     }
 
     private void CalcularTotales()
@@ -57,7 +58,6 @@ namespace entrega_cupones.Formularios
 
     private void CalcularDeuda()
     {
-      //_ddjj.Clear();
       _VDDetalle = mtdVDDetalle.VD_ListadoDDJJT(_VDDetalle,
                     txt_CUIT.Text,
                     Convert.ToDateTime("01/" + msk_Desde.Text),
@@ -67,8 +67,6 @@ namespace entrega_cupones.Formularios
                     Convert.ToDecimal(txt_InteresDiario.Text),
                     _VDId
                     );
-      //_ddjj = vD_Detalles;
-      mtdVDDetalle.Insert_VDDetalle(_VDDetalle, _VDId, false); // Envio False para que modifique
       VD_Mostrar();
     }
 
@@ -104,7 +102,14 @@ namespace entrega_cupones.Formularios
       }
     }
 
-    // Prueba de GitHub
+    private void txt_Interes_TextChanged(object sender, EventArgs e)
+    {
+      if (txt_Interes.Text == "")
+      {
+        txt_Interes.Text = "0";
+      }
+      txt_InteresDiario.Text = mtdIntereses.CalcularInteresDiario(txt_Interes.Text);
+    }
   }
 }
 

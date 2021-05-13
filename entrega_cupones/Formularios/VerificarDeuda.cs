@@ -592,10 +592,15 @@ namespace entrega_cupones.Formularios
       {
         txt_Interes.Text = "0";
       }
-      else
-      {
-        txt_InteresDiario.Text = Math.Round((Convert.ToDecimal(txt_Interes.Text) / 30), 6).ToString();
-      }
+      txt_InteresDiario.Text = mtdIntereses.CalcularInteresDiario(txt_Interes.Text);
+      //if (txt_Interes.Text == "")
+      //{
+      //  txt_Interes.Text = "0";
+      //}
+      //else
+      //{
+      //  txt_InteresDiario.Text = Math.Round((Convert.ToDecimal(txt_Interes.Text) / 30), 6).ToString();
+      //}
     }
 
     private void btn_CalcularDifAporteSocio_Click(object sender, EventArgs e)
@@ -663,6 +668,7 @@ namespace entrega_cupones.Formularios
     private void btn_Actualizar_VD_Click(object sender, EventArgs e)
     {
       Actualizar_VD();
+      CalcularDeuda();
     }
 
     private void Actualizar_VD()

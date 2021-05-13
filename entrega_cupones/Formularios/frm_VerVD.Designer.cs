@@ -29,33 +29,33 @@ namespace entrega_cupones.Formularios
     /// </summary>
     private void InitializeComponent()
     {
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle82 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle83 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle84 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle85 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle86 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle87 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle88 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle89 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle90 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle91 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle92 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle93 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle94 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle95 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle96 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle97 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle98 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle99 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle100 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle101 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle108 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle102 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle103 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle104 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle105 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle106 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle107 = new System.Windows.Forms.DataGridViewCellStyle();
       this.panel1 = new System.Windows.Forms.Panel();
       this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
       this.txt_Total = new System.Windows.Forms.TextBox();
@@ -86,7 +86,6 @@ namespace entrega_cupones.Formularios
       this.Capital = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.Interes = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.panel3 = new System.Windows.Forms.Panel();
       this.btn_CopiarSiguiente = new System.Windows.Forms.Button();
       this.btn_EmitirActa = new System.Windows.Forms.Button();
       this.btn_IngresoManual = new System.Windows.Forms.Button();
@@ -156,7 +155,6 @@ namespace entrega_cupones.Formularios
       this.btn_CalcularDeuda = new System.Windows.Forms.Button();
       this.panel1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dgv_VD)).BeginInit();
-      this.panel3.SuspendLayout();
       this.panel6.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dgv_PlanDePagos)).BeginInit();
       this.panel2.SuspendLayout();
@@ -166,21 +164,40 @@ namespace entrega_cupones.Formularios
       // panel1
       // 
       this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+      this.panel1.Controls.Add(this.cbx_TipoDeInteres);
+      this.panel1.Controls.Add(this.label22);
       this.panel1.Controls.Add(this.bunifuCustomLabel1);
+      this.panel1.Controls.Add(this.label2);
+      this.panel1.Controls.Add(this.btn_CopiarSiguiente);
+      this.panel1.Controls.Add(this.label3);
       this.panel1.Controls.Add(this.txt_Total);
+      this.panel1.Controls.Add(this.msk_Desde);
+      this.panel1.Controls.Add(this.btn_CalcularDeuda);
       this.panel1.Controls.Add(this.label7);
+      this.panel1.Controls.Add(this.label4);
+      this.panel1.Controls.Add(this.btn_EmitirActa);
+      this.panel1.Controls.Add(this.txt_InteresDiario);
       this.panel1.Controls.Add(this.txt_TotalInteres);
+      this.panel1.Controls.Add(this.label11);
+      this.panel1.Controls.Add(this.btn_IngresoManual);
+      this.panel1.Controls.Add(this.msk_Hasta);
       this.panel1.Controls.Add(this.label8);
+      this.panel1.Controls.Add(this.label6);
+      this.panel1.Controls.Add(this.btn_PeriodoDetalle);
+      this.panel1.Controls.Add(this.msk_Vencimiento);
       this.panel1.Controls.Add(this.label9);
+      this.panel1.Controls.Add(this.txt_Interes);
+      this.panel1.Controls.Add(this.btn_EliminarFila);
       this.panel1.Controls.Add(this.txt_Deuda);
       this.panel1.Controls.Add(this.label10);
+      this.panel1.Controls.Add(this.btn_CopiarAnterior);
       this.panel1.Controls.Add(this.txt_Pagado);
       this.panel1.Controls.Add(this.label12);
       this.panel1.Controls.Add(this.txt_PerNoDec);
       this.panel1.Controls.Add(this.dgv_VD);
-      this.panel1.Location = new System.Drawing.Point(2, 214);
+      this.panel1.Location = new System.Drawing.Point(2, 64);
       this.panel1.Name = "panel1";
-      this.panel1.Size = new System.Drawing.Size(923, 488);
+      this.panel1.Size = new System.Drawing.Size(923, 361);
       this.panel1.TabIndex = 598;
       // 
       // bunifuCustomLabel1
@@ -190,7 +207,7 @@ namespace entrega_cupones.Formularios
       this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
       this.bunifuCustomLabel1.Location = new System.Drawing.Point(6, 4);
       this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-      this.bunifuCustomLabel1.Size = new System.Drawing.Size(910, 22);
+      this.bunifuCustomLabel1.Size = new System.Drawing.Size(914, 22);
       this.bunifuCustomLabel1.TabIndex = 590;
       this.bunifuCustomLabel1.Text = "Detalle de  Verificacion de Deuda";
       this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -199,7 +216,7 @@ namespace entrega_cupones.Formularios
       // 
       this.txt_Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.txt_Total.ForeColor = System.Drawing.Color.Black;
-      this.txt_Total.Location = new System.Drawing.Point(805, 461);
+      this.txt_Total.Location = new System.Drawing.Point(805, 335);
       this.txt_Total.Name = "txt_Total";
       this.txt_Total.Size = new System.Drawing.Size(111, 22);
       this.txt_Total.TabIndex = 578;
@@ -210,7 +227,7 @@ namespace entrega_cupones.Formularios
       this.label7.AutoSize = true;
       this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label7.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label7.Location = new System.Drawing.Point(756, 464);
+      this.label7.Location = new System.Drawing.Point(756, 338);
       this.label7.Name = "label7";
       this.label7.Size = new System.Drawing.Size(43, 17);
       this.label7.TabIndex = 579;
@@ -220,7 +237,7 @@ namespace entrega_cupones.Formularios
       // 
       this.txt_TotalInteres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.txt_TotalInteres.ForeColor = System.Drawing.Color.Black;
-      this.txt_TotalInteres.Location = new System.Drawing.Point(655, 461);
+      this.txt_TotalInteres.Location = new System.Drawing.Point(655, 335);
       this.txt_TotalInteres.Name = "txt_TotalInteres";
       this.txt_TotalInteres.Size = new System.Drawing.Size(84, 22);
       this.txt_TotalInteres.TabIndex = 580;
@@ -231,7 +248,7 @@ namespace entrega_cupones.Formularios
       this.label8.AutoSize = true;
       this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label8.Location = new System.Drawing.Point(599, 464);
+      this.label8.Location = new System.Drawing.Point(599, 338);
       this.label8.Name = "label8";
       this.label8.Size = new System.Drawing.Size(53, 17);
       this.label8.TabIndex = 581;
@@ -242,7 +259,7 @@ namespace entrega_cupones.Formularios
       this.label9.AutoSize = true;
       this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label9.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label9.Location = new System.Drawing.Point(273, 464);
+      this.label9.Location = new System.Drawing.Point(273, 338);
       this.label9.Name = "label9";
       this.label9.Size = new System.Drawing.Size(65, 17);
       this.label9.TabIndex = 582;
@@ -252,7 +269,7 @@ namespace entrega_cupones.Formularios
       // 
       this.txt_Deuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.txt_Deuda.ForeColor = System.Drawing.Color.Black;
-      this.txt_Deuda.Location = new System.Drawing.Point(503, 461);
+      this.txt_Deuda.Location = new System.Drawing.Point(503, 335);
       this.txt_Deuda.Name = "txt_Deuda";
       this.txt_Deuda.Size = new System.Drawing.Size(84, 22);
       this.txt_Deuda.TabIndex = 583;
@@ -263,7 +280,7 @@ namespace entrega_cupones.Formularios
       this.label10.AutoSize = true;
       this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label10.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label10.Location = new System.Drawing.Point(442, 464);
+      this.label10.Location = new System.Drawing.Point(442, 338);
       this.label10.Name = "label10";
       this.label10.Size = new System.Drawing.Size(56, 17);
       this.label10.TabIndex = 584;
@@ -273,7 +290,7 @@ namespace entrega_cupones.Formularios
       // 
       this.txt_Pagado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.txt_Pagado.ForeColor = System.Drawing.Color.Black;
-      this.txt_Pagado.Location = new System.Drawing.Point(338, 461);
+      this.txt_Pagado.Location = new System.Drawing.Point(338, 335);
       this.txt_Pagado.Name = "txt_Pagado";
       this.txt_Pagado.Size = new System.Drawing.Size(84, 22);
       this.txt_Pagado.TabIndex = 585;
@@ -284,7 +301,7 @@ namespace entrega_cupones.Formularios
       this.label12.AutoSize = true;
       this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label12.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label12.Location = new System.Drawing.Point(134, 464);
+      this.label12.Location = new System.Drawing.Point(134, 338);
       this.label12.Name = "label12";
       this.label12.Size = new System.Drawing.Size(86, 17);
       this.label12.TabIndex = 586;
@@ -294,7 +311,7 @@ namespace entrega_cupones.Formularios
       // 
       this.txt_PerNoDec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.txt_PerNoDec.ForeColor = System.Drawing.Color.Black;
-      this.txt_PerNoDec.Location = new System.Drawing.Point(221, 461);
+      this.txt_PerNoDec.Location = new System.Drawing.Point(221, 335);
       this.txt_PerNoDec.Name = "txt_PerNoDec";
       this.txt_PerNoDec.Size = new System.Drawing.Size(37, 22);
       this.txt_PerNoDec.TabIndex = 587;
@@ -304,18 +321,18 @@ namespace entrega_cupones.Formularios
       // 
       this.dgv_VD.AllowUserToAddRows = false;
       this.dgv_VD.AllowUserToResizeRows = false;
-      dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-      dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-      this.dgv_VD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+      dataGridViewCellStyle82.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+      dataGridViewCellStyle82.ForeColor = System.Drawing.Color.Black;
+      this.dgv_VD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle82;
       this.dgv_VD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-      dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-      dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-      dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-      dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-      dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-      dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-      this.dgv_VD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+      dataGridViewCellStyle83.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+      dataGridViewCellStyle83.BackColor = System.Drawing.SystemColors.Control;
+      dataGridViewCellStyle83.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      dataGridViewCellStyle83.ForeColor = System.Drawing.SystemColors.WindowText;
+      dataGridViewCellStyle83.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+      dataGridViewCellStyle83.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+      dataGridViewCellStyle83.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+      this.dgv_VD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle83;
       this.dgv_VD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
       this.dgv_VD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Periodo,
@@ -335,20 +352,20 @@ namespace entrega_cupones.Formularios
             this.Capital,
             this.Interes,
             this.Total});
-      this.dgv_VD.Location = new System.Drawing.Point(6, 29);
+      this.dgv_VD.Location = new System.Drawing.Point(6, 105);
       this.dgv_VD.Name = "dgv_VD";
       this.dgv_VD.RowHeadersVisible = false;
       this.dgv_VD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-      this.dgv_VD.Size = new System.Drawing.Size(910, 426);
+      this.dgv_VD.Size = new System.Drawing.Size(910, 225);
       this.dgv_VD.TabIndex = 536;
       // 
       // Periodo
       // 
       this.Periodo.DataPropertyName = "Periodo";
-      dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      dataGridViewCellStyle3.Format = "MM/yyyy";
-      dataGridViewCellStyle3.NullValue = null;
-      this.Periodo.DefaultCellStyle = dataGridViewCellStyle3;
+      dataGridViewCellStyle84.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      dataGridViewCellStyle84.Format = "MM/yyyy";
+      dataGridViewCellStyle84.NullValue = null;
+      this.Periodo.DefaultCellStyle = dataGridViewCellStyle84;
       this.Periodo.HeaderText = "Periodo";
       this.Periodo.Name = "Periodo";
       this.Periodo.Width = 70;
@@ -363,8 +380,8 @@ namespace entrega_cupones.Formularios
       // Rectificacion
       // 
       this.Rectificacion.DataPropertyName = "Rectificacion";
-      dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      this.Rectificacion.DefaultCellStyle = dataGridViewCellStyle4;
+      dataGridViewCellStyle85.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.Rectificacion.DefaultCellStyle = dataGridViewCellStyle85;
       this.Rectificacion.HeaderText = "Rect";
       this.Rectificacion.Name = "Rectificacion";
       this.Rectificacion.Width = 50;
@@ -372,10 +389,10 @@ namespace entrega_cupones.Formularios
       // AporteLey
       // 
       this.AporteLey.DataPropertyName = "TotalAporteEmpleados";
-      dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle5.Format = "N2";
-      dataGridViewCellStyle5.NullValue = null;
-      this.AporteLey.DefaultCellStyle = dataGridViewCellStyle5;
+      dataGridViewCellStyle86.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle86.Format = "N2";
+      dataGridViewCellStyle86.NullValue = null;
+      this.AporteLey.DefaultCellStyle = dataGridViewCellStyle86;
       this.AporteLey.HeaderText = "Ley 2%";
       this.AporteLey.Name = "AporteLey";
       this.AporteLey.Width = 80;
@@ -383,10 +400,10 @@ namespace entrega_cupones.Formularios
       // TotalSueldoEmpleado
       // 
       this.TotalSueldoEmpleado.DataPropertyName = "TotalSueldoEmpleados";
-      dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle6.Format = "N2";
-      dataGridViewCellStyle6.NullValue = null;
-      this.TotalSueldoEmpleado.DefaultCellStyle = dataGridViewCellStyle6;
+      dataGridViewCellStyle87.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle87.Format = "N2";
+      dataGridViewCellStyle87.NullValue = null;
+      this.TotalSueldoEmpleado.DefaultCellStyle = dataGridViewCellStyle87;
       this.TotalSueldoEmpleado.HeaderText = "Sueldo Empleado";
       this.TotalSueldoEmpleado.Name = "TotalSueldoEmpleado";
       this.TotalSueldoEmpleado.Visible = false;
@@ -394,10 +411,10 @@ namespace entrega_cupones.Formularios
       // AporteSocio
       // 
       this.AporteSocio.DataPropertyName = "TotalAporteSocios";
-      dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle7.Format = "N2";
-      dataGridViewCellStyle7.NullValue = null;
-      this.AporteSocio.DefaultCellStyle = dataGridViewCellStyle7;
+      dataGridViewCellStyle88.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle88.Format = "N2";
+      dataGridViewCellStyle88.NullValue = null;
+      this.AporteSocio.DefaultCellStyle = dataGridViewCellStyle88;
       this.AporteSocio.HeaderText = "Socio 2%";
       this.AporteSocio.Name = "AporteSocio";
       this.AporteSocio.Width = 80;
@@ -405,10 +422,10 @@ namespace entrega_cupones.Formularios
       // TotalSueldoSocio
       // 
       this.TotalSueldoSocio.DataPropertyName = "TotalSueldoSocios";
-      dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle8.Format = "N2";
-      dataGridViewCellStyle8.NullValue = null;
-      this.TotalSueldoSocio.DefaultCellStyle = dataGridViewCellStyle8;
+      dataGridViewCellStyle89.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle89.Format = "N2";
+      dataGridViewCellStyle89.NullValue = null;
+      this.TotalSueldoSocio.DefaultCellStyle = dataGridViewCellStyle89;
       this.TotalSueldoSocio.HeaderText = "Sueldo Socios";
       this.TotalSueldoSocio.Name = "TotalSueldoSocio";
       this.TotalSueldoSocio.Visible = false;
@@ -416,8 +433,8 @@ namespace entrega_cupones.Formularios
       // FechaDePago
       // 
       this.FechaDePago.DataPropertyName = "FechaDePago";
-      dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      this.FechaDePago.DefaultCellStyle = dataGridViewCellStyle9;
+      dataGridViewCellStyle90.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.FechaDePago.DefaultCellStyle = dataGridViewCellStyle90;
       this.FechaDePago.HeaderText = "Fecha Pago";
       this.FechaDePago.Name = "FechaDePago";
       this.FechaDePago.Width = 70;
@@ -425,10 +442,10 @@ namespace entrega_cupones.Formularios
       // ImporteDepositado
       // 
       this.ImporteDepositado.DataPropertyName = "ImporteDepositado";
-      dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle10.Format = "N2";
-      dataGridViewCellStyle10.NullValue = null;
-      this.ImporteDepositado.DefaultCellStyle = dataGridViewCellStyle10;
+      dataGridViewCellStyle91.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle91.Format = "N2";
+      dataGridViewCellStyle91.NullValue = null;
+      this.ImporteDepositado.DefaultCellStyle = dataGridViewCellStyle91;
       this.ImporteDepositado.HeaderText = "Depositado ";
       this.ImporteDepositado.Name = "ImporteDepositado";
       this.ImporteDepositado.Width = 80;
@@ -436,8 +453,8 @@ namespace entrega_cupones.Formularios
       // DiasDeMora
       // 
       this.DiasDeMora.DataPropertyName = "DiasDeMora";
-      dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      this.DiasDeMora.DefaultCellStyle = dataGridViewCellStyle11;
+      dataGridViewCellStyle92.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.DiasDeMora.DefaultCellStyle = dataGridViewCellStyle92;
       this.DiasDeMora.HeaderText = "Dias de Mora";
       this.DiasDeMora.Name = "DiasDeMora";
       this.DiasDeMora.Width = 70;
@@ -445,10 +462,10 @@ namespace entrega_cupones.Formularios
       // InteresCobrado
       // 
       this.InteresCobrado.DataPropertyName = "InteresGenerado";
-      dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle12.Format = "N2";
-      dataGridViewCellStyle12.NullValue = null;
-      this.InteresCobrado.DefaultCellStyle = dataGridViewCellStyle12;
+      dataGridViewCellStyle93.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle93.Format = "N2";
+      dataGridViewCellStyle93.NullValue = null;
+      this.InteresCobrado.DefaultCellStyle = dataGridViewCellStyle93;
       this.InteresCobrado.HeaderText = "Interes Cobrado";
       this.InteresCobrado.Name = "InteresCobrado";
       this.InteresCobrado.Visible = false;
@@ -457,8 +474,8 @@ namespace entrega_cupones.Formularios
       // Empleados
       // 
       this.Empleados.DataPropertyName = "CantidadEmpleados";
-      dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      this.Empleados.DefaultCellStyle = dataGridViewCellStyle13;
+      dataGridViewCellStyle94.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.Empleados.DefaultCellStyle = dataGridViewCellStyle94;
       this.Empleados.HeaderText = "Empleados ";
       this.Empleados.Name = "Empleados";
       this.Empleados.Width = 80;
@@ -466,8 +483,8 @@ namespace entrega_cupones.Formularios
       // Socios
       // 
       this.Socios.DataPropertyName = "CantidadSocios";
-      dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      this.Socios.DefaultCellStyle = dataGridViewCellStyle14;
+      dataGridViewCellStyle95.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.Socios.DefaultCellStyle = dataGridViewCellStyle95;
       this.Socios.HeaderText = "Socios";
       this.Socios.Name = "Socios";
       this.Socios.Width = 70;
@@ -475,10 +492,10 @@ namespace entrega_cupones.Formularios
       // AporteSocioDif
       // 
       this.AporteSocioDif.DataPropertyName = "AporteSocioDifJorPar";
-      dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle15.Format = "N2";
-      dataGridViewCellStyle15.NullValue = null;
-      this.AporteSocioDif.DefaultCellStyle = dataGridViewCellStyle15;
+      dataGridViewCellStyle96.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle96.Format = "N2";
+      dataGridViewCellStyle96.NullValue = null;
+      this.AporteSocioDif.DefaultCellStyle = dataGridViewCellStyle96;
       this.AporteSocioDif.HeaderText = "Dif Aporte Soc Jor Parcial";
       this.AporteSocioDif.Name = "AporteSocioDif";
       this.AporteSocioDif.Visible = false;
@@ -486,10 +503,10 @@ namespace entrega_cupones.Formularios
       // Capital
       // 
       this.Capital.DataPropertyName = "DeudaGenerada";
-      dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle16.Format = "N2";
-      dataGridViewCellStyle16.NullValue = null;
-      this.Capital.DefaultCellStyle = dataGridViewCellStyle16;
+      dataGridViewCellStyle97.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle97.Format = "N2";
+      dataGridViewCellStyle97.NullValue = null;
+      this.Capital.DefaultCellStyle = dataGridViewCellStyle97;
       this.Capital.HeaderText = "Deuda";
       this.Capital.Name = "Capital";
       this.Capital.Width = 80;
@@ -497,10 +514,10 @@ namespace entrega_cupones.Formularios
       // Interes
       // 
       this.Interes.DataPropertyName = "InteresGenerado";
-      dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle17.Format = "N2";
-      dataGridViewCellStyle17.NullValue = null;
-      this.Interes.DefaultCellStyle = dataGridViewCellStyle17;
+      dataGridViewCellStyle98.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle98.Format = "N2";
+      dataGridViewCellStyle98.NullValue = null;
+      this.Interes.DefaultCellStyle = dataGridViewCellStyle98;
       this.Interes.HeaderText = "Interes";
       this.Interes.Name = "Interes";
       this.Interes.Width = 80;
@@ -508,33 +525,19 @@ namespace entrega_cupones.Formularios
       // Total
       // 
       this.Total.DataPropertyName = "Total";
-      dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle18.Format = "N2";
-      dataGridViewCellStyle18.NullValue = null;
-      this.Total.DefaultCellStyle = dataGridViewCellStyle18;
+      dataGridViewCellStyle99.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle99.Format = "N2";
+      dataGridViewCellStyle99.NullValue = null;
+      this.Total.DefaultCellStyle = dataGridViewCellStyle99;
       this.Total.HeaderText = "Total";
       this.Total.Name = "Total";
       this.Total.Width = 80;
-      // 
-      // panel3
-      // 
-      this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-      this.panel3.Controls.Add(this.btn_CopiarSiguiente);
-      this.panel3.Controls.Add(this.btn_EmitirActa);
-      this.panel3.Controls.Add(this.btn_IngresoManual);
-      this.panel3.Controls.Add(this.btn_PeriodoDetalle);
-      this.panel3.Controls.Add(this.btn_EliminarFila);
-      this.panel3.Controls.Add(this.btn_CopiarAnterior);
-      this.panel3.Location = new System.Drawing.Point(2, 164);
-      this.panel3.Name = "panel3";
-      this.panel3.Size = new System.Drawing.Size(778, 46);
-      this.panel3.TabIndex = 600;
       // 
       // btn_CopiarSiguiente
       // 
       this.btn_CopiarSiguiente.Enabled = false;
       this.btn_CopiarSiguiente.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn_CopiarSiguiente.Location = new System.Drawing.Point(262, 3);
+      this.btn_CopiarSiguiente.Location = new System.Drawing.Point(264, 29);
       this.btn_CopiarSiguiente.Name = "btn_CopiarSiguiente";
       this.btn_CopiarSiguiente.Size = new System.Drawing.Size(123, 39);
       this.btn_CopiarSiguiente.TabIndex = 590;
@@ -545,7 +548,7 @@ namespace entrega_cupones.Formularios
       // 
       this.btn_EmitirActa.Enabled = false;
       this.btn_EmitirActa.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn_EmitirActa.Location = new System.Drawing.Point(520, 3);
+      this.btn_EmitirActa.Location = new System.Drawing.Point(522, 29);
       this.btn_EmitirActa.Name = "btn_EmitirActa";
       this.btn_EmitirActa.Size = new System.Drawing.Size(123, 39);
       this.btn_EmitirActa.TabIndex = 591;
@@ -555,7 +558,7 @@ namespace entrega_cupones.Formularios
       // btn_IngresoManual
       // 
       this.btn_IngresoManual.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn_IngresoManual.Location = new System.Drawing.Point(391, 3);
+      this.btn_IngresoManual.Location = new System.Drawing.Point(393, 29);
       this.btn_IngresoManual.Name = "btn_IngresoManual";
       this.btn_IngresoManual.Size = new System.Drawing.Size(123, 39);
       this.btn_IngresoManual.TabIndex = 592;
@@ -565,7 +568,7 @@ namespace entrega_cupones.Formularios
       // btn_PeriodoDetalle
       // 
       this.btn_PeriodoDetalle.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn_PeriodoDetalle.Location = new System.Drawing.Point(649, 3);
+      this.btn_PeriodoDetalle.Location = new System.Drawing.Point(651, 29);
       this.btn_PeriodoDetalle.Name = "btn_PeriodoDetalle";
       this.btn_PeriodoDetalle.Size = new System.Drawing.Size(123, 39);
       this.btn_PeriodoDetalle.TabIndex = 594;
@@ -576,7 +579,7 @@ namespace entrega_cupones.Formularios
       // 
       this.btn_EliminarFila.Enabled = false;
       this.btn_EliminarFila.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn_EliminarFila.Location = new System.Drawing.Point(4, 3);
+      this.btn_EliminarFila.Location = new System.Drawing.Point(6, 29);
       this.btn_EliminarFila.Name = "btn_EliminarFila";
       this.btn_EliminarFila.Size = new System.Drawing.Size(123, 39);
       this.btn_EliminarFila.TabIndex = 588;
@@ -587,7 +590,7 @@ namespace entrega_cupones.Formularios
       // 
       this.btn_CopiarAnterior.Enabled = false;
       this.btn_CopiarAnterior.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn_CopiarAnterior.Location = new System.Drawing.Point(133, 3);
+      this.btn_CopiarAnterior.Location = new System.Drawing.Point(135, 29);
       this.btn_CopiarAnterior.Name = "btn_CopiarAnterior";
       this.btn_CopiarAnterior.Size = new System.Drawing.Size(123, 39);
       this.btn_CopiarAnterior.TabIndex = 589;
@@ -619,9 +622,9 @@ namespace entrega_cupones.Formularios
       this.panel6.Controls.Add(this.txt_DeudaPlan);
       this.panel6.Controls.Add(this.label20);
       this.panel6.Controls.Add(this.txt_Anticipo);
-      this.panel6.Location = new System.Drawing.Point(931, 214);
+      this.panel6.Location = new System.Drawing.Point(929, 183);
       this.panel6.Name = "panel6";
-      this.panel6.Size = new System.Drawing.Size(406, 244);
+      this.panel6.Size = new System.Drawing.Size(408, 244);
       this.panel6.TabIndex = 601;
       // 
       // bunifuCustomLabel3
@@ -920,18 +923,18 @@ namespace entrega_cupones.Formularios
       this.dgv_PlanDePagos.AllowUserToAddRows = false;
       this.dgv_PlanDePagos.AllowUserToDeleteRows = false;
       this.dgv_PlanDePagos.AllowUserToResizeRows = false;
-      dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-      this.dgv_PlanDePagos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+      dataGridViewCellStyle100.BackColor = System.Drawing.Color.White;
+      this.dgv_PlanDePagos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle100;
       this.dgv_PlanDePagos.BackgroundColor = System.Drawing.Color.White;
       this.dgv_PlanDePagos.CausesValidation = false;
-      dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-      dataGridViewCellStyle20.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
-      dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
-      dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-      dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-      dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-      this.dgv_PlanDePagos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+      dataGridViewCellStyle101.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      dataGridViewCellStyle101.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+      dataGridViewCellStyle101.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+      dataGridViewCellStyle101.ForeColor = System.Drawing.SystemColors.WindowText;
+      dataGridViewCellStyle101.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+      dataGridViewCellStyle101.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+      dataGridViewCellStyle101.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+      this.dgv_PlanDePagos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle101;
       this.dgv_PlanDePagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
       this.dgv_PlanDePagos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CuotaDelPlan,
@@ -946,8 +949,8 @@ namespace entrega_cupones.Formularios
       this.dgv_PlanDePagos.Name = "dgv_PlanDePagos";
       this.dgv_PlanDePagos.ReadOnly = true;
       this.dgv_PlanDePagos.RowHeadersVisible = false;
-      dataGridViewCellStyle27.BackColor = System.Drawing.Color.Silver;
-      this.dgv_PlanDePagos.RowsDefaultCellStyle = dataGridViewCellStyle27;
+      dataGridViewCellStyle108.BackColor = System.Drawing.Color.Silver;
+      this.dgv_PlanDePagos.RowsDefaultCellStyle = dataGridViewCellStyle108;
       this.dgv_PlanDePagos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
       this.dgv_PlanDePagos.Size = new System.Drawing.Size(232, 161);
       this.dgv_PlanDePagos.TabIndex = 591;
@@ -955,8 +958,8 @@ namespace entrega_cupones.Formularios
       // CuotaDelPlan
       // 
       this.CuotaDelPlan.DataPropertyName = "Cuota";
-      dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
-      this.CuotaDelPlan.DefaultCellStyle = dataGridViewCellStyle21;
+      dataGridViewCellStyle102.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
+      this.CuotaDelPlan.DefaultCellStyle = dataGridViewCellStyle102;
       this.CuotaDelPlan.HeaderText = "Cuota";
       this.CuotaDelPlan.Name = "CuotaDelPlan";
       this.CuotaDelPlan.ReadOnly = true;
@@ -965,9 +968,9 @@ namespace entrega_cupones.Formularios
       // ImporteDeCuota
       // 
       this.ImporteDeCuota.DataPropertyName = "ImporteDeCuota";
-      dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
-      dataGridViewCellStyle22.Format = "N2";
-      this.ImporteDeCuota.DefaultCellStyle = dataGridViewCellStyle22;
+      dataGridViewCellStyle103.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
+      dataGridViewCellStyle103.Format = "N2";
+      this.ImporteDeCuota.DefaultCellStyle = dataGridViewCellStyle103;
       this.ImporteDeCuota.HeaderText = "Importe";
       this.ImporteDeCuota.Name = "ImporteDeCuota";
       this.ImporteDeCuota.ReadOnly = true;
@@ -976,9 +979,9 @@ namespace entrega_cupones.Formularios
       // InteresDeCuota
       // 
       this.InteresDeCuota.DataPropertyName = "Interes";
-      dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
-      dataGridViewCellStyle23.Format = "N2";
-      this.InteresDeCuota.DefaultCellStyle = dataGridViewCellStyle23;
+      dataGridViewCellStyle104.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
+      dataGridViewCellStyle104.Format = "N2";
+      this.InteresDeCuota.DefaultCellStyle = dataGridViewCellStyle104;
       this.InteresDeCuota.HeaderText = "Interes";
       this.InteresDeCuota.Name = "InteresDeCuota";
       this.InteresDeCuota.ReadOnly = true;
@@ -988,10 +991,10 @@ namespace entrega_cupones.Formularios
       // Amortizado
       // 
       this.Amortizado.DataPropertyName = "Amortizado";
-      dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
-      dataGridViewCellStyle24.Format = "N2";
-      dataGridViewCellStyle24.NullValue = "0";
-      this.Amortizado.DefaultCellStyle = dataGridViewCellStyle24;
+      dataGridViewCellStyle105.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
+      dataGridViewCellStyle105.Format = "N2";
+      dataGridViewCellStyle105.NullValue = "0";
+      this.Amortizado.DefaultCellStyle = dataGridViewCellStyle105;
       this.Amortizado.HeaderText = "Amortizado";
       this.Amortizado.Name = "Amortizado";
       this.Amortizado.ReadOnly = true;
@@ -1001,9 +1004,9 @@ namespace entrega_cupones.Formularios
       // AAmortizar
       // 
       this.AAmortizar.DataPropertyName = "AAmortizar";
-      dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
-      dataGridViewCellStyle25.Format = "N2";
-      this.AAmortizar.DefaultCellStyle = dataGridViewCellStyle25;
+      dataGridViewCellStyle106.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
+      dataGridViewCellStyle106.Format = "N2";
+      this.AAmortizar.DefaultCellStyle = dataGridViewCellStyle106;
       this.AAmortizar.HeaderText = "a Amortizar";
       this.AAmortizar.Name = "AAmortizar";
       this.AAmortizar.ReadOnly = true;
@@ -1013,10 +1016,10 @@ namespace entrega_cupones.Formularios
       // FechaDeVencimiento
       // 
       this.FechaDeVencimiento.DataPropertyName = "FechaDeVenc";
-      dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
-      dataGridViewCellStyle26.Format = "d";
-      dataGridViewCellStyle26.NullValue = null;
-      this.FechaDeVencimiento.DefaultCellStyle = dataGridViewCellStyle26;
+      dataGridViewCellStyle107.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
+      dataGridViewCellStyle107.Format = "d";
+      dataGridViewCellStyle107.NullValue = null;
+      this.FechaDeVencimiento.DefaultCellStyle = dataGridViewCellStyle107;
       this.FechaDeVencimiento.HeaderText = "Vence";
       this.FechaDeVencimiento.Name = "FechaDeVencimiento";
       this.FechaDeVencimiento.ReadOnly = true;
@@ -1087,28 +1090,16 @@ namespace entrega_cupones.Formularios
       // panel2
       // 
       this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-      this.panel2.Controls.Add(this.cbx_TipoDeInteres);
-      this.panel2.Controls.Add(this.label22);
       this.panel2.Controls.Add(this.bunifuCustomLabel2);
       this.panel2.Controls.Add(this.txt_BuscarEmpesa);
       this.panel2.Controls.Add(this.label1);
-      this.panel2.Controls.Add(this.label2);
-      this.panel2.Controls.Add(this.label3);
-      this.panel2.Controls.Add(this.label4);
-      this.panel2.Controls.Add(this.msk_Desde);
-      this.panel2.Controls.Add(this.msk_Hasta);
-      this.panel2.Controls.Add(this.msk_Vencimiento);
       this.panel2.Controls.Add(this.txt_CUIT);
       this.panel2.Controls.Add(this.label5);
       this.panel2.Controls.Add(this.label13);
-      this.panel2.Controls.Add(this.txt_Interes);
       this.panel2.Controls.Add(this.txt_Domicilio);
-      this.panel2.Controls.Add(this.label6);
-      this.panel2.Controls.Add(this.label11);
-      this.panel2.Controls.Add(this.txt_InteresDiario);
-      this.panel2.Location = new System.Drawing.Point(4, 44);
+      this.panel2.Location = new System.Drawing.Point(4, 1);
       this.panel2.Name = "panel2";
-      this.panel2.Size = new System.Drawing.Size(770, 117);
+      this.panel2.Size = new System.Drawing.Size(1333, 60);
       this.panel2.TabIndex = 602;
       // 
       // cbx_TipoDeInteres
@@ -1122,7 +1113,7 @@ namespace entrega_cupones.Formularios
       this.cbx_TipoDeInteres.Items.AddRange(new object[] {
             "Manual",
             "AFIP"});
-      this.cbx_TipoDeInteres.Location = new System.Drawing.Point(416, 87);
+      this.cbx_TipoDeInteres.Location = new System.Drawing.Point(422, 74);
       this.cbx_TipoDeInteres.Name = "cbx_TipoDeInteres";
       this.cbx_TipoDeInteres.Size = new System.Drawing.Size(113, 25);
       this.cbx_TipoDeInteres.TabIndex = 599;
@@ -1132,7 +1123,7 @@ namespace entrega_cupones.Formularios
       this.label22.AutoSize = true;
       this.label22.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label22.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label22.Location = new System.Drawing.Point(361, 92);
+      this.label22.Location = new System.Drawing.Point(367, 78);
       this.label22.Name = "label22";
       this.label22.Size = new System.Drawing.Size(53, 17);
       this.label22.TabIndex = 590;
@@ -1145,9 +1136,9 @@ namespace entrega_cupones.Formularios
       this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
       this.bunifuCustomLabel2.Location = new System.Drawing.Point(4, 4);
       this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-      this.bunifuCustomLabel2.Size = new System.Drawing.Size(760, 22);
+      this.bunifuCustomLabel2.Size = new System.Drawing.Size(1324, 22);
       this.bunifuCustomLabel2.TabIndex = 589;
-      this.bunifuCustomLabel2.Text = "Busqueda";
+      this.bunifuCustomLabel2.Text = "Datos de la Empresa";
       this.bunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
       // txt_BuscarEmpesa
@@ -1176,7 +1167,7 @@ namespace entrega_cupones.Formularios
       this.label2.AutoSize = true;
       this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label2.Location = new System.Drawing.Point(6, 92);
+      this.label2.Location = new System.Drawing.Point(12, 78);
       this.label2.Name = "label2";
       this.label2.Size = new System.Drawing.Size(52, 17);
       this.label2.TabIndex = 561;
@@ -1187,7 +1178,7 @@ namespace entrega_cupones.Formularios
       this.label3.AutoSize = true;
       this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label3.Location = new System.Drawing.Point(118, 92);
+      this.label3.Location = new System.Drawing.Point(124, 78);
       this.label3.Name = "label3";
       this.label3.Size = new System.Drawing.Size(49, 17);
       this.label3.TabIndex = 562;
@@ -1198,7 +1189,7 @@ namespace entrega_cupones.Formularios
       this.label4.AutoSize = true;
       this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label4.Location = new System.Drawing.Point(218, 92);
+      this.label4.Location = new System.Drawing.Point(224, 78);
       this.label4.Name = "label4";
       this.label4.Size = new System.Drawing.Size(49, 17);
       this.label4.TabIndex = 563;
@@ -1206,7 +1197,7 @@ namespace entrega_cupones.Formularios
       // 
       // msk_Desde
       // 
-      this.msk_Desde.Location = new System.Drawing.Point(62, 90);
+      this.msk_Desde.Location = new System.Drawing.Point(68, 76);
       this.msk_Desde.Mask = "00/0000";
       this.msk_Desde.Name = "msk_Desde";
       this.msk_Desde.Size = new System.Drawing.Size(49, 20);
@@ -1217,7 +1208,7 @@ namespace entrega_cupones.Formularios
       // msk_Hasta
       // 
       this.msk_Hasta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-      this.msk_Hasta.Location = new System.Drawing.Point(167, 90);
+      this.msk_Hasta.Location = new System.Drawing.Point(173, 76);
       this.msk_Hasta.Mask = "00/0000";
       this.msk_Hasta.Name = "msk_Hasta";
       this.msk_Hasta.Size = new System.Drawing.Size(47, 20);
@@ -1227,7 +1218,7 @@ namespace entrega_cupones.Formularios
       // msk_Vencimiento
       // 
       this.msk_Vencimiento.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-      this.msk_Vencimiento.Location = new System.Drawing.Point(270, 90);
+      this.msk_Vencimiento.Location = new System.Drawing.Point(276, 76);
       this.msk_Vencimiento.Mask = "00/00/0000";
       this.msk_Vencimiento.Name = "msk_Vencimiento";
       this.msk_Vencimiento.Size = new System.Drawing.Size(68, 20);
@@ -1260,7 +1251,7 @@ namespace entrega_cupones.Formularios
       this.label13.AutoSize = true;
       this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label13.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label13.Location = new System.Drawing.Point(6, 62);
+      this.label13.Location = new System.Drawing.Point(650, 33);
       this.label13.Name = "label13";
       this.label13.Size = new System.Drawing.Size(73, 17);
       this.label13.TabIndex = 577;
@@ -1270,20 +1261,20 @@ namespace entrega_cupones.Formularios
       // 
       this.txt_Interes.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.txt_Interes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-      this.txt_Interes.Location = new System.Drawing.Point(601, 89);
+      this.txt_Interes.Location = new System.Drawing.Point(607, 75);
       this.txt_Interes.Name = "txt_Interes";
       this.txt_Interes.Size = new System.Drawing.Size(41, 23);
       this.txt_Interes.TabIndex = 571;
       this.txt_Interes.Text = "3";
+      this.txt_Interes.TextChanged += new System.EventHandler(this.txt_Interes_TextChanged);
       // 
       // txt_Domicilio
       // 
       this.txt_Domicilio.BackColor = System.Drawing.Color.White;
       this.txt_Domicilio.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txt_Domicilio.Location = new System.Drawing.Point(82, 59);
+      this.txt_Domicilio.Location = new System.Drawing.Point(726, 30);
       this.txt_Domicilio.Name = "txt_Domicilio";
-      this.txt_Domicilio.ReadOnly = true;
-      this.txt_Domicilio.Size = new System.Drawing.Size(561, 23);
+      this.txt_Domicilio.Size = new System.Drawing.Size(603, 23);
       this.txt_Domicilio.TabIndex = 576;
       // 
       // label6
@@ -1291,7 +1282,7 @@ namespace entrega_cupones.Formularios
       this.label6.AutoSize = true;
       this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label6.Location = new System.Drawing.Point(533, 92);
+      this.label6.Location = new System.Drawing.Point(539, 78);
       this.label6.Name = "label6";
       this.label6.Size = new System.Drawing.Size(64, 17);
       this.label6.TabIndex = 572;
@@ -1302,7 +1293,7 @@ namespace entrega_cupones.Formularios
       this.label11.AutoSize = true;
       this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label11.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label11.Location = new System.Drawing.Point(646, 92);
+      this.label11.Location = new System.Drawing.Point(652, 78);
       this.label11.Name = "label11";
       this.label11.Size = new System.Drawing.Size(50, 17);
       this.label11.TabIndex = 573;
@@ -1310,10 +1301,12 @@ namespace entrega_cupones.Formularios
       // 
       // txt_InteresDiario
       // 
+      this.txt_InteresDiario.BackColor = System.Drawing.Color.White;
       this.txt_InteresDiario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.txt_InteresDiario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-      this.txt_InteresDiario.Location = new System.Drawing.Point(695, 89);
+      this.txt_InteresDiario.Location = new System.Drawing.Point(701, 75);
       this.txt_InteresDiario.Name = "txt_InteresDiario";
+      this.txt_InteresDiario.ReadOnly = true;
       this.txt_InteresDiario.Size = new System.Drawing.Size(67, 23);
       this.txt_InteresDiario.TabIndex = 574;
       this.txt_InteresDiario.Text = "0.1";
@@ -1329,25 +1322,24 @@ namespace entrega_cupones.Formularios
       this.panel4.Controls.Add(this.cbx_Inspectores);
       this.panel4.Controls.Add(this.label23);
       this.panel4.Controls.Add(this.btn_ImprimirDeuda);
-      this.panel4.Controls.Add(this.btn_CalcularDeuda);
-      this.panel4.Location = new System.Drawing.Point(780, 44);
+      this.panel4.Location = new System.Drawing.Point(928, 64);
       this.panel4.Name = "panel4";
-      this.panel4.Size = new System.Drawing.Size(583, 116);
+      this.panel4.Size = new System.Drawing.Size(457, 116);
       this.panel4.TabIndex = 603;
       // 
       // txt_InspectorAsignado
       // 
       this.txt_InspectorAsignado.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txt_InspectorAsignado.Location = new System.Drawing.Point(342, 44);
+      this.txt_InspectorAsignado.Location = new System.Drawing.Point(150, 35);
       this.txt_InspectorAsignado.Name = "txt_InspectorAsignado";
       this.txt_InspectorAsignado.ReadOnly = true;
-      this.txt_InspectorAsignado.Size = new System.Drawing.Size(233, 23);
+      this.txt_InspectorAsignado.Size = new System.Drawing.Size(143, 23);
       this.txt_InspectorAsignado.TabIndex = 607;
       // 
       // btn_VerVD
       // 
       this.btn_VerVD.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn_VerVD.Location = new System.Drawing.Point(494, 72);
+      this.btn_VerVD.Location = new System.Drawing.Point(213, 62);
       this.btn_VerVD.Name = "btn_VerVD";
       this.btn_VerVD.Size = new System.Drawing.Size(82, 38);
       this.btn_VerVD.TabIndex = 606;
@@ -1359,7 +1351,7 @@ namespace entrega_cupones.Formularios
       this.lbl_InspectorAsignado.AutoSize = true;
       this.lbl_InspectorAsignado.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.lbl_InspectorAsignado.ForeColor = System.Drawing.Color.Gainsboro;
-      this.lbl_InspectorAsignado.Location = new System.Drawing.Point(203, 47);
+      this.lbl_InspectorAsignado.Location = new System.Drawing.Point(8, 38);
       this.lbl_InspectorAsignado.Name = "lbl_InspectorAsignado";
       this.lbl_InspectorAsignado.Size = new System.Drawing.Size(136, 17);
       this.lbl_InspectorAsignado.TabIndex = 605;
@@ -1368,7 +1360,7 @@ namespace entrega_cupones.Formularios
       // btn_Actualizar_VD
       // 
       this.btn_Actualizar_VD.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn_Actualizar_VD.Location = new System.Drawing.Point(406, 72);
+      this.btn_Actualizar_VD.Location = new System.Drawing.Point(125, 62);
       this.btn_Actualizar_VD.Name = "btn_Actualizar_VD";
       this.btn_Actualizar_VD.Size = new System.Drawing.Size(82, 38);
       this.btn_Actualizar_VD.TabIndex = 604;
@@ -1379,9 +1371,9 @@ namespace entrega_cupones.Formularios
       // btn_ConfirmAsignacion
       // 
       this.btn_ConfirmAsignacion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn_ConfirmAsignacion.Location = new System.Drawing.Point(479, 9);
+      this.btn_ConfirmAsignacion.Location = new System.Drawing.Point(266, 2);
       this.btn_ConfirmAsignacion.Name = "btn_ConfirmAsignacion";
-      this.btn_ConfirmAsignacion.Size = new System.Drawing.Size(96, 28);
+      this.btn_ConfirmAsignacion.Size = new System.Drawing.Size(69, 28);
       this.btn_ConfirmAsignacion.TabIndex = 603;
       this.btn_ConfirmAsignacion.Text = "Confirmar";
       this.btn_ConfirmAsignacion.UseVisualStyleBackColor = true;
@@ -1394,9 +1386,9 @@ namespace entrega_cupones.Formularios
       this.cbx_Inspectores.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.cbx_Inspectores.ForeColor = System.Drawing.Color.Black;
       this.cbx_Inspectores.FormattingEnabled = true;
-      this.cbx_Inspectores.Location = new System.Drawing.Point(272, 9);
+      this.cbx_Inspectores.Location = new System.Drawing.Point(72, 3);
       this.cbx_Inspectores.Name = "cbx_Inspectores";
-      this.cbx_Inspectores.Size = new System.Drawing.Size(201, 25);
+      this.cbx_Inspectores.Size = new System.Drawing.Size(174, 25);
       this.cbx_Inspectores.TabIndex = 602;
       // 
       // label23
@@ -1404,7 +1396,7 @@ namespace entrega_cupones.Formularios
       this.label23.AutoSize = true;
       this.label23.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label23.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label23.Location = new System.Drawing.Point(203, 12);
+      this.label23.Location = new System.Drawing.Point(3, 6);
       this.label23.Name = "label23";
       this.label23.Size = new System.Drawing.Size(63, 17);
       this.label23.TabIndex = 601;
@@ -1413,7 +1405,7 @@ namespace entrega_cupones.Formularios
       // btn_ImprimirDeuda
       // 
       this.btn_ImprimirDeuda.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn_ImprimirDeuda.Location = new System.Drawing.Point(3, 58);
+      this.btn_ImprimirDeuda.Location = new System.Drawing.Point(6, 62);
       this.btn_ImprimirDeuda.Name = "btn_ImprimirDeuda";
       this.btn_ImprimirDeuda.Size = new System.Drawing.Size(104, 42);
       this.btn_ImprimirDeuda.TabIndex = 575;
@@ -1423,9 +1415,9 @@ namespace entrega_cupones.Formularios
       // btn_CalcularDeuda
       // 
       this.btn_CalcularDeuda.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-      this.btn_CalcularDeuda.Location = new System.Drawing.Point(3, 6);
+      this.btn_CalcularDeuda.Location = new System.Drawing.Point(780, 29);
       this.btn_CalcularDeuda.Name = "btn_CalcularDeuda";
-      this.btn_CalcularDeuda.Size = new System.Drawing.Size(104, 43);
+      this.btn_CalcularDeuda.Size = new System.Drawing.Size(104, 39);
       this.btn_CalcularDeuda.TabIndex = 570;
       this.btn_CalcularDeuda.Text = "Calcular Deuda";
       this.btn_CalcularDeuda.UseVisualStyleBackColor = true;
@@ -1439,7 +1431,6 @@ namespace entrega_cupones.Formularios
       this.Controls.Add(this.panel4);
       this.Controls.Add(this.panel2);
       this.Controls.Add(this.panel6);
-      this.Controls.Add(this.panel3);
       this.Controls.Add(this.panel1);
       this.Name = "frm_VerVD";
       this.Text = "frm_VerVD";
@@ -1448,7 +1439,6 @@ namespace entrega_cupones.Formularios
       this.panel1.ResumeLayout(false);
       this.panel1.PerformLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dgv_VD)).EndInit();
-      this.panel3.ResumeLayout(false);
       this.panel6.ResumeLayout(false);
       this.panel6.PerformLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dgv_PlanDePagos)).EndInit();
@@ -1492,7 +1482,6 @@ namespace entrega_cupones.Formularios
     private System.Windows.Forms.DataGridViewTextBoxColumn Capital;
     private System.Windows.Forms.DataGridViewTextBoxColumn Interes;
     private System.Windows.Forms.DataGridViewTextBoxColumn Total;
-    private System.Windows.Forms.Panel panel3;
     private System.Windows.Forms.Button btn_CopiarSiguiente;
     private System.Windows.Forms.Button btn_EmitirActa;
     private System.Windows.Forms.Button btn_IngresoManual;
