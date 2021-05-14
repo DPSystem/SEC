@@ -60,5 +60,35 @@ namespace entrega_cupones.Metodos
         return VD_Cuit;
       }
     }
+
+    public static List<mdlVDListado> Get_VDListado()
+    {
+      using (var context = new lts_sindicatoDataContext())
+      {
+        var VDI = from a in context.VD_Inspector
+                  select new mdlVDListado
+                  {
+                    //VDId = a.Id,
+                    //Fecha = a.FechaAsignacion,
+                    //CUIT = a.CUIT,
+                    //Empresa = mtdEmpresas.GetEmpresa(a.CUIT).MAEEMP_RAZSOC.Trim(),
+                    //Importe = Convert.ToDecimal( a.Total),
+                    //Estado = a.Estado
+                  };
+        return VDI.ToList();
+      }
+
+    }
+    public static List<VD_Inspector> Get_VDListado2()
+    {
+      using (var context = new lts_sindicatoDataContext())
+      {
+        List<VD_Inspector> VDI =( from a in context.VD_Inspector select a).ToList();
+                  
+        return VDI.ToList();
+      }
+
+    }
+
   }
 }

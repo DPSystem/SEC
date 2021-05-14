@@ -52,6 +52,7 @@
       this.lbl_SinRegistrosSocios = new System.Windows.Forms.Label();
       this.lbl_CantidadNOSocios = new Bunifu.Framework.UI.BunifuCustomLabel();
       this.lbl_CantidadEmpleados = new Bunifu.Framework.UI.BunifuCustomLabel();
+      this.btn_BuscarEmpresa = new System.Windows.Forms.Button();
       this.txt_CUIT = new System.Windows.Forms.TextBox();
       this.btn_Buscar = new System.Windows.Forms.Button();
       this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -105,12 +106,14 @@
       this.txt_NroSocio = new System.Windows.Forms.TextBox();
       this.panel4 = new System.Windows.Forms.Panel();
       this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+      this.picbox_socio = new System.Windows.Forms.PictureBox();
       this.txt_EmpresaNombre = new System.Windows.Forms.TextBox();
       this.txt_CUIT2 = new System.Windows.Forms.TextBox();
       this.panel7 = new System.Windows.Forms.Panel();
       this.lbl_SinRegistrosAportes = new System.Windows.Forms.Label();
       this.panel5 = new System.Windows.Forms.Panel();
       this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
+      this.btn_ImprimirAportes = new Bunifu.Framework.UI.BunifuImageButton();
       this.dgv_MostrarAportes = new System.Windows.Forms.DataGridView();
       this.periodo = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.aporte_ley = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -131,6 +134,7 @@
       this.DNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.FechaDeNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.Edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.picbox_beneficiario = new System.Windows.Forms.PictureBox();
       this.panel9 = new System.Windows.Forms.Panel();
       this.txt_EmpresaCodigoPostal = new System.Windows.Forms.TextBox();
       this.txt_EmpresaLocalidad = new System.Windows.Forms.TextBox();
@@ -168,6 +172,7 @@
       this.panel12 = new System.Windows.Forms.Panel();
       this.chk_VerificarCarencia = new System.Windows.Forms.CheckBox();
       this.panel13 = new System.Windows.Forms.Panel();
+      this.roundPictureBox1 = new entrega_cupones.RoundPictureBox();
       this.lbl_Rol = new Bunifu.Framework.UI.BunifuCustomLabel();
       this.lbl_Usuario = new Bunifu.Framework.UI.BunifuCustomLabel();
       this.pnl_Menu2 = new System.Windows.Forms.Panel();
@@ -176,6 +181,7 @@
       this.menuMochilas = new System.Windows.Forms.ToolStripMenuItem();
       this.menuMochilasEmitirCupon = new System.Windows.Forms.ToolStripMenuItem();
       this.menuMochilasEntregar = new System.Windows.Forms.ToolStripMenuItem();
+      this.menuMochilasEdades = new System.Windows.Forms.ToolStripMenuItem();
       this.menuRecepcion = new System.Windows.Forms.ToolStripMenuItem();
       this.menuCupones = new System.Windows.Forms.ToolStripMenuItem();
       this.menuQuinchos = new System.Windows.Forms.ToolStripMenuItem();
@@ -205,37 +211,32 @@
       this.menu_Futbol = new System.Windows.Forms.ToolStripMenuItem();
       this.menu_DeportesInformes = new System.Windows.Forms.ToolStripMenuItem();
       this.menu_Inspectores = new System.Windows.Forms.ToolStripMenuItem();
-      this.menu_VerificarDeuda = new System.Windows.Forms.ToolStripMenuItem();
+      this.menu_EstadoDDJJ = new System.Windows.Forms.ToolStripMenuItem();
       this.menu_Informes = new System.Windows.Forms.ToolStripMenuItem();
       this.menu_RendicionDeCobroDeActa = new System.Windows.Forms.ToolStripMenuItem();
-      this.picbox_beneficiario = new System.Windows.Forms.PictureBox();
-      this.btn_ImprimirAportes = new Bunifu.Framework.UI.BunifuImageButton();
-      this.picbox_socio = new System.Windows.Forms.PictureBox();
-      this.btn_BuscarEmpresa = new System.Windows.Forms.Button();
-      this.roundPictureBox1 = new entrega_cupones.RoundPictureBox();
-      this.menuMochilasEdades = new System.Windows.Forms.ToolStripMenuItem();
+      this.menu_BuscarVerificacionDeuda = new System.Windows.Forms.ToolStripMenuItem();
       this.panel1.SuspendLayout();
       this.panel3.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dgv_MostrarSocios)).BeginInit();
       this.panel2.SuspendLayout();
       this.panel4.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.picbox_socio)).BeginInit();
       this.panel7.SuspendLayout();
       this.panel5.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.btn_ImprimirAportes)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.dgv_MostrarAportes)).BeginInit();
       this.panel6.SuspendLayout();
       this.panel8.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dgv_MostrarBeneficiario)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picbox_beneficiario)).BeginInit();
       this.panel9.SuspendLayout();
       this.panel10.SuspendLayout();
       this.panel11.SuspendLayout();
       this.panel12.SuspendLayout();
       this.panel13.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.roundPictureBox1)).BeginInit();
       this.pnl_Menu2.SuspendLayout();
       this.menuStrip1.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.picbox_beneficiario)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.btn_ImprimirAportes)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.picbox_socio)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.roundPictureBox1)).BeginInit();
       this.SuspendLayout();
       // 
       // panel1
@@ -295,6 +296,21 @@
       this.lbl_CantidadEmpleados.Size = new System.Drawing.Size(90, 19);
       this.lbl_CantidadEmpleados.TabIndex = 560;
       this.lbl_CantidadEmpleados.Text = "Empleados:";
+      // 
+      // btn_BuscarEmpresa
+      // 
+      this.btn_BuscarEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(151)))), ((int)(((byte)(119)))));
+      this.btn_BuscarEmpresa.Cursor = System.Windows.Forms.Cursors.Hand;
+      this.btn_BuscarEmpresa.FlatAppearance.BorderSize = 0;
+      this.btn_BuscarEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.btn_BuscarEmpresa.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.btn_BuscarEmpresa.Image = global::entrega_cupones.Properties.Resources.magnifier13;
+      this.btn_BuscarEmpresa.Location = new System.Drawing.Point(587, 39);
+      this.btn_BuscarEmpresa.Name = "btn_BuscarEmpresa";
+      this.btn_BuscarEmpresa.Size = new System.Drawing.Size(34, 30);
+      this.btn_BuscarEmpresa.TabIndex = 559;
+      this.btn_BuscarEmpresa.UseVisualStyleBackColor = false;
+      this.btn_BuscarEmpresa.Click += new System.EventHandler(this.btn_BuscarEmpresa_Click);
       // 
       // txt_CUIT
       // 
@@ -930,6 +946,16 @@
       this.bunifuCustomLabel3.TabIndex = 1;
       this.bunifuCustomLabel3.Text = "Datos del Empleado";
       // 
+      // picbox_socio
+      // 
+      this.picbox_socio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+      this.picbox_socio.Location = new System.Drawing.Point(6, 35);
+      this.picbox_socio.Name = "picbox_socio";
+      this.picbox_socio.Size = new System.Drawing.Size(140, 140);
+      this.picbox_socio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+      this.picbox_socio.TabIndex = 568;
+      this.picbox_socio.TabStop = false;
+      // 
       // txt_EmpresaNombre
       // 
       this.txt_EmpresaNombre.BackColor = System.Drawing.Color.White;
@@ -996,6 +1022,21 @@
       this.bunifuCustomLabel6.Size = new System.Drawing.Size(59, 17);
       this.bunifuCustomLabel6.TabIndex = 2;
       this.bunifuCustomLabel6.Text = "Aportes";
+      // 
+      // btn_ImprimirAportes
+      // 
+      this.btn_ImprimirAportes.BackColor = System.Drawing.Color.Transparent;
+      this.btn_ImprimirAportes.Cursor = System.Windows.Forms.Cursors.Hand;
+      this.btn_ImprimirAportes.Image = global::entrega_cupones.Properties.Resources.printer_with_paper__1_;
+      this.btn_ImprimirAportes.ImageActive = null;
+      this.btn_ImprimirAportes.Location = new System.Drawing.Point(555, 2);
+      this.btn_ImprimirAportes.Name = "btn_ImprimirAportes";
+      this.btn_ImprimirAportes.Size = new System.Drawing.Size(33, 28);
+      this.btn_ImprimirAportes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+      this.btn_ImprimirAportes.TabIndex = 79;
+      this.btn_ImprimirAportes.TabStop = false;
+      this.btn_ImprimirAportes.Zoom = 10;
+      this.btn_ImprimirAportes.Click += new System.EventHandler(this.btn_ImprimirAportes_Click);
       // 
       // dgv_MostrarAportes
       // 
@@ -1258,6 +1299,17 @@
       this.Edad.Name = "Edad";
       this.Edad.ReadOnly = true;
       this.Edad.Width = 50;
+      // 
+      // picbox_beneficiario
+      // 
+      this.picbox_beneficiario.BackColor = System.Drawing.Color.Transparent;
+      this.picbox_beneficiario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+      this.picbox_beneficiario.Location = new System.Drawing.Point(7, 38);
+      this.picbox_beneficiario.Name = "picbox_beneficiario";
+      this.picbox_beneficiario.Size = new System.Drawing.Size(121, 101);
+      this.picbox_beneficiario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+      this.picbox_beneficiario.TabIndex = 76;
+      this.picbox_beneficiario.TabStop = false;
       // 
       // panel9
       // 
@@ -1729,6 +1781,15 @@
       this.panel13.Size = new System.Drawing.Size(146, 105);
       this.panel13.TabIndex = 616;
       // 
+      // roundPictureBox1
+      // 
+      this.roundPictureBox1.Location = new System.Drawing.Point(42, 2);
+      this.roundPictureBox1.Name = "roundPictureBox1";
+      this.roundPictureBox1.Size = new System.Drawing.Size(58, 56);
+      this.roundPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+      this.roundPictureBox1.TabIndex = 619;
+      this.roundPictureBox1.TabStop = false;
+      // 
       // lbl_Rol
       // 
       this.lbl_Rol.BackColor = System.Drawing.Color.Transparent;
@@ -1765,7 +1826,7 @@
       // 
       // btn_Anterior
       // 
-      this.btn_Anterior.Location = new System.Drawing.Point(14, 410);
+      this.btn_Anterior.Location = new System.Drawing.Point(14, 409);
       this.btn_Anterior.Name = "btn_Anterior";
       this.btn_Anterior.Size = new System.Drawing.Size(95, 35);
       this.btn_Anterior.TabIndex = 616;
@@ -1815,16 +1876,23 @@
       // menuMochilasEmitirCupon
       // 
       this.menuMochilasEmitirCupon.Name = "menuMochilasEmitirCupon";
-      this.menuMochilasEmitirCupon.Size = new System.Drawing.Size(180, 22);
+      this.menuMochilasEmitirCupon.Size = new System.Drawing.Size(150, 22);
       this.menuMochilasEmitirCupon.Text = "Emitir Cupon";
       this.menuMochilasEmitirCupon.Click += new System.EventHandler(this.menuMochilasEmitirCupon_Click);
       // 
       // menuMochilasEntregar
       // 
       this.menuMochilasEntregar.Name = "menuMochilasEntregar";
-      this.menuMochilasEntregar.Size = new System.Drawing.Size(180, 22);
+      this.menuMochilasEntregar.Size = new System.Drawing.Size(150, 22);
       this.menuMochilasEntregar.Text = "Entregar ";
       this.menuMochilasEntregar.Click += new System.EventHandler(this.menuMochilasEntregar_Click);
+      // 
+      // menuMochilasEdades
+      // 
+      this.menuMochilasEdades.Name = "menuMochilasEdades";
+      this.menuMochilasEdades.Size = new System.Drawing.Size(150, 22);
+      this.menuMochilasEdades.Text = "Edades";
+      this.menuMochilasEdades.Click += new System.EventHandler(this.menuMochilasEdades_Click);
       // 
       // menuRecepcion
       // 
@@ -2071,9 +2139,10 @@
       // 
       this.menu_Inspectores.AutoSize = false;
       this.menu_Inspectores.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menu_VerificarDeuda,
+            this.menu_EstadoDDJJ,
             this.menu_Informes,
-            this.menu_RendicionDeCobroDeActa});
+            this.menu_RendicionDeCobroDeActa,
+            this.menu_BuscarVerificacionDeuda});
       this.menu_Inspectores.ForeColor = System.Drawing.Color.Black;
       this.menu_Inspectores.Image = global::entrega_cupones.Properties.Resources.Modificar_24;
       this.menu_Inspectores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2081,93 +2150,34 @@
       this.menu_Inspectores.Name = "menu_Inspectores";
       this.menu_Inspectores.Size = new System.Drawing.Size(126, 40);
       this.menu_Inspectores.Text = "  Inspectores";
+      this.menu_Inspectores.Click += new System.EventHandler(this.menu_Inspectores_Click);
       // 
-      // menu_VerificarDeuda
+      // menu_EstadoDDJJ
       // 
-      this.menu_VerificarDeuda.Name = "menu_VerificarDeuda";
-      this.menu_VerificarDeuda.Size = new System.Drawing.Size(246, 22);
-      this.menu_VerificarDeuda.Text = "Verificar Deuda";
-      this.menu_VerificarDeuda.Click += new System.EventHandler(this.menu_VerificarDeuda_Click);
+      this.menu_EstadoDDJJ.Name = "menu_EstadoDDJJ";
+      this.menu_EstadoDDJJ.Size = new System.Drawing.Size(253, 22);
+      this.menu_EstadoDDJJ.Text = "Estado DDJJ";
+      this.menu_EstadoDDJJ.Click += new System.EventHandler(this.menu_VerificarDeuda_Click);
       // 
       // menu_Informes
       // 
       this.menu_Informes.Name = "menu_Informes";
-      this.menu_Informes.Size = new System.Drawing.Size(246, 22);
+      this.menu_Informes.Size = new System.Drawing.Size(253, 22);
       this.menu_Informes.Text = "Informes";
       // 
       // menu_RendicionDeCobroDeActa
       // 
       this.menu_RendicionDeCobroDeActa.Name = "menu_RendicionDeCobroDeActa";
-      this.menu_RendicionDeCobroDeActa.Size = new System.Drawing.Size(246, 22);
+      this.menu_RendicionDeCobroDeActa.Size = new System.Drawing.Size(253, 22);
       this.menu_RendicionDeCobroDeActa.Text = "Rendicion de Cobro de Acta";
       this.menu_RendicionDeCobroDeActa.Click += new System.EventHandler(this.menu_RendicionDeCobroDeActa_Click);
       // 
-      // picbox_beneficiario
+      // menu_BuscarVerificacionDeuda
       // 
-      this.picbox_beneficiario.BackColor = System.Drawing.Color.Transparent;
-      this.picbox_beneficiario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-      this.picbox_beneficiario.Location = new System.Drawing.Point(7, 38);
-      this.picbox_beneficiario.Name = "picbox_beneficiario";
-      this.picbox_beneficiario.Size = new System.Drawing.Size(121, 101);
-      this.picbox_beneficiario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-      this.picbox_beneficiario.TabIndex = 76;
-      this.picbox_beneficiario.TabStop = false;
-      // 
-      // btn_ImprimirAportes
-      // 
-      this.btn_ImprimirAportes.BackColor = System.Drawing.Color.Transparent;
-      this.btn_ImprimirAportes.Cursor = System.Windows.Forms.Cursors.Hand;
-      this.btn_ImprimirAportes.Image = global::entrega_cupones.Properties.Resources.printer_with_paper__1_;
-      this.btn_ImprimirAportes.ImageActive = null;
-      this.btn_ImprimirAportes.Location = new System.Drawing.Point(555, 2);
-      this.btn_ImprimirAportes.Name = "btn_ImprimirAportes";
-      this.btn_ImprimirAportes.Size = new System.Drawing.Size(33, 28);
-      this.btn_ImprimirAportes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-      this.btn_ImprimirAportes.TabIndex = 79;
-      this.btn_ImprimirAportes.TabStop = false;
-      this.btn_ImprimirAportes.Zoom = 10;
-      this.btn_ImprimirAportes.Click += new System.EventHandler(this.btn_ImprimirAportes_Click);
-      // 
-      // picbox_socio
-      // 
-      this.picbox_socio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-      this.picbox_socio.Location = new System.Drawing.Point(6, 35);
-      this.picbox_socio.Name = "picbox_socio";
-      this.picbox_socio.Size = new System.Drawing.Size(140, 140);
-      this.picbox_socio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-      this.picbox_socio.TabIndex = 568;
-      this.picbox_socio.TabStop = false;
-      // 
-      // btn_BuscarEmpresa
-      // 
-      this.btn_BuscarEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(151)))), ((int)(((byte)(119)))));
-      this.btn_BuscarEmpresa.Cursor = System.Windows.Forms.Cursors.Hand;
-      this.btn_BuscarEmpresa.FlatAppearance.BorderSize = 0;
-      this.btn_BuscarEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-      this.btn_BuscarEmpresa.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn_BuscarEmpresa.Image = global::entrega_cupones.Properties.Resources.magnifier13;
-      this.btn_BuscarEmpresa.Location = new System.Drawing.Point(587, 39);
-      this.btn_BuscarEmpresa.Name = "btn_BuscarEmpresa";
-      this.btn_BuscarEmpresa.Size = new System.Drawing.Size(34, 30);
-      this.btn_BuscarEmpresa.TabIndex = 559;
-      this.btn_BuscarEmpresa.UseVisualStyleBackColor = false;
-      this.btn_BuscarEmpresa.Click += new System.EventHandler(this.btn_BuscarEmpresa_Click);
-      // 
-      // roundPictureBox1
-      // 
-      this.roundPictureBox1.Location = new System.Drawing.Point(42, 2);
-      this.roundPictureBox1.Name = "roundPictureBox1";
-      this.roundPictureBox1.Size = new System.Drawing.Size(58, 56);
-      this.roundPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-      this.roundPictureBox1.TabIndex = 619;
-      this.roundPictureBox1.TabStop = false;
-      // 
-      // menuMochilasEdades
-      // 
-      this.menuMochilasEdades.Name = "menuMochilasEdades";
-      this.menuMochilasEdades.Size = new System.Drawing.Size(180, 22);
-      this.menuMochilasEdades.Text = "Edades";
-      this.menuMochilasEdades.Click += new System.EventHandler(this.menuMochilasEdades_Click);
+      this.menu_BuscarVerificacionDeuda.Name = "menu_BuscarVerificacionDeuda";
+      this.menu_BuscarVerificacionDeuda.Size = new System.Drawing.Size(253, 22);
+      this.menu_BuscarVerificacionDeuda.Text = "Buscar Verificacion de Deuda";
+      this.menu_BuscarVerificacionDeuda.Click += new System.EventHandler(this.menu_BuscarVerificacionDeuda_Click);
       // 
       // frm_Principal2
       // 
@@ -2201,14 +2211,17 @@
       this.panel2.PerformLayout();
       this.panel4.ResumeLayout(false);
       this.panel4.PerformLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.picbox_socio)).EndInit();
       this.panel7.ResumeLayout(false);
       this.panel5.ResumeLayout(false);
       this.panel5.PerformLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.btn_ImprimirAportes)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.dgv_MostrarAportes)).EndInit();
       this.panel6.ResumeLayout(false);
       this.panel8.ResumeLayout(false);
       this.panel8.PerformLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dgv_MostrarBeneficiario)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picbox_beneficiario)).EndInit();
       this.panel9.ResumeLayout(false);
       this.panel9.PerformLayout();
       this.panel10.ResumeLayout(false);
@@ -2218,13 +2231,10 @@
       this.panel12.ResumeLayout(false);
       this.panel12.PerformLayout();
       this.panel13.ResumeLayout(false);
+      ((System.ComponentModel.ISupportInitialize)(this.roundPictureBox1)).EndInit();
       this.pnl_Menu2.ResumeLayout(false);
       this.menuStrip1.ResumeLayout(false);
       this.menuStrip1.PerformLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.picbox_beneficiario)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.btn_ImprimirAportes)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.picbox_socio)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.roundPictureBox1)).EndInit();
       this.ResumeLayout(false);
 
     }
@@ -2374,7 +2384,7 @@
     private System.Windows.Forms.ToolStripMenuItem menu_TesoreriaInformes;
     private System.Windows.Forms.ToolStripMenuItem menu_EmpadronarInformes;
     private System.Windows.Forms.ToolStripMenuItem menu_Inspectores;
-    private System.Windows.Forms.ToolStripMenuItem menu_VerificarDeuda;
+    private System.Windows.Forms.ToolStripMenuItem menu_EstadoDDJJ;
     private System.Windows.Forms.ToolStripMenuItem menu_Informes;
     private System.Windows.Forms.DataGridViewTextBoxColumn numero_soc;
     private System.Windows.Forms.DataGridViewTextBoxColumn dni_socio;
@@ -2396,5 +2406,6 @@
     private System.Windows.Forms.ToolStripMenuItem menuMochilasEmitirCupon;
     private System.Windows.Forms.ToolStripMenuItem menuMochilasEntregar;
     private System.Windows.Forms.ToolStripMenuItem menuMochilasEdades;
+    private System.Windows.Forms.ToolStripMenuItem menu_BuscarVerificacionDeuda;
   }
 }

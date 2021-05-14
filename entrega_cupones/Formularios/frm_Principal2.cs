@@ -661,5 +661,16 @@ namespace entrega_cupones.Formularios
       frm_edades f_edades = new frm_edades();
       f_edades.Show();
     }
+
+    private void menu_Inspectores_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void menu_BuscarVerificacionDeuda_Click(object sender, EventArgs e)
+    {
+      frm_VDBuscar f_VDBuscar = new frm_VDBuscar();
+      f_VDBuscar.ShowDialog();
+    }
   }
 }

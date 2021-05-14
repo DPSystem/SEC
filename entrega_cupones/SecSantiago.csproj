@@ -225,6 +225,12 @@
     <Compile Include="Formularios\frm_Reportes.Designer.cs">
       <DependentUpon>frm_Reportes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frm_VDBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_VDBuscar.Designer.cs">
+      <DependentUpon>frm_VDBuscar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frm_VerActasAsignadasParaCobrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -424,6 +430,7 @@
     <Compile Include="Modelos\mdlSocio.cs" />
     <Compile Include="Modelos\mdlTransf.cs" />
     <Compile Include="Modelos\mdlVDCabecera.cs" />
+    <Compile Include="Modelos\mdlVDListado.cs" />
     <Compile Include="Modelos\mdlVerRecibos.cs" />
     <Compile Include="Modelos\mdlVDDetalle.cs" />
     <Compile Include="Program.cs" />
@@ -485,6 +492,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_Reportes.resx">
       <DependentUpon>frm_Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_VDBuscar.resx">
+      <DependentUpon>frm_VDBuscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_VerActasAsignadasParaCobrar.resx">
       <DependentUpon>frm_VerActasAsignadasParaCobrar.cs</DependentUpon>

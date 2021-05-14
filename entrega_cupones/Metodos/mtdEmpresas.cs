@@ -38,6 +38,7 @@ namespace entrega_cupones.Metodos
            ImporteDepositado = (decimal)row.impban1,
            Empleados = context.ddjj.Where(x => x.CUIT_STR == cuit && (x.periodo == row.periodo) && (x.rect == row.rect)).Count(),
            Socios = context.ddjj.Where(x => x.CUIT_STR == cuit && (x.periodo == row.periodo) && x.rect == row.rect && x.item2 == true).Count(),
+
            Capital =
                     CalcularCapital((decimal)(row.impban1), (decimal)row.titem1, (decimal)row.titem2,
                     Convert.ToDateTime(row.fpago), FechaVencimiento, Convert.ToDateTime(row.periodo), TipoInteres, TazaInteres
@@ -65,8 +66,6 @@ namespace entrega_cupones.Metodos
 
            Acta = GetNroDeActa(Convert.ToDateTime(row.periodo), row.CUIT_STR),
            VerifDeuda = GetNroVerifDeuda(cuit, Convert.ToDateTime(row.periodo), Convert.ToInt32(row.rect), false, Convert.ToDateTime(row.fpago))
-
-
          });
 
         _ddjj.AddRange(_EstadoDDJJ);
