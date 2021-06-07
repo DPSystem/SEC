@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace entrega_cupones.Modelos
 {
-  public class EmpleadoAportePorPeriodo
+  public class mdlDDJJEmpleado
   {
     public string Cuit { get; set; }
     public DateTime Periodo { get; set; }
@@ -36,7 +36,12 @@ namespace entrega_cupones.Modelos
     public decimal FAECys { get; set; }
     public decimal OSECAC { get; set; }
     public decimal TotalHaberes { get; set; }
+    public decimal TotalHaberes2 { get; set; }
     public decimal TotalDescuentos { get; set; }
     public decimal BasicoJubPres { get; set; }
+    public decimal AcuerdoNR1 { get; set; }
+    public decimal AcuerdoNR2 { get; set; }
+
+
   }
 }

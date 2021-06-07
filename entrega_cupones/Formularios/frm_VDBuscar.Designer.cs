@@ -50,9 +50,9 @@ namespace entrega_cupones.Formularios
       System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
       System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
       this.panel1 = new System.Windows.Forms.Panel();
+      this.btn_VerVD = new System.Windows.Forms.Button();
       this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
       this.dgv_VD = new System.Windows.Forms.DataGridView();
-      this.btn_VerVD = new System.Windows.Forms.Button();
       this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.VD_Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.VD_Cuit = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -85,6 +85,17 @@ namespace entrega_cupones.Formularios
       this.panel1.Name = "panel1";
       this.panel1.Size = new System.Drawing.Size(800, 320);
       this.panel1.TabIndex = 598;
+      // 
+      // btn_VerVD
+      // 
+      this.btn_VerVD.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.btn_VerVD.Location = new System.Drawing.Point(713, 276);
+      this.btn_VerVD.Name = "btn_VerVD";
+      this.btn_VerVD.Size = new System.Drawing.Size(82, 38);
+      this.btn_VerVD.TabIndex = 607;
+      this.btn_VerVD.Text = "Ver VD";
+      this.btn_VerVD.UseVisualStyleBackColor = true;
+      this.btn_VerVD.Click += new System.EventHandler(this.btn_VerVD_Click);
       // 
       // bunifuCustomLabel1
       // 
@@ -140,17 +151,7 @@ namespace entrega_cupones.Formularios
       this.dgv_VD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
       this.dgv_VD.Size = new System.Drawing.Size(789, 241);
       this.dgv_VD.TabIndex = 536;
-      // 
-      // btn_VerVD
-      // 
-      this.btn_VerVD.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn_VerVD.Location = new System.Drawing.Point(713, 276);
-      this.btn_VerVD.Name = "btn_VerVD";
-      this.btn_VerVD.Size = new System.Drawing.Size(82, 38);
-      this.btn_VerVD.TabIndex = 607;
-      this.btn_VerVD.Text = "Ver VD";
-      this.btn_VerVD.UseVisualStyleBackColor = true;
-      this.btn_VerVD.Click += new System.EventHandler(this.btn_VerVD_Click);
+      this.dgv_VD.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_VD_CellContentClick);
       // 
       // Id
       // 
@@ -184,6 +185,7 @@ namespace entrega_cupones.Formularios
       // 
       // VD_Empresa
       // 
+      this.VD_Empresa.DataPropertyName = "Empresa";
       dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
       this.VD_Empresa.DefaultCellStyle = dataGridViewCellStyle6;
       this.VD_Empresa.HeaderText = "Empresa";

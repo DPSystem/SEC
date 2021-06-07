@@ -61,19 +61,27 @@ namespace entrega_cupones.Metodos
       }
     }
 
-    public static List<mdlVDListado> Get_VDListado()
+    public static List<mdlVDInspector> Get_VDListado()
     {
       using (var context = new lts_sindicatoDataContext())
       {
         var VDI = from a in context.VD_Inspector
-                  select new mdlVDListado
+                  select new mdlVDInspector
                   {
-                    //VDId = a.Id,
-                    //Fecha = a.FechaAsignacion,
-                    //CUIT = a.CUIT,
-                    //Empresa = mtdEmpresas.GetEmpresa(a.CUIT).MAEEMP_RAZSOC.Trim(),
-                    //Importe = Convert.ToDecimal( a.Total),
-                    //Estado = a.Estado
+                    Id = a.Id,
+                    FechaAsignacion = a.FechaAsignacion,
+                    Desde = Convert.ToDateTime(a.Desde),
+                    Hasta = Convert.ToDateTime(a.Hasta),
+                    FechaVenc = Convert.ToDateTime(a.FechaVenc),
+                    TipoInteres = (int)a.TipoInteres,
+                    InteresMensual = (decimal)a.InteresMensual,
+                    InteresDiario = (decimal)a.InteresDiario,
+                    Interes = (decimal)a.Interes,
+                    CUIT = a.CUIT,
+                    Empresa = mtdEmpresas.GetEmpresa(a.CUIT).MAEEMP_RAZSOC.Trim(),
+                    Domicilio = mtdEmpresas.GetDomicilio(a.CUIT),
+                    Total = Convert.ToDecimal(a.Total),
+                    Estado = a.Estado
                   };
         return VDI.ToList();
       }

@@ -219,9 +219,6 @@ namespace entrega_cupones
     partial void Insertcategorias_empleado(categorias_empleado instance);
     partial void Updatecategorias_empleado(categorias_empleado instance);
     partial void Deletecategorias_empleado(categorias_empleado instance);
-    partial void InsertEscalaSalarial(EscalaSalarial instance);
-    partial void UpdateEscalaSalarial(EscalaSalarial instance);
-    partial void DeleteEscalaSalarial(EscalaSalarial instance);
     partial void InsertACTAS(ACTAS instance);
     partial void UpdateACTAS(ACTAS instance);
     partial void DeleteACTAS(ACTAS instance);
@@ -273,6 +270,12 @@ namespace entrega_cupones
     partial void InsertVD_Detalle(VD_Detalle instance);
     partial void UpdateVD_Detalle(VD_Detalle instance);
     partial void DeleteVD_Detalle(VD_Detalle instance);
+    partial void InsertReciboSueldoConceptos(ReciboSueldoConceptos instance);
+    partial void UpdateReciboSueldoConceptos(ReciboSueldoConceptos instance);
+    partial void DeleteReciboSueldoConceptos(ReciboSueldoConceptos instance);
+    partial void InsertEscalaSalarial(EscalaSalarial instance);
+    partial void UpdateEscalaSalarial(EscalaSalarial instance);
+    partial void DeleteEscalaSalarial(EscalaSalarial instance);
     #endregion
 		
 		public lts_sindicatoDataContext() : 
@@ -953,14 +956,6 @@ namespace entrega_cupones
 			}
 		}
 		
-		public System.Data.Linq.Table<EscalaSalarial> EscalaSalarial
-		{
-			get
-			{
-				return this.GetTable<EscalaSalarial>();
-			}
-		}
-		
 		public System.Data.Linq.Table<socemp> socemp
 		{
 			get
@@ -1126,6 +1121,22 @@ namespace entrega_cupones
 			get
 			{
 				return this.GetTable<VD_Detalle>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ReciboSueldoConceptos> ReciboSueldoConceptos
+		{
+			get
+			{
+				return this.GetTable<ReciboSueldoConceptos>();
+			}
+		}
+		
+		public System.Data.Linq.Table<EscalaSalarial> EscalaSalarial
+		{
+			get
+			{
+				return this.GetTable<EscalaSalarial>();
 			}
 		}
 		
@@ -17555,188 +17566,6 @@ namespace entrega_cupones
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.EscalaSalarial")]
-	public partial class EscalaSalarial : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _Id;
-		
-		private System.Nullable<System.DateTime> _Periodo;
-		
-		private System.Nullable<int> _CodCategoria;
-		
-		private System.Nullable<decimal> _Importe;
-		
-		private System.Nullable<decimal> _Acuerdo;
-		
-		private System.Nullable<int> _Estado;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIdChanging(int value);
-    partial void OnIdChanged();
-    partial void OnPeriodoChanging(System.Nullable<System.DateTime> value);
-    partial void OnPeriodoChanged();
-    partial void OnCodCategoriaChanging(System.Nullable<int> value);
-    partial void OnCodCategoriaChanged();
-    partial void OnImporteChanging(System.Nullable<decimal> value);
-    partial void OnImporteChanged();
-    partial void OnAcuerdoChanging(System.Nullable<decimal> value);
-    partial void OnAcuerdoChanged();
-    partial void OnEstadoChanging(System.Nullable<int> value);
-    partial void OnEstadoChanged();
-    #endregion
-		
-		public EscalaSalarial()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int Id
-		{
-			get
-			{
-				return this._Id;
-			}
-			set
-			{
-				if ((this._Id != value))
-				{
-					this.OnIdChanging(value);
-					this.SendPropertyChanging();
-					this._Id = value;
-					this.SendPropertyChanged("Id");
-					this.OnIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Periodo", DbType="DateTime")]
-		public System.Nullable<System.DateTime> Periodo
-		{
-			get
-			{
-				return this._Periodo;
-			}
-			set
-			{
-				if ((this._Periodo != value))
-				{
-					this.OnPeriodoChanging(value);
-					this.SendPropertyChanging();
-					this._Periodo = value;
-					this.SendPropertyChanged("Periodo");
-					this.OnPeriodoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CodCategoria", DbType="Int")]
-		public System.Nullable<int> CodCategoria
-		{
-			get
-			{
-				return this._CodCategoria;
-			}
-			set
-			{
-				if ((this._CodCategoria != value))
-				{
-					this.OnCodCategoriaChanging(value);
-					this.SendPropertyChanging();
-					this._CodCategoria = value;
-					this.SendPropertyChanged("CodCategoria");
-					this.OnCodCategoriaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Importe", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> Importe
-		{
-			get
-			{
-				return this._Importe;
-			}
-			set
-			{
-				if ((this._Importe != value))
-				{
-					this.OnImporteChanging(value);
-					this.SendPropertyChanging();
-					this._Importe = value;
-					this.SendPropertyChanged("Importe");
-					this.OnImporteChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Acuerdo", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> Acuerdo
-		{
-			get
-			{
-				return this._Acuerdo;
-			}
-			set
-			{
-				if ((this._Acuerdo != value))
-				{
-					this.OnAcuerdoChanging(value);
-					this.SendPropertyChanging();
-					this._Acuerdo = value;
-					this.SendPropertyChanged("Acuerdo");
-					this.OnAcuerdoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Estado", DbType="Int")]
-		public System.Nullable<int> Estado
-		{
-			get
-			{
-				return this._Estado;
-			}
-			set
-			{
-				if ((this._Estado != value))
-				{
-					this.OnEstadoChanging(value);
-					this.SendPropertyChanging();
-					this._Estado = value;
-					this.SendPropertyChanged("Estado");
-					this.OnEstadoChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="fotos_.socemp")]
 	public partial class socemp
 	{
@@ -26258,6 +26087,442 @@ namespace entrega_cupones
 					this._NumeroDeActa = value;
 					this.SendPropertyChanged("NumeroDeActa");
 					this.OnNumeroDeActaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Estado", DbType="Int")]
+		public System.Nullable<int> Estado
+		{
+			get
+			{
+				return this._Estado;
+			}
+			set
+			{
+				if ((this._Estado != value))
+				{
+					this.OnEstadoChanging(value);
+					this.SendPropertyChanging();
+					this._Estado = value;
+					this.SendPropertyChanged("Estado");
+					this.OnEstadoChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ReciboSueldoConceptos")]
+	public partial class ReciboSueldoConceptos : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private string _Concepto;
+		
+		private decimal _Unidad;
+		
+		private decimal _Base;
+		
+		private decimal _Remunerativo;
+		
+		private decimal _NoRemunerativo;
+		
+		private decimal _Descuento;
+		
+		private int _Estado;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnConceptoChanging(string value);
+    partial void OnConceptoChanged();
+    partial void OnUnidadChanging(decimal value);
+    partial void OnUnidadChanged();
+    partial void OnBaseChanging(decimal value);
+    partial void OnBaseChanged();
+    partial void OnRemunerativoChanging(decimal value);
+    partial void OnRemunerativoChanged();
+    partial void OnNoRemunerativoChanging(decimal value);
+    partial void OnNoRemunerativoChanged();
+    partial void OnDescuentoChanging(decimal value);
+    partial void OnDescuentoChanged();
+    partial void OnEstadoChanging(int value);
+    partial void OnEstadoChanged();
+    #endregion
+		
+		public ReciboSueldoConceptos()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Concepto", DbType="VarChar(80) NOT NULL", CanBeNull=false)]
+		public string Concepto
+		{
+			get
+			{
+				return this._Concepto;
+			}
+			set
+			{
+				if ((this._Concepto != value))
+				{
+					this.OnConceptoChanging(value);
+					this.SendPropertyChanging();
+					this._Concepto = value;
+					this.SendPropertyChanged("Concepto");
+					this.OnConceptoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Unidad", DbType="Decimal(18,2) NOT NULL")]
+		public decimal Unidad
+		{
+			get
+			{
+				return this._Unidad;
+			}
+			set
+			{
+				if ((this._Unidad != value))
+				{
+					this.OnUnidadChanging(value);
+					this.SendPropertyChanging();
+					this._Unidad = value;
+					this.SendPropertyChanged("Unidad");
+					this.OnUnidadChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Base", DbType="Decimal(18,2) NOT NULL")]
+		public decimal Base
+		{
+			get
+			{
+				return this._Base;
+			}
+			set
+			{
+				if ((this._Base != value))
+				{
+					this.OnBaseChanging(value);
+					this.SendPropertyChanging();
+					this._Base = value;
+					this.SendPropertyChanged("Base");
+					this.OnBaseChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Remunerativo", DbType="Decimal(18,2) NOT NULL")]
+		public decimal Remunerativo
+		{
+			get
+			{
+				return this._Remunerativo;
+			}
+			set
+			{
+				if ((this._Remunerativo != value))
+				{
+					this.OnRemunerativoChanging(value);
+					this.SendPropertyChanging();
+					this._Remunerativo = value;
+					this.SendPropertyChanged("Remunerativo");
+					this.OnRemunerativoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NoRemunerativo", DbType="Decimal(18,2) NOT NULL")]
+		public decimal NoRemunerativo
+		{
+			get
+			{
+				return this._NoRemunerativo;
+			}
+			set
+			{
+				if ((this._NoRemunerativo != value))
+				{
+					this.OnNoRemunerativoChanging(value);
+					this.SendPropertyChanging();
+					this._NoRemunerativo = value;
+					this.SendPropertyChanged("NoRemunerativo");
+					this.OnNoRemunerativoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Descuento", DbType="Decimal(18,2) NOT NULL")]
+		public decimal Descuento
+		{
+			get
+			{
+				return this._Descuento;
+			}
+			set
+			{
+				if ((this._Descuento != value))
+				{
+					this.OnDescuentoChanging(value);
+					this.SendPropertyChanging();
+					this._Descuento = value;
+					this.SendPropertyChanged("Descuento");
+					this.OnDescuentoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Estado", DbType="Int NOT NULL")]
+		public int Estado
+		{
+			get
+			{
+				return this._Estado;
+			}
+			set
+			{
+				if ((this._Estado != value))
+				{
+					this.OnEstadoChanging(value);
+					this.SendPropertyChanging();
+					this._Estado = value;
+					this.SendPropertyChanged("Estado");
+					this.OnEstadoChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.EscalaSalarial")]
+	public partial class EscalaSalarial : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private System.Nullable<System.DateTime> _Periodo;
+		
+		private System.Nullable<int> _CodCategoria;
+		
+		private System.Nullable<decimal> _Importe;
+		
+		private System.Nullable<decimal> _AcuerdoNR1;
+		
+		private System.Nullable<decimal> _AcuerdoNR2;
+		
+		private System.Nullable<int> _Estado;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnPeriodoChanging(System.Nullable<System.DateTime> value);
+    partial void OnPeriodoChanged();
+    partial void OnCodCategoriaChanging(System.Nullable<int> value);
+    partial void OnCodCategoriaChanged();
+    partial void OnImporteChanging(System.Nullable<decimal> value);
+    partial void OnImporteChanged();
+    partial void OnAcuerdoNR1Changing(System.Nullable<decimal> value);
+    partial void OnAcuerdoNR1Changed();
+    partial void OnAcuerdoNR2Changing(System.Nullable<decimal> value);
+    partial void OnAcuerdoNR2Changed();
+    partial void OnEstadoChanging(System.Nullable<int> value);
+    partial void OnEstadoChanged();
+    #endregion
+		
+		public EscalaSalarial()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Periodo", DbType="DateTime")]
+		public System.Nullable<System.DateTime> Periodo
+		{
+			get
+			{
+				return this._Periodo;
+			}
+			set
+			{
+				if ((this._Periodo != value))
+				{
+					this.OnPeriodoChanging(value);
+					this.SendPropertyChanging();
+					this._Periodo = value;
+					this.SendPropertyChanged("Periodo");
+					this.OnPeriodoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CodCategoria", DbType="Int")]
+		public System.Nullable<int> CodCategoria
+		{
+			get
+			{
+				return this._CodCategoria;
+			}
+			set
+			{
+				if ((this._CodCategoria != value))
+				{
+					this.OnCodCategoriaChanging(value);
+					this.SendPropertyChanging();
+					this._CodCategoria = value;
+					this.SendPropertyChanged("CodCategoria");
+					this.OnCodCategoriaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Importe", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> Importe
+		{
+			get
+			{
+				return this._Importe;
+			}
+			set
+			{
+				if ((this._Importe != value))
+				{
+					this.OnImporteChanging(value);
+					this.SendPropertyChanging();
+					this._Importe = value;
+					this.SendPropertyChanged("Importe");
+					this.OnImporteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AcuerdoNR1", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> AcuerdoNR1
+		{
+			get
+			{
+				return this._AcuerdoNR1;
+			}
+			set
+			{
+				if ((this._AcuerdoNR1 != value))
+				{
+					this.OnAcuerdoNR1Changing(value);
+					this.SendPropertyChanging();
+					this._AcuerdoNR1 = value;
+					this.SendPropertyChanged("AcuerdoNR1");
+					this.OnAcuerdoNR1Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AcuerdoNR2", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> AcuerdoNR2
+		{
+			get
+			{
+				return this._AcuerdoNR2;
+			}
+			set
+			{
+				if ((this._AcuerdoNR2 != value))
+				{
+					this.OnAcuerdoNR2Changing(value);
+					this.SendPropertyChanging();
+					this._AcuerdoNR2 = value;
+					this.SendPropertyChanged("AcuerdoNR2");
+					this.OnAcuerdoNR2Changed();
 				}
 			}
 		}

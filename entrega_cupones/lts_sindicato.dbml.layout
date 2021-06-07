@@ -488,12 +488,6 @@
         <elementListCompartment Id="e5d30efb-e96a-4fe9-b86d-9f7ad1693183" absoluteBounds="0.89000000000000012, 11.585, 1.9700000000000002, 6.5953369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="009e0321-baba-4d84-9cd8-187b5db274fa" isExpanded="false" absoluteBounds="6.125, 10.5, 2, 0.45">
-      <DataClassMoniker Name="/lts_sindicatoDataContext/EscalaSalarial" />
-      <nestedChildShapes>
-        <elementListCompartment Id="6f7b894a-7637-422b-ad81-36f9f16bb03f" absoluteBounds="6.14, 10.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
     <classShape Id="b633f76b-cc5d-4a34-ba42-1761ecf79e8a" isExpanded="false" absoluteBounds="3.75, 0.5, 2, 0.45">
       <DataClassMoniker Name="/lts_sindicatoDataContext/socemp" />
       <nestedChildShapes>
@@ -618,6 +612,18 @@
       <DataClassMoniker Name="/lts_sindicatoDataContext/VD_Detalle" />
       <nestedChildShapes>
         <elementListCompartment Id="a4155e28-f8de-4c2b-a180-865ec66d77bd" absoluteBounds="0.88999999999999968, 12.21, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6b4961e0-a830-4f6b-8aa7-c1ecddf4d1d4" isExpanded="false" absoluteBounds="3.75, 12.375, 2, 0.45">
+      <DataClassMoniker Name="/lts_sindicatoDataContext/ReciboSueldoConceptos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1c5bc781-88cd-4bd8-a12d-ff9a1e4d678e" absoluteBounds="3.7649999999999997, 12.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="76eb7615-deed-4069-a746-35921c27f8b9" isExpanded="false" absoluteBounds="6.125, 10.5, 2, 0.45">
+      <DataClassMoniker Name="/lts_sindicatoDataContext/EscalaSalarial" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5da004e8-7828-43bd-974b-b0a95fe40c4c" absoluteBounds="6.14, 10.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

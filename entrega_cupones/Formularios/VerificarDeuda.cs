@@ -17,21 +17,24 @@ namespace entrega_cupones.Formularios
 {
   public partial class VerificarDeuda : Form
   {
+
     List<EstadoDDJJ> _ddjj = new List<EstadoDDJJ>();
     List<mdlCuadroAmortizacion> _PlanDePago = new List<mdlCuadroAmortizacion>();
-    List<EmpleadoAportePorPeriodo> _AporteEstadoSocio = new List<EmpleadoAportePorPeriodo>();
+    List<mdlDDJJEmpleado> _AporteEstadoSocio = new List<mdlDDJJEmpleado>();
     public int _UserId;
     public int _VDId = 0;
+
     public VerificarDeuda()
     {
       InitializeComponent();
     }
+
     public void EstadoEmpleado()
     {
       using (var Context = new lts_sindicatoDataContext())
       {
         var ListadoAportes = Context.ddjj.
-         Select(row => new EmpleadoAportePorPeriodo
+         Select(row => new mdlDDJJEmpleado
          {
            Cuit = row.CUIT_STR,
            Periodo = (DateTime)row.periodo,
@@ -46,6 +49,7 @@ namespace entrega_cupones.Formularios
         _AporteEstadoSocio.AddRange(ListadoAportes);
       }
     }
+
     private void VerificarDeuda_Load(object sender, EventArgs e)
     {
       // Maxihogar 30646757327
@@ -68,6 +72,7 @@ namespace entrega_cupones.Formularios
 
       //EstadoEmpleado();
     }
+
     private void Cargar_cbxInspectores()
     {
       cbx_Inspectores.DisplayMember = "Nombre";
@@ -83,10 +88,12 @@ namespace entrega_cupones.Formularios
       formBuscarEmpresa.ShowDialog();
 
     }
+
     private void btn_BuscarEmpresa_Click(object sender, EventArgs e)
     {
       BuscarEmpresa();
     }
+
     private void btn_CalcularDeuda_Click(object sender, EventArgs e)
     {
       CalcularDeuda();
@@ -132,6 +139,7 @@ namespace entrega_cupones.Formularios
       txt_DeudaPlan.Text = txt_Total.Text;
       VerPlanDePago();
     }
+
     private void PintarPerNoDec()
     {
       foreach (DataGridViewRow fila in dgv_ddjj.Rows)
@@ -142,10 +150,12 @@ namespace entrega_cupones.Formularios
         }
       }
     }
+
     private void btn_EliminarFila_Click(object sender, EventArgs e)
     {
       EliminarFila();
     }
+
     private void EliminarFila()
     {
       if (MessageBox.Show("Esta Seguro que desea ELIMINAR el Periodo seleccionado?", "ATENCION", MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -166,6 +176,7 @@ namespace entrega_cupones.Formularios
         PintarPerNoDec();
       }
     }
+
     private void ActivarBotones()
     {
       btn_EliminarFila.Enabled = true;
@@ -174,6 +185,7 @@ namespace entrega_cupones.Formularios
       btn_EmitirActa.Enabled = true;
       btn_ConfirmAsignacion.Enabled = true;
     }
+
     private void DesactivarBotones()
     {
       btn_EliminarFila.Enabled = false;
@@ -182,10 +194,12 @@ namespace entrega_cupones.Formularios
       btn_EmitirActa.Enabled = false;
       btn_ConfirmAsignacion.Enabled = false;
     }
+
     private void btn_CopiarAnterior_Click(object sender, EventArgs e)
     {
       CopiarPeriodo(false, dgv_ddjj.CurrentRow.Index - 1);
     }
+
     private void CopiarPeriodo(bool copiarSiguiente, int Index)
     {
       // decimal taza = Convert.ToDecimal(txt_Interes.Text);
@@ -227,8 +241,6 @@ namespace entrega_cupones.Formularios
           FilaActual.TotalSueldoSocios = FilaACopiar.TotalSueldoSocios;
         }
       }
-
-
       FilaActual.Rectificacion = 0;
       FilaActual.FechaDePago = null;//Convert.ToDateTime("01/01/0001");
       FilaActual.ImporteDepositado = Convert.ToDecimal(0.00);
@@ -244,6 +256,7 @@ namespace entrega_cupones.Formularios
       PintarPerNoDec();
 
     }
+
     private void dgv_ddjj_SelectionChanged(object sender, EventArgs e)
     {
       btn_CopiarAnterior.Enabled = dgv_ddjj.CurrentRow.Index == 0 ? false : true;
@@ -261,10 +274,12 @@ namespace entrega_cupones.Formularios
       txt_InspectorAsignado.Text = _VDId > 0 ? mtdInspectores.Get_Inspector(mtdVDInspector.Get_InspectorId(_VDId)).Nombre : "";
 
     }
+
     private void btn_CopiarSiguiente_Click(object sender, EventArgs e)
     {
       CopiarPeriodo(true, dgv_ddjj.CurrentRow.Index + 1);
     }
+
     private void btn_ImprimirDeuda_Click(object sender, EventArgs e)
     {
       DS_cupones ds = new DS_cupones();
@@ -315,10 +330,12 @@ namespace entrega_cupones.Formularios
       formReporte.NombreDelReporte = "entrega_cupones.Reportes.rpt_VerificacionDeDeuda.rdlc";
       formReporte.Show();
     }
+
     private void btn_IngresoManual_Click(object sender, EventArgs e)
     {
       PasarDatosIngresoManual();
     }
+
     private void PasarDatosIngresoManual()
     {
       frm_IngresoManualDDJJ formIngresoManual = new frm_IngresoManualDDJJ();
@@ -353,6 +370,7 @@ namespace entrega_cupones.Formularios
       PintarPerNoDec();
 
     }
+
     private void GuardarIngresoManual()
     {
       DateTime Periodo = Convert.ToDateTime(dgv_ddjj.CurrentRow.Cells["Periodo"].Value);
@@ -371,10 +389,12 @@ namespace entrega_cupones.Formularios
       registro.Total = (decimal)dgv_ddjj.CurrentRow.Cells["Total"].Value;
 
     }
+
     private void dgv_ddjj_CellContentClick(object sender, DataGridViewCellEventArgs e)
     {
 
     }
+
     private void MostrarEmpleados()
     {
       DateTime Periodo = Convert.ToDateTime(dgv_ddjj.CurrentRow.Cells["Periodo"].Value);
@@ -390,10 +410,12 @@ namespace entrega_cupones.Formularios
 
       frmEmpleadosDetalle.Show();
     }
+
     private void btn_PeriodoDetalle_Click(object sender, EventArgs e)
     {
       MostrarEmpleados();
     }
+
     private void btn_EmitirActa_Click(object sender, EventArgs e)
     {
       if (_ddjj.Where(x => x.Acta != "").Count() > 0)
@@ -413,6 +435,7 @@ namespace entrega_cupones.Formularios
       }
 
     }
+
     private void EmitirActa()
     {
       frm_GenerarActa formActasGenerar = new frm_GenerarActa();
@@ -436,10 +459,12 @@ namespace entrega_cupones.Formularios
       formActasGenerar.txt_ImporteDeCuota.Text = txt_ImporteDeCuota.Text;
       formActasGenerar.Show();
     }
+
     private void btn_VerPlanDePago_Click(object sender, EventArgs e)
     {
       VerPlanDePago();
     }
+
     private void VerPlanDePago()
     {
       if (string.IsNullOrEmpty(txt_InteresPlan.Text) || string.IsNullOrWhiteSpace(txt_InteresPlan.Text) || txt_InteresPlan.Text == "0")
@@ -469,6 +494,7 @@ namespace entrega_cupones.Formularios
         }
       }
     }
+
     private void TraerPlanDePago()
     {
       //obtengo el importe de la cuota, si la cuota es 1 entonces el interes es 0% sino se aplica el 3% lo mismo para el cuadro de amortizacion
@@ -493,6 +519,7 @@ namespace entrega_cupones.Formularios
       dgv_PlanDePagos.DataSource = _PlanDePago;
 
     }
+
     private void txt_Anticipo_TextChanged(object sender, EventArgs e)
     {
       if (txt_Anticipo.Text != "")
@@ -506,6 +533,7 @@ namespace entrega_cupones.Formularios
       }
 
     }
+
     private void txt_CantidadDeCuotas_TextChanged(object sender, EventArgs e)
     {
       if (txt_CantidadDeCuotas.Text == "0")
@@ -514,15 +542,18 @@ namespace entrega_cupones.Formularios
       }
 
     }
+
     private void btn_ImprimirPlanDePago2_Click(object sender, EventArgs e)
     {
       ImprimirPlanDePago();
     }
+
     private void ImprimirPlanDePago()
     {
       string tf = _PlanDePago.Sum(x => x.ImporteDeCuota).ToString("N2"); //(decimal) Math.Round(dt.AsEnumerable().Sum(r => r.Field<double>("ImporteDeCuota")), 2);
       mtdCobranzas.ImprimirPlanDePago(_PlanDePago, txt_BuscarEmpesa.Text, txt_CUIT.Text, "", txt_Total.Text, tf.ToString(), "");
     }
+
     private void btn_VerRanking_Click(object sender, EventArgs e)
     {
       using (var context = new lts_sindicatoDataContext())
@@ -572,6 +603,7 @@ namespace entrega_cupones.Formularios
         dgv_Ranking.DataSource = CUITAgrupado.OrderByDescending(x => x.Deuda).ToList();
       }
     }
+
     private void cbx_TipoDeInteres_SelectedIndexChanged(object sender, EventArgs e)
     {
       // SelectedIndex => 0 = Manual ; 1 = AFIP
@@ -586,6 +618,7 @@ namespace entrega_cupones.Formularios
         txt_InteresDiario.Enabled = true;
       }
     }
+
     private void txt_Interes_TextChanged(object sender, EventArgs e)
     {
       if (txt_Interes.Text == "")
@@ -662,8 +695,6 @@ namespace entrega_cupones.Formularios
         MessageBox.Show("Debe Excluir los periodos que pertescan a un Acta ");
       }
     }
-
-
 
     private void btn_Actualizar_VD_Click(object sender, EventArgs e)
     {

@@ -72,7 +72,6 @@ namespace entrega_cupones.Metodos
         EliminarRectificacion();
         return _ddjj.Union(GenerarPerNoDec(desde, hasta, cuit)).OrderBy(x => x.Periodo).ToList();
       }
-
     }
     public static decimal CalcularCapital(decimal Depositado, decimal titem1, decimal titem2, DateTime? FechaDePago, DateTime FechaDeVencimientoDeActa, DateTime Periodo, int TipoDeInteres, decimal TazaDeInteres)
     {
@@ -106,7 +105,7 @@ namespace entrega_cupones.Metodos
 
     public static decimal DifAporteSocioJorPar(string Cuit, DateTime Periodo, int Rectif)
     {
-      List<EmpleadoAportePorPeriodo> lists = mtdEmpleados.ListadoEmpleadoAporte(Cuit, Periodo, Rectif);
+      List<mdlDDJJEmpleado> lists = mtdEmpleados.ListadoEmpleadoAporte(Cuit, Periodo, Rectif);
       decimal DiferenciaAporteSocioJorPar = lists.Where(x => x.Jornada == "Parcial").Sum(x => x.AporteSocioDif);
       return DiferenciaAporteSocioJorPar;
     }
@@ -156,9 +155,19 @@ namespace entrega_cupones.Metodos
       var agrupado = _ddjj.GroupBy(x => x.Periodo).Where(x => x.Count() > 1);
       foreach (var item in agrupado)
       {
+        // en la variable sss almaceno la suma del grupo y si es igual a cero quiere decir que hay rectificaciones pero niguna pagada 
+        // por lo tanto en la variable MayorRectif alamceno la rectificacion mas alta la cual no debo eliminar
+        // entonces comparo ambas y si son distintas la elimino y si son iguales no las elimino
+
+        decimal sss = item.Sum(x => x.ImporteDepositado);
+        string MayorRectif = "0";
+        if (sss == 0 )
+        {
+          MayorRectif = item.Max(x => x.Rectificacion).ToString();
+        }
         foreach (var registro in item)
         {
-          if (registro.ImporteDepositado == 0)
+          if (registro.ImporteDepositado == 0 && Convert.ToString( registro.Rectificacion ) !=  MayorRectif)
           {
             _ddjj.RemoveAll(x => x.Periodo == registro.Periodo && x.Rectificacion == registro.Rectificacion);
           }
@@ -261,10 +270,7 @@ namespace entrega_cupones.Metodos
     }
     public static string GetNroVerifDeuda(string cuit, DateTime Periodo, int Rectificacion, bool PerNoDec, DateTime? FechaDePago)
     {
-      //if (FechaDePago == null)
-      //{
-      //  FechaDePago = Convert.ToDateTime("0001 - 01 - 01 00:00:00.0000000");
-      //}
+                                                   
       using (var context = new lts_sindicatoDataContext())
       {
         string vd = "";
@@ -287,7 +293,6 @@ namespace entrega_cupones.Metodos
         return vd;
       }
     }
-
     public static List<EstadoDDJJ> VD_ListadoDDJJT(string cuit, DateTime desde, DateTime hasta, DateTime FechaVencimiento, int TipoInteres, decimal TazaInteres, int VDId)
     {
       _ddjj.Clear();
@@ -340,6 +345,19 @@ namespace entrega_cupones.Metodos
         //_ddjj.Union(GenerarPerNoDec(desde, hasta, cuit)).OrderBy(x => x.Periodo).ToList();
         //return _ddjj.OrderBy(x => x.Periodo).ToList();
         return (List<EstadoDDJJ>)_EstadoDDJJ;
+      }
+    }
+    public static string GetDomicilio(string cuit)
+    {
+      using (var context = new lts_sindicatoDataContext())
+      {
+        var emp = (from a in context.maeemp where a.MEEMP_CUIT_STR == cuit select a).SingleOrDefault(); // context.maeemp.Where(x => x.MEEMP_CUIT_STR == cuit)
+
+        string calle = string.IsNullOrEmpty(emp.MAEEMP_CALLE) ? "":emp.MAEEMP_CALLE.Trim() ;
+        string numero = string.IsNullOrEmpty(emp.MAEEMP_NRO)? "S/N" : emp.MAEEMP_NRO.Trim();
+        string codigoPostal = string.IsNullOrEmpty(emp.MAEEMP_CODPOS) ? "0" : emp.MAEEMP_CODPOS.Trim();
+        string domicilio = calle + " Nº " + numero + " " + codigoPostal;
+        return domicilio ;
       }
     }
   }

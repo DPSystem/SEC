@@ -87,56 +87,114 @@ namespace entrega_cupones.Metodos
       }
     }
 
-    public static List<VD_Detalle> Get_VDD(int VDId)
+    public static List<mdlVDDetalle> Get_VDD(int VDId)
     {
       using (var context = new lts_sindicatoDataContext())
       {
-        var VD = from a in context.VD_Detalle where a.VDInspectorId == VDId select a;
+        var VD = from a in context.VD_Detalle
+                 where a.VDInspectorId == VDId
+                 select new mdlVDDetalle
+                 {
+                   Id = a.Id,
+                   VDInspectorId = (int)a.VDInspectorId,
+                   Periodo = a.Periodo,
+                   Rectificacion = (int)a.Rectificacion,
+                   CantidadEmpleados = a.CantidadEmpleados,
+                   CantidadSocios = a.CantidadSocios,
+                   TotalSueldoEmpleados = a.TotalSueldoEmpleados,
+                   TotalSueldoSocios = a.TotalSueldoSocios,
+                   TotalAporteEmpleados = a.TotalAporteEmpleados,
+                   TotalAporteSocios = a.TotalAporteSocios,
+                   FechaDePago = a.FechaDePago,
+                   ImporteDepositado = a.ImporteDepositado,
+                   DiasDeMora = a.DiasDeMora,
+                   DeudaGenerada = a.DeudaGenerada,
+                   InteresGenerado = a.InteresGenerado,
+                   Total = a.Total,
+                   ActaId = a.ActaId,
+                   NumeroDeActa = a.NumeroDeActa,
+                   Estado = (int)a.Estado
+                 };
         return VD.ToList();
       }
     }
 
-    public static List<VD_Detalle> VD_ListadoDDJJT(List<VD_Detalle> VD_Detalle, string cuit, DateTime desde, DateTime hasta, DateTime FechaVencimiento, int TipoInteres, decimal TazaInteres, int VDId)
+    public static List<mdlVDDetalle> VD_Simulacion(List<mdlVDDetalle> VD_Detalle, string cuit, DateTime desde, DateTime hasta, DateTime FechaVencimiento, int TipoInteres, decimal TazaInteres, int VDId)
     {
-      using (var context = new lts_sindicatoDataContext())
+      foreach (mdlVDDetalle vD in VD_Detalle)
       {
-        foreach (var vD in VD_Detalle)
-        {
-          VD_Detalle updt = context.VD_Detalle.Where(x => x.Id == vD.Id).Single();
+        vD.Periodo = Convert.ToDateTime(vD.Periodo); // Convert.ToDateTime(row.Periodo),
+        vD.Rectificacion = (int)vD.Rectificacion;
+        vD.TotalAporteEmpleados = (decimal)vD.TotalAporteEmpleados;
+        vD.TotalAporteSocios = (decimal)vD.TotalAporteSocios;
+        vD.TotalSueldoEmpleados = (decimal)vD.TotalSueldoEmpleados; /*.titem1 / Convert.ToDecimal(0.02)*/
+        vD.TotalSueldoSocios = (decimal)vD.TotalSueldoSocios; //.titem2 / Convert.ToDecimal(0.02),
+        vD.FechaDePago = vD.FechaDePago == null ? null : vD.FechaDePago; //.fpago == null ? null : row.fpago,
+        vD.ImporteDepositado = (decimal)vD.ImporteDepositado; //row.impban1,
+        vD.CantidadEmpleados = vD.CantidadEmpleados;//context.ddjj.Where(x => x.CUIT_STR == cuit && (x.periodo == row.periodo) && (x.rect == row.rect)).Count(),
+        vD.CantidadSocios = vD.CantidadSocios;//context.ddjj.Where(x => x.CUIT_STR == cuit && (x.periodo == row.periodo) && x.rect == row.rect && x.item2 == true).Count(),
 
-          updt.Periodo = vD.Periodo.Date; // Convert.ToDateTime(row.Periodo),
-          updt.Rectificacion = (int)vD.Rectificacion;
-          updt.TotalAporteEmpleados = (decimal)vD.TotalAporteEmpleados;
-          updt.TotalAporteSocios = (decimal)vD.TotalAporteSocios;
-          updt.TotalSueldoEmpleados = (decimal)vD.TotalSueldoEmpleados; /*.titem1 / Convert.ToDecimal(0.02)*/
-          updt.TotalSueldoSocios = (decimal)vD.TotalSueldoSocios; //.titem2 / Convert.ToDecimal(0.02),
-          updt.FechaDePago = vD.FechaDePago == null ? null : vD.FechaDePago; //.fpago == null ? null : row.fpago,
-          updt.ImporteDepositado = (decimal)vD.ImporteDepositado; //row.impban1,
-          updt.CantidadEmpleados = vD.CantidadEmpleados;//context.ddjj.Where(x => x.CUIT_STR == cuit && (x.periodo == row.periodo) && (x.rect == row.rect)).Count(),
-          updt.CantidadSocios = vD.CantidadSocios;//context.ddjj.Where(x => x.CUIT_STR == cuit && (x.periodo == row.periodo) && x.rect == row.rect && x.item2 == true).Count(),
+        decimal Capital = CalcularCapital(vD.ImporteDepositado, vD.TotalAporteEmpleados, vD.TotalAporteSocios,
+                 Convert.ToDateTime(vD.FechaDePago), FechaVencimiento, Convert.ToDateTime(vD.Periodo),
+                 TipoInteres, TazaInteres);
 
-          decimal Capital = CalcularCapital(vD.ImporteDepositado, vD.TotalAporteEmpleados, vD.TotalAporteSocios,
-                   Convert.ToDateTime(vD.FechaDePago), FechaVencimiento, Convert.ToDateTime(vD.Periodo), 
-                   TipoInteres, TazaInteres);
-          
-          decimal InteresGenerado =
-                   CalcularInteres(Convert.ToDateTime(vD.FechaDePago), Convert.ToDateTime(vD.Periodo), 
-                   Capital, FechaVencimiento, TipoInteres, TazaInteres);
+        decimal InteresGenerado =
+                 CalcularInteres(Convert.ToDateTime(vD.FechaDePago), Convert.ToDateTime(vD.Periodo),
+                 Capital, FechaVencimiento, TipoInteres, TazaInteres);
 
-          int DiasDeMora = CalcularDias(Convert.ToDateTime(vD.Periodo), Convert.ToDateTime(vD.FechaDePago) == null ? FechaVencimiento : Convert.ToDateTime(vD.FechaDePago)); //Convert.ToDecimal(0.99)
+        int DiasDeMora = CalcularDias(Convert.ToDateTime(vD.Periodo), vD.FechaDePago == null ? FechaVencimiento : Convert.ToDateTime(vD.FechaDePago)); //Convert.ToDecimal(0.99)
 
-          decimal Total = CalcularTotal(Capital, InteresGenerado);
+        decimal Total = CalcularTotal(Capital, InteresGenerado);
 
-          updt.DeudaGenerada = Capital;
-          updt.InteresGenerado = InteresGenerado;
-          updt.DiasDeMora = DiasDeMora;
-          updt.Total = Total;
-
-          context.SubmitChanges();
-        };
+        vD.DeudaGenerada = Capital;
+        vD.InteresGenerado = InteresGenerado;
+        vD.DiasDeMora = DiasDeMora;
+        vD.Total = Total;
       }
       return VD_Detalle;
     }
+
+    //public static List<VD_Detalle> VD_ListadoDDJJT(List<mdlVDDetalle> VD_Detalle, string cuit, DateTime desde, DateTime hasta, DateTime FechaVencimiento, int TipoInteres, decimal TazaInteres, int VDId)
+    //{
+    //  using (var context = new lts_sindicatoDataContext())
+    //  {
+    //    foreach (var vD in VD_Detalle)
+    //    {
+    //      VD_Detalle updt = context.VD_Detalle.Where(x => x.Id == vD.Id).Single();
+
+    //      updt.Periodo = Convert.ToDateTime(vD.Periodo); // Convert.ToDateTime(row.Periodo),
+    //      updt.Rectificacion = (int)vD.Rectificacion;
+    //      updt.TotalAporteEmpleados = (decimal)vD.TotalAporteEmpleados;
+    //      updt.TotalAporteSocios = (decimal)vD.TotalAporteSocios;
+    //      updt.TotalSueldoEmpleados = (decimal)vD.TotalSueldoEmpleados; /*.titem1 / Convert.ToDecimal(0.02)*/
+    //      updt.TotalSueldoSocios = (decimal)vD.TotalSueldoSocios; //.titem2 / Convert.ToDecimal(0.02),
+    //      updt.FechaDePago = vD.FechaDePago == null ? null : vD.FechaDePago; //.fpago == null ? null : row.fpago,
+    //      updt.ImporteDepositado = (decimal)vD.ImporteDepositado; //row.impban1,
+    //      updt.CantidadEmpleados = vD.CantidadEmpleados;//context.ddjj.Where(x => x.CUIT_STR == cuit && (x.periodo == row.periodo) && (x.rect == row.rect)).Count(),
+    //      updt.CantidadSocios = vD.CantidadSocios;//context.ddjj.Where(x => x.CUIT_STR == cuit && (x.periodo == row.periodo) && x.rect == row.rect && x.item2 == true).Count(),
+
+    //      decimal Capital = CalcularCapital(vD.ImporteDepositado, vD.TotalAporteEmpleados, vD.TotalAporteSocios,
+    //               Convert.ToDateTime(vD.FechaDePago), FechaVencimiento, Convert.ToDateTime(vD.Periodo),
+    //               TipoInteres, TazaInteres);
+
+    //      decimal InteresGenerado =
+    //               CalcularInteres(Convert.ToDateTime(vD.FechaDePago), Convert.ToDateTime(vD.Periodo),
+    //               Capital, FechaVencimiento, TipoInteres, TazaInteres);
+
+    //      int DiasDeMora = CalcularDias(Convert.ToDateTime(vD.Periodo), vD.FechaDePago == null ? FechaVencimiento : Convert.ToDateTime(vD.FechaDePago)); //Convert.ToDecimal(0.99)
+
+    //      decimal Total = CalcularTotal(Capital, InteresGenerado);
+
+    //      updt.DeudaGenerada = Capital;
+    //      updt.InteresGenerado = InteresGenerado;
+    //      updt.DiasDeMora = DiasDeMora;
+    //      updt.Total = Total;
+
+    //      context.SubmitChanges();
+    //    };
+    //  }
+    //  return VD_Detalle;
+    //}
     public static decimal CalcularCapital(decimal Depositado, decimal titem1, decimal titem2, DateTime? FechaDePago, DateTime FechaDeVencimientoDeActa, DateTime Periodo, int TipoDeInteres, decimal TazaDeInteres)
     {
       decimal Capital = Depositado - (titem1 + titem2);

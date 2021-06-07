@@ -150,6 +150,7 @@
       this.dgv_DetallePeriodo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
       this.dgv_DetallePeriodo.Size = new System.Drawing.Size(993, 257);
       this.dgv_DetallePeriodo.TabIndex = 594;
+      this.dgv_DetallePeriodo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DetallePeriodo_CellContentClick);
       this.dgv_DetallePeriodo.SelectionChanged += new System.EventHandler(this.dgv_DetallePeriodo_SelectionChanged);
       // 
       // dataGridViewTextBoxColumn1

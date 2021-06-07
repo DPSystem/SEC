@@ -14,7 +14,7 @@ namespace entrega_cupones.Formularios
 {
   public partial class frm_EmpleadoEstadoDDJJ : Form
   {
-    public List<EmpleadoAportePorPeriodo> _DetallePeriodo = new List<EmpleadoAportePorPeriodo>();
+    public List<mdlDDJJEmpleado> _DetallePeriodo = new List<mdlDDJJEmpleado>();
     public DateTime Periodo;
     public int Rectificacion;
     public frm_EmpleadoEstadoDDJJ()
@@ -57,6 +57,11 @@ namespace entrega_cupones.Formularios
       txt_CantidadJornadaParcial.Text = _DetallePeriodo.Count(x => x.Jornada == "Parcial").ToString();
       txt_DifAporteSocio.Text = _DetallePeriodo.Where(x=>x.Jornada == "Parcial") .Sum(x => x.AporteSocioDif).ToString("N2");
       txt_DifSueldo.Text = _DetallePeriodo.Sum(x => x.SueldoDif).ToString("N2");
+    }
+
+    private void dgv_DetallePeriodo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+    {
+
     }
   }
 }

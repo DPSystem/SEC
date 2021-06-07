@@ -417,7 +417,7 @@
     <Compile Include="Modelos\mdlCargaDeCheques.cs" />
     <Compile Include="Modelos\DDJJ.cs" />
     <Compile Include="Modelos\DDJJT.cs" />
-    <Compile Include="Modelos\EmpleadoAportePorPeriodo.cs" />
+    <Compile Include="Modelos\mdlDDJJEmpleado.cs" />
     <Compile Include="Modelos\Empresa.cs" />
     <Compile Include="Modelos\EstadoDDJJ.cs" />
     <Compile Include="Modelos\mdlActa.cs" />

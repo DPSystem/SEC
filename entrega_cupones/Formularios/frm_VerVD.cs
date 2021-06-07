@@ -14,9 +14,14 @@ namespace entrega_cupones.Formularios
 {
   public partial class frm_VerVD : Form
   {
-    public List<VD_Detalle> _VDDetalle = new List<VD_Detalle>();
+    public List<mdlVDDetalle> _VDDetalle = new List<mdlVDDetalle>();
+
     public List<EstadoDDJJ> _ddjj = new List<EstadoDDJJ>();
+
     public int _VDId;
+
+    public List<mdlDDJJEmpleado> _DDJJEmpleados = new List<mdlDDJJEmpleado>();
+
     public frm_VerVD()
     {
       InitializeComponent();
@@ -25,8 +30,10 @@ namespace entrega_cupones.Formularios
     private void frm_VerVD_Load(object sender, EventArgs e)
     {
       dgv_VD.AutoGenerateColumns = false;
+      dgv_DetallePeriodo.AutoGenerateColumns = false;
+      dgv_ReciboSueldo.AutoGenerateColumns = false;
       VD_Mostrar();
-      
+      //Cargar_DDJJEmpleado();
     }
 
     private void VD_Mostrar()
@@ -35,8 +42,25 @@ namespace entrega_cupones.Formularios
       dgv_VD.DataSource = _VDDetalle;
       BindingSource bindingSource = new BindingSource();
       bindingSource.DataSource = _VDDetalle;
+
       //dataGridView1.DataSource = bindingSource;
       CalcularTotales();
+    }
+
+    private void Cargar_DDJJEmpleado()
+    {
+      _DDJJEmpleados.Clear();
+      _DDJJEmpleados = mtdEmpleados.ListadoEmpleadoAporte
+        (
+        txt_CUIT.Text,
+        Convert.ToDateTime(dgv_VD.CurrentRow.Cells["Periodo"].Value),
+        Convert.ToInt32(dgv_VD.CurrentRow.Cells["Rectificacion"].Value)
+        );
+
+      //BindingSource bindingSource2 = new BindingSource();
+      //bindingSource2.DataSource = _DDJJEmpleados;
+      //txt_SueldoDeclarado.DataBindings.Add("Text", _DDJJEmpleados, "Sueldo");
+      dgv_DetallePeriodo.DataSource = _DDJJEmpleados.ToList();
     }
 
     private void CalcularTotales()
@@ -53,12 +77,12 @@ namespace entrega_cupones.Formularios
 
     private void btn_CalcularDeuda_Click(object sender, EventArgs e)
     {
-      CalcularDeuda();
+      Simulacion();
     }
 
-    private void CalcularDeuda()
+    private void Simulacion()
     {
-      _VDDetalle = mtdVDDetalle.VD_ListadoDDJJT(_VDDetalle,
+      _VDDetalle = mtdVDDetalle.VD_Simulacion(_VDDetalle,
                     txt_CUIT.Text,
                     Convert.ToDateTime("01/" + msk_Desde.Text),
                     Convert.ToDateTime("01/" + msk_Hasta.Text),
@@ -67,7 +91,8 @@ namespace entrega_cupones.Formularios
                     Convert.ToDecimal(txt_InteresDiario.Text),
                     _VDId
                     );
-      VD_Mostrar();
+      dgv_VD.DataSource = _VDDetalle;
+      CalcularTotales();
     }
 
     private void btn_Actualizar_VD_Click(object sender, EventArgs e)
@@ -76,10 +101,14 @@ namespace entrega_cupones.Formularios
       {
         foreach (var periodo in _VDDetalle)
         {
-
           var VDDetalle = context.VD_Detalle.Where(x => x.Id == periodo.Id).SingleOrDefault();
-         
-          VDDetalle.Periodo = periodo.Periodo;
+          DateTime? FechaDePago = null;
+          if (FechaDePago != null)
+          {
+            Convert.ToDateTime(periodo.FechaDePago);
+          }
+
+          VDDetalle.Periodo = Convert.ToDateTime(periodo.Periodo);
           VDDetalle.Rectificacion = periodo.Rectificacion;
           VDDetalle.CantidadEmpleados = periodo.CantidadEmpleados;
           VDDetalle.CantidadSocios = periodo.CantidadSocios;
@@ -87,7 +116,7 @@ namespace entrega_cupones.Formularios
           VDDetalle.TotalSueldoSocios = periodo.TotalSueldoSocios;
           VDDetalle.TotalAporteEmpleados = periodo.TotalAporteEmpleados;
           VDDetalle.TotalAporteSocios = periodo.TotalAporteSocios;
-          VDDetalle.FechaDePago = Convert.ToDateTime(periodo.FechaDePago);
+          VDDetalle.FechaDePago = FechaDePago;//periodo.FechaDePago == null ? null : Convert.ToDateTime(periodo.FechaDePago);
           VDDetalle.ImporteDepositado = periodo.ImporteDepositado;
           VDDetalle.DiasDeMora = periodo.DiasDeMora;
           VDDetalle.DeudaGenerada = periodo.DeudaGenerada;
@@ -109,6 +138,134 @@ namespace entrega_cupones.Formularios
         txt_Interes.Text = "0";
       }
       txt_InteresDiario.Text = mtdIntereses.CalcularInteresDiario(txt_Interes.Text);
+    }
+
+    private void btn_CopiarSiguiente_Click(object sender, EventArgs e)
+    {
+      CopiarPeriodo(true);
+    }
+
+    private void CopiarPeriodo(bool CopiarSiguiente)
+    {
+      // la Fila Actual y obtengo el Id del periodo actual
+      int Index = dgv_VD.CurrentRow.Index;
+      int VDId_Actual = Convert.ToInt32(dgv_VD.CurrentRow.Cells["Id"].Value);
+
+      // VDD_Id para buscar en _VDDetalle y asi obtener el Id a copiar y lo guardo en la Variable PeriodoACopiar
+      int VD_Id = Convert.ToInt32(dgv_VD.Rows[CopiarSiguiente == true ? Index + 1 : Index - 1].Cells["Id"].Value);
+      mdlVDDetalle ACopiar = _VDDetalle.FirstOrDefault(x => x.Id == VD_Id);
+
+      decimal TotalSueldoEmpleados = ACopiar.Periodo.Value.Month == 12 || ACopiar.Periodo.Value.Month == 6 ? (ACopiar.TotalAporteEmpleados / 3) * 2 : ACopiar.TotalAporteEmpleados;
+      // Busco en _VDDetalle el periodo a modificar 
+      mdlVDDetalle AModificar = _VDDetalle.FirstOrDefault(x => x.Id == VDId_Actual);
+
+      //Comienzo a Copiar desde la Variable PeriodoACopiar a la variable PeriodoAModificar
+      AModificar.TotalSueldoEmpleados = CalcularDifAguinaldo(Convert.ToDateTime(ACopiar.Periodo), ACopiar.TotalAporteEmpleados, Convert.ToDateTime(AModificar.Periodo));
+      AModificar.TotalSueldoSocios = CalcularDifAguinaldo(Convert.ToDateTime(ACopiar.Periodo), ACopiar.TotalAporteEmpleados, Convert.ToDateTime(AModificar.Periodo));
+      AModificar.TotalAporteEmpleados = CalcularDifAguinaldo(Convert.ToDateTime(ACopiar.Periodo), ACopiar.TotalAporteEmpleados, Convert.ToDateTime(AModificar.Periodo));
+      AModificar.TotalAporteSocios = CalcularDifAguinaldo(Convert.ToDateTime(ACopiar.Periodo), ACopiar.TotalAporteEmpleados, Convert.ToDateTime(AModificar.Periodo));
+      AModificar.DiasDeMora = mtdEmpresas.CalcularDias(Convert.ToDateTime(AModificar.Periodo), Convert.ToDateTime(msk_Vencimiento.Text));
+      AModificar.DeudaGenerada = AModificar.TotalAporteSocios + AModificar.TotalAporteSocios;
+      AModificar.InteresGenerado = Math.Round(mtdEmpresas.CalcularInteres(null, Convert.ToDateTime(AModificar.Periodo), AModificar.DeudaGenerada, Convert.ToDateTime(msk_Vencimiento.Text), cbx_TipoDeInteres.SelectedIndex, Convert.ToDecimal(txt_InteresDiario.Text)), 2);
+      AModificar.Total = AModificar.DeudaGenerada + AModificar.InteresGenerado;
+    }
+
+    public decimal CalcularDifAguinaldo(DateTime PerioACopiar, decimal Importe, DateTime PeriodoAModificar)
+    {
+      if (PerioACopiar.Month == 12 || PerioACopiar.Month == 6)
+      {
+        Importe = (Importe / 3) * 2;
+      }
+
+      if (PeriodoAModificar.Month == 6 || PeriodoAModificar.Month == 12)
+      {
+        Importe = (Importe * Convert.ToDecimal("0.50")) + Importe;
+      }
+      return Importe;
+    }
+
+    private void btn_CopiarAnterior_Click(object sender, EventArgs e)
+    {
+      CopiarPeriodo(false);
+    }
+
+    private void dgv_VD_CellContentClick(object sender, DataGridViewCellEventArgs e)
+    {
+
+    }
+
+    private void dgv_VD_SelectionChanged(object sender, EventArgs e)
+    {
+      btn_CopiarAnterior.Enabled = dgv_VD.CurrentRow.Index == 0 ? false : true;
+      btn_CopiarSiguiente.Enabled = dgv_VD.CurrentRow.Index == dgv_VD.Rows.Count - 1 ? false : true;
+      btn_IngresoManual.Enabled = Convert.ToInt32(dgv_VD.CurrentRow.Cells["PerNoDec"].Value) == 1 ? true : false;
+      Cargar_DDJJEmpleado();
+
+    }
+
+    private void MostrarDetalleDDJJ()
+    {
+      if (_DDJJEmpleados.Count > 0)
+      {
+        // jubilacion y ley 19032 sobre base de Basico + antiguedad + presentismo
+        // (obra Social, SEC Ley , SEC Socio, FAECyS) sobre base de (Basico + antiguedad + presentismo + ANR1 + ACNR2)
+
+        int index = dgv_DetallePeriodo.CurrentRow.Index ;
+
+        txt_Categoria.Text = _DDJJEmpleados[index].Categoria;
+        txt_Antigue.Text = _DDJJEmpleados[index].Antiguedad.ToString();
+        txt_Jornada.Text = _DDJJEmpleados[index].Jornada; 
+
+        decimal Base1 = _DDJJEmpleados[index].Escala + _DDJJEmpleados[index].AntiguedadImporte + _DDJJEmpleados[index].Presentismo;
+
+        //Haberes
+        txt_SueldoBasico.Text = _DDJJEmpleados[index].Escala.ToString("N2");
+        txt_Antiguedad.Text = _DDJJEmpleados[index].AntiguedadImporte.ToString("N2");
+        txt_Presentismo.Text = _DDJJEmpleados[index].Presentismo.ToString("N2");
+        txt_Acuerdo.Text = _DDJJEmpleados[index].AcuerdoNR1.ToString("N2");
+        txt_Acuerdo2.Text = _DDJJEmpleados[index].AcuerdoNR2 .ToString("N2");
+
+        //Descuentos
+        txt_Jubilacion.Text = _DDJJEmpleados[index].Jubilacion.ToString("N2");
+        txt_Ley19302.Text = _DDJJEmpleados[index].Ley19302.ToString("N2");
+        txt_ObraSocial.Text = _DDJJEmpleados[index].ObraSocial.ToString("N2");
+        txt_AporteLey.Text = _DDJJEmpleados[index].AporteLeyDif.ToString("N2");
+        txt_AporteSocio.Text = _DDJJEmpleados[index].AporteSocioEscala.ToString("N2");
+        txt_FAECyS.Text = _DDJJEmpleados[index].FAECys.ToString("N2");
+        txt_Osecac.Text = _DDJJEmpleados[index].OSECAC.ToString("N2");
+
+        //Totales
+        txt_TotalHaberes.Text = _DDJJEmpleados[index].TotalHaberes.ToString("N2");
+        txt_TotalDescuentos.Text = _DDJJEmpleados[index].TotalDescuentos.ToString("N2");
+        txt_TotalNeto.Text = (_DDJJEmpleados[index].TotalHaberes - _DDJJEmpleados[index].TotalDescuentos).ToString("N2");
+        txt_SueldoDeclarado.Text = _DDJJEmpleados[index].Sueldo.ToString("N2");
+        txt_Diferencia.Text = ((_DDJJEmpleados[index].TotalHaberes - _DDJJEmpleados[index].TotalDescuentos) - _DDJJEmpleados[index].Sueldo).ToString("N2");
+
+        // Resumen
+        txt_CantidadEmpleados.Text = _DDJJEmpleados.Count.ToString();
+        txt_CantidadJorandaCompleta.Text = _DDJJEmpleados.Count(x => x.Jornada == "Completa").ToString();
+        txt_CantidadJornadaParcial.Text = _DDJJEmpleados.Count(x => x.Jornada == "Parcial").ToString();
+        txt_DifAporteSocio.Text = _DDJJEmpleados.Where(x => x.Jornada == "Parcial").Sum(x => x.AporteSocioDif).ToString("N2");
+        txt_DifSueldo.Text = _DDJJEmpleados.Sum(x => x.SueldoDif).ToString("N2");
+      }
+    }
+    private void dgv_DetallePeriodo_SelectionChanged(object sender, EventArgs e)
+    {
+      MostrarDetalleDDJJ();
+      MostrarSueldoSegunEscala();
+    }
+
+    private void MostrarSueldoSegunEscala()
+    {
+      using (var context = new lts_sindicatoDataContext())
+      {
+        dgv_ReciboSueldo.DataSource = (from a in context.ReciboSueldoConceptos select a).ToList();
+      }
+    }
+
+    private void dgv_DetallePeriodo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+    {
+
     }
   }
 }

@@ -934,16 +934,6 @@
       <Column Name="CUIT_STR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.EscalaSalarial" Member="EscalaSalarial">
-    <Type Name="EscalaSalarial">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Periodo" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="CodCategoria" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Importe" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
-      <Column Name="Acuerdo" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
-      <Column Name="Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="fotos_.socemp" Member="socemp">
     <Type Name="socemp">
       <Column Name="SOCEMP_CUIL" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
@@ -1367,6 +1357,29 @@
       <Column Name="PerNoDec" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="ActaId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="NumeroDeActa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ReciboSueldoConceptos" Member="ReciboSueldoConceptos">
+    <Type Name="ReciboSueldoConceptos">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Concepto" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Unidad" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Base" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Remunerativo" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="NoRemunerativo" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Descuento" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Estado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EscalaSalarial" Member="EscalaSalarial">
+    <Type Name="EscalaSalarial">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Periodo" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CodCategoria" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Importe" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AcuerdoNR1" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AcuerdoNR2" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
       <Column Name="Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>

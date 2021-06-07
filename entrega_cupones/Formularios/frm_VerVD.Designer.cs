@@ -29,47 +29,61 @@ namespace entrega_cupones.Formularios
     /// </summary>
     private void InitializeComponent()
     {
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle109 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle110 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle111 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle112 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle113 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle114 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle115 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle116 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle117 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle118 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle119 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle120 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle121 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle122 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle123 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle124 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle125 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle126 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle127 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle128 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle135 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle129 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle130 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle131 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle132 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle133 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle134 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle136 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle137 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle138 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle139 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle140 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle141 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle142 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle143 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle144 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle145 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle146 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle147 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle148 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle149 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
       this.panel1 = new System.Windows.Forms.Panel();
       this.cbx_TipoDeInteres = new System.Windows.Forms.ComboBox();
       this.label22 = new System.Windows.Forms.Label();
@@ -102,6 +116,7 @@ namespace entrega_cupones.Formularios
       this.label12 = new System.Windows.Forms.Label();
       this.txt_PerNoDec = new System.Windows.Forms.TextBox();
       this.dgv_VD = new System.Windows.Forms.DataGridView();
+      this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.Periodo = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.PerNoDec = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.Rectificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -168,7 +183,77 @@ namespace entrega_cupones.Formularios
       this.label23 = new System.Windows.Forms.Label();
       this.btn_ImprimirDeuda = new System.Windows.Forms.Button();
       this.panel3 = new System.Windows.Forms.Panel();
-      this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+      this.txt_Jornada = new System.Windows.Forms.TextBox();
+      this.label53 = new System.Windows.Forms.Label();
+      this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
+      this.dgv_ReciboSueldo = new System.Windows.Forms.DataGridView();
+      this.Concepto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.Unidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.Base = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.Remunerativo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.NoRemunerativo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.Descuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.label52 = new System.Windows.Forms.Label();
+      this.txt_Categoria = new System.Windows.Forms.TextBox();
+      this.label51 = new System.Windows.Forms.Label();
+      this.txt_Antigue = new System.Windows.Forms.TextBox();
+      this.label50 = new System.Windows.Forms.Label();
+      this.txt_DifSueldo = new System.Windows.Forms.TextBox();
+      this.txt_DifAporteSocio = new System.Windows.Forms.TextBox();
+      this.txt_CantidadJorandaCompleta = new System.Windows.Forms.TextBox();
+      this.txt_CantidadJornadaParcial = new System.Windows.Forms.TextBox();
+      this.txt_CantidadEmpleados = new System.Windows.Forms.TextBox();
+      this.label39 = new System.Windows.Forms.Label();
+      this.label40 = new System.Windows.Forms.Label();
+      this.label41 = new System.Windows.Forms.Label();
+      this.label42 = new System.Windows.Forms.Label();
+      this.label43 = new System.Windows.Forms.Label();
+      this.txt_Diferencia = new System.Windows.Forms.TextBox();
+      this.textBox1 = new System.Windows.Forms.TextBox();
+      this.txt_TotalNeto = new System.Windows.Forms.TextBox();
+      this.txt_TotalDescuentos = new System.Windows.Forms.TextBox();
+      this.txt_TotalHaberes = new System.Windows.Forms.TextBox();
+      this.label44 = new System.Windows.Forms.Label();
+      this.label45 = new System.Windows.Forms.Label();
+      this.label46 = new System.Windows.Forms.Label();
+      this.label47 = new System.Windows.Forms.Label();
+      this.label48 = new System.Windows.Forms.Label();
+      this.label49 = new System.Windows.Forms.Label();
+      this.txt_SueldoDeclarado = new System.Windows.Forms.TextBox();
+      this.label38 = new System.Windows.Forms.Label();
+      this.txt_Osecac = new System.Windows.Forms.TextBox();
+      this.txt_FAECyS = new System.Windows.Forms.TextBox();
+      this.txt_AporteSocio = new System.Windows.Forms.TextBox();
+      this.txt_AporteLey = new System.Windows.Forms.TextBox();
+      this.txt_ObraSocial = new System.Windows.Forms.TextBox();
+      this.txt_Ley19302 = new System.Windows.Forms.TextBox();
+      this.txt_Jubilacion = new System.Windows.Forms.TextBox();
+      this.txt_Acuerdo2 = new System.Windows.Forms.TextBox();
+      this.txt_Acuerdo = new System.Windows.Forms.TextBox();
+      this.txt_Presentismo = new System.Windows.Forms.TextBox();
+      this.txt_Antiguedad = new System.Windows.Forms.TextBox();
+      this.txt_SueldoBasico = new System.Windows.Forms.TextBox();
+      this.label24 = new System.Windows.Forms.Label();
+      this.label25 = new System.Windows.Forms.Label();
+      this.label26 = new System.Windows.Forms.Label();
+      this.label27 = new System.Windows.Forms.Label();
+      this.label28 = new System.Windows.Forms.Label();
+      this.label29 = new System.Windows.Forms.Label();
+      this.label30 = new System.Windows.Forms.Label();
+      this.label31 = new System.Windows.Forms.Label();
+      this.label32 = new System.Windows.Forms.Label();
+      this.label33 = new System.Windows.Forms.Label();
+      this.label34 = new System.Windows.Forms.Label();
+      this.label35 = new System.Windows.Forms.Label();
+      this.label36 = new System.Windows.Forms.Label();
+      this.label37 = new System.Windows.Forms.Label();
       this.dgv_DetallePeriodo = new System.Windows.Forms.DataGridView();
       this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -183,6 +268,7 @@ namespace entrega_cupones.Formularios
       this.Escala = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.Diferencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.DiferenciaSueldo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
       this.panel1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dgv_VD)).BeginInit();
       this.panel6.SuspendLayout();
@@ -190,6 +276,7 @@ namespace entrega_cupones.Formularios
       this.panel2.SuspendLayout();
       this.panel4.SuspendLayout();
       this.panel3.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dgv_ReciboSueldo)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.dgv_DetallePeriodo)).BeginInit();
       this.SuspendLayout();
       // 
@@ -292,6 +379,7 @@ namespace entrega_cupones.Formularios
       this.btn_CopiarSiguiente.TabIndex = 590;
       this.btn_CopiarSiguiente.Text = "Copiar Siguiente";
       this.btn_CopiarSiguiente.UseVisualStyleBackColor = true;
+      this.btn_CopiarSiguiente.Click += new System.EventHandler(this.btn_CopiarSiguiente_Click);
       // 
       // label3
       // 
@@ -527,6 +615,7 @@ namespace entrega_cupones.Formularios
       this.btn_CopiarAnterior.TabIndex = 589;
       this.btn_CopiarAnterior.Text = "Copiar Anterior";
       this.btn_CopiarAnterior.UseVisualStyleBackColor = true;
+      this.btn_CopiarAnterior.Click += new System.EventHandler(this.btn_CopiarAnterior_Click);
       // 
       // txt_Pagado
       // 
@@ -563,20 +652,21 @@ namespace entrega_cupones.Formularios
       // 
       this.dgv_VD.AllowUserToAddRows = false;
       this.dgv_VD.AllowUserToResizeRows = false;
-      dataGridViewCellStyle109.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-      dataGridViewCellStyle109.ForeColor = System.Drawing.Color.Black;
-      this.dgv_VD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle109;
+      dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+      dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+      this.dgv_VD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
       this.dgv_VD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-      dataGridViewCellStyle110.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-      dataGridViewCellStyle110.BackColor = System.Drawing.SystemColors.Control;
-      dataGridViewCellStyle110.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      dataGridViewCellStyle110.ForeColor = System.Drawing.SystemColors.WindowText;
-      dataGridViewCellStyle110.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-      dataGridViewCellStyle110.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-      dataGridViewCellStyle110.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-      this.dgv_VD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle110;
+      dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+      dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+      dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+      dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+      dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+      dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+      this.dgv_VD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
       this.dgv_VD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
       this.dgv_VD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
             this.Periodo,
             this.PerNoDec,
             this.Rectificacion,
@@ -600,14 +690,23 @@ namespace entrega_cupones.Formularios
       this.dgv_VD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
       this.dgv_VD.Size = new System.Drawing.Size(910, 238);
       this.dgv_VD.TabIndex = 536;
+      this.dgv_VD.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_VD_CellContentClick);
+      this.dgv_VD.SelectionChanged += new System.EventHandler(this.dgv_VD_SelectionChanged);
+      // 
+      // Id
+      // 
+      this.Id.DataPropertyName = "Id";
+      this.Id.HeaderText = "Id";
+      this.Id.Name = "Id";
+      this.Id.Visible = false;
       // 
       // Periodo
       // 
       this.Periodo.DataPropertyName = "Periodo";
-      dataGridViewCellStyle111.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      dataGridViewCellStyle111.Format = "MM/yyyy";
-      dataGridViewCellStyle111.NullValue = null;
-      this.Periodo.DefaultCellStyle = dataGridViewCellStyle111;
+      dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      dataGridViewCellStyle3.Format = "MM/yyyy";
+      dataGridViewCellStyle3.NullValue = null;
+      this.Periodo.DefaultCellStyle = dataGridViewCellStyle3;
       this.Periodo.HeaderText = "Periodo";
       this.Periodo.Name = "Periodo";
       this.Periodo.Width = 70;
@@ -622,8 +721,8 @@ namespace entrega_cupones.Formularios
       // Rectificacion
       // 
       this.Rectificacion.DataPropertyName = "Rectificacion";
-      dataGridViewCellStyle112.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      this.Rectificacion.DefaultCellStyle = dataGridViewCellStyle112;
+      dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.Rectificacion.DefaultCellStyle = dataGridViewCellStyle4;
       this.Rectificacion.HeaderText = "Rect";
       this.Rectificacion.Name = "Rectificacion";
       this.Rectificacion.Width = 50;
@@ -631,10 +730,10 @@ namespace entrega_cupones.Formularios
       // AporteLey
       // 
       this.AporteLey.DataPropertyName = "TotalAporteEmpleados";
-      dataGridViewCellStyle113.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle113.Format = "N2";
-      dataGridViewCellStyle113.NullValue = null;
-      this.AporteLey.DefaultCellStyle = dataGridViewCellStyle113;
+      dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle5.Format = "N2";
+      dataGridViewCellStyle5.NullValue = null;
+      this.AporteLey.DefaultCellStyle = dataGridViewCellStyle5;
       this.AporteLey.HeaderText = "Ley 2%";
       this.AporteLey.Name = "AporteLey";
       this.AporteLey.Width = 80;
@@ -642,10 +741,10 @@ namespace entrega_cupones.Formularios
       // TotalSueldoEmpleado
       // 
       this.TotalSueldoEmpleado.DataPropertyName = "TotalSueldoEmpleados";
-      dataGridViewCellStyle114.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle114.Format = "N2";
-      dataGridViewCellStyle114.NullValue = null;
-      this.TotalSueldoEmpleado.DefaultCellStyle = dataGridViewCellStyle114;
+      dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle6.Format = "N2";
+      dataGridViewCellStyle6.NullValue = null;
+      this.TotalSueldoEmpleado.DefaultCellStyle = dataGridViewCellStyle6;
       this.TotalSueldoEmpleado.HeaderText = "Sueldo Empleado";
       this.TotalSueldoEmpleado.Name = "TotalSueldoEmpleado";
       this.TotalSueldoEmpleado.Visible = false;
@@ -653,10 +752,10 @@ namespace entrega_cupones.Formularios
       // AporteSocio
       // 
       this.AporteSocio.DataPropertyName = "TotalAporteSocios";
-      dataGridViewCellStyle115.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle115.Format = "N2";
-      dataGridViewCellStyle115.NullValue = null;
-      this.AporteSocio.DefaultCellStyle = dataGridViewCellStyle115;
+      dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle7.Format = "N2";
+      dataGridViewCellStyle7.NullValue = null;
+      this.AporteSocio.DefaultCellStyle = dataGridViewCellStyle7;
       this.AporteSocio.HeaderText = "Socio 2%";
       this.AporteSocio.Name = "AporteSocio";
       this.AporteSocio.Width = 80;
@@ -664,10 +763,10 @@ namespace entrega_cupones.Formularios
       // TotalSueldoSocio
       // 
       this.TotalSueldoSocio.DataPropertyName = "TotalSueldoSocios";
-      dataGridViewCellStyle116.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle116.Format = "N2";
-      dataGridViewCellStyle116.NullValue = null;
-      this.TotalSueldoSocio.DefaultCellStyle = dataGridViewCellStyle116;
+      dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle8.Format = "N2";
+      dataGridViewCellStyle8.NullValue = null;
+      this.TotalSueldoSocio.DefaultCellStyle = dataGridViewCellStyle8;
       this.TotalSueldoSocio.HeaderText = "Sueldo Socios";
       this.TotalSueldoSocio.Name = "TotalSueldoSocio";
       this.TotalSueldoSocio.Visible = false;
@@ -675,8 +774,8 @@ namespace entrega_cupones.Formularios
       // FechaDePago
       // 
       this.FechaDePago.DataPropertyName = "FechaDePago";
-      dataGridViewCellStyle117.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      this.FechaDePago.DefaultCellStyle = dataGridViewCellStyle117;
+      dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.FechaDePago.DefaultCellStyle = dataGridViewCellStyle9;
       this.FechaDePago.HeaderText = "Fecha Pago";
       this.FechaDePago.Name = "FechaDePago";
       this.FechaDePago.Width = 70;
@@ -684,10 +783,10 @@ namespace entrega_cupones.Formularios
       // ImporteDepositado
       // 
       this.ImporteDepositado.DataPropertyName = "ImporteDepositado";
-      dataGridViewCellStyle118.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle118.Format = "N2";
-      dataGridViewCellStyle118.NullValue = null;
-      this.ImporteDepositado.DefaultCellStyle = dataGridViewCellStyle118;
+      dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle10.Format = "N2";
+      dataGridViewCellStyle10.NullValue = null;
+      this.ImporteDepositado.DefaultCellStyle = dataGridViewCellStyle10;
       this.ImporteDepositado.HeaderText = "Depositado ";
       this.ImporteDepositado.Name = "ImporteDepositado";
       this.ImporteDepositado.Width = 80;
@@ -695,8 +794,8 @@ namespace entrega_cupones.Formularios
       // DiasDeMora
       // 
       this.DiasDeMora.DataPropertyName = "DiasDeMora";
-      dataGridViewCellStyle119.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      this.DiasDeMora.DefaultCellStyle = dataGridViewCellStyle119;
+      dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.DiasDeMora.DefaultCellStyle = dataGridViewCellStyle11;
       this.DiasDeMora.HeaderText = "Dias de Mora";
       this.DiasDeMora.Name = "DiasDeMora";
       this.DiasDeMora.Width = 70;
@@ -704,10 +803,10 @@ namespace entrega_cupones.Formularios
       // InteresCobrado
       // 
       this.InteresCobrado.DataPropertyName = "InteresGenerado";
-      dataGridViewCellStyle120.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle120.Format = "N2";
-      dataGridViewCellStyle120.NullValue = null;
-      this.InteresCobrado.DefaultCellStyle = dataGridViewCellStyle120;
+      dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle12.Format = "N2";
+      dataGridViewCellStyle12.NullValue = null;
+      this.InteresCobrado.DefaultCellStyle = dataGridViewCellStyle12;
       this.InteresCobrado.HeaderText = "Interes Cobrado";
       this.InteresCobrado.Name = "InteresCobrado";
       this.InteresCobrado.Visible = false;
@@ -716,8 +815,8 @@ namespace entrega_cupones.Formularios
       // Empleados
       // 
       this.Empleados.DataPropertyName = "CantidadEmpleados";
-      dataGridViewCellStyle121.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      this.Empleados.DefaultCellStyle = dataGridViewCellStyle121;
+      dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.Empleados.DefaultCellStyle = dataGridViewCellStyle13;
       this.Empleados.HeaderText = "Empleados ";
       this.Empleados.Name = "Empleados";
       this.Empleados.Width = 80;
@@ -725,8 +824,8 @@ namespace entrega_cupones.Formularios
       // Socios
       // 
       this.Socios.DataPropertyName = "CantidadSocios";
-      dataGridViewCellStyle122.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      this.Socios.DefaultCellStyle = dataGridViewCellStyle122;
+      dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.Socios.DefaultCellStyle = dataGridViewCellStyle14;
       this.Socios.HeaderText = "Socios";
       this.Socios.Name = "Socios";
       this.Socios.Width = 70;
@@ -734,10 +833,10 @@ namespace entrega_cupones.Formularios
       // AporteSocioDif
       // 
       this.AporteSocioDif.DataPropertyName = "AporteSocioDifJorPar";
-      dataGridViewCellStyle123.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle123.Format = "N2";
-      dataGridViewCellStyle123.NullValue = null;
-      this.AporteSocioDif.DefaultCellStyle = dataGridViewCellStyle123;
+      dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle15.Format = "N2";
+      dataGridViewCellStyle15.NullValue = null;
+      this.AporteSocioDif.DefaultCellStyle = dataGridViewCellStyle15;
       this.AporteSocioDif.HeaderText = "Dif Aporte Soc Jor Parcial";
       this.AporteSocioDif.Name = "AporteSocioDif";
       this.AporteSocioDif.Visible = false;
@@ -745,10 +844,10 @@ namespace entrega_cupones.Formularios
       // Capital
       // 
       this.Capital.DataPropertyName = "DeudaGenerada";
-      dataGridViewCellStyle124.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle124.Format = "N2";
-      dataGridViewCellStyle124.NullValue = null;
-      this.Capital.DefaultCellStyle = dataGridViewCellStyle124;
+      dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle16.Format = "N2";
+      dataGridViewCellStyle16.NullValue = null;
+      this.Capital.DefaultCellStyle = dataGridViewCellStyle16;
       this.Capital.HeaderText = "Deuda";
       this.Capital.Name = "Capital";
       this.Capital.Width = 80;
@@ -756,10 +855,10 @@ namespace entrega_cupones.Formularios
       // Interes
       // 
       this.Interes.DataPropertyName = "InteresGenerado";
-      dataGridViewCellStyle125.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle125.Format = "N2";
-      dataGridViewCellStyle125.NullValue = null;
-      this.Interes.DefaultCellStyle = dataGridViewCellStyle125;
+      dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle17.Format = "N2";
+      dataGridViewCellStyle17.NullValue = null;
+      this.Interes.DefaultCellStyle = dataGridViewCellStyle17;
       this.Interes.HeaderText = "Interes";
       this.Interes.Name = "Interes";
       this.Interes.Width = 80;
@@ -767,10 +866,10 @@ namespace entrega_cupones.Formularios
       // Total
       // 
       this.Total.DataPropertyName = "Total";
-      dataGridViewCellStyle126.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle126.Format = "N2";
-      dataGridViewCellStyle126.NullValue = null;
-      this.Total.DefaultCellStyle = dataGridViewCellStyle126;
+      dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle18.Format = "N2";
+      dataGridViewCellStyle18.NullValue = null;
+      this.Total.DefaultCellStyle = dataGridViewCellStyle18;
       this.Total.HeaderText = "Total";
       this.Total.Name = "Total";
       this.Total.Width = 80;
@@ -1101,18 +1200,18 @@ namespace entrega_cupones.Formularios
       this.dgv_PlanDePagos.AllowUserToAddRows = false;
       this.dgv_PlanDePagos.AllowUserToDeleteRows = false;
       this.dgv_PlanDePagos.AllowUserToResizeRows = false;
-      dataGridViewCellStyle127.BackColor = System.Drawing.Color.White;
-      this.dgv_PlanDePagos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle127;
+      dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+      this.dgv_PlanDePagos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
       this.dgv_PlanDePagos.BackgroundColor = System.Drawing.Color.White;
       this.dgv_PlanDePagos.CausesValidation = false;
-      dataGridViewCellStyle128.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      dataGridViewCellStyle128.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-      dataGridViewCellStyle128.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
-      dataGridViewCellStyle128.ForeColor = System.Drawing.SystemColors.WindowText;
-      dataGridViewCellStyle128.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-      dataGridViewCellStyle128.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-      dataGridViewCellStyle128.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-      this.dgv_PlanDePagos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle128;
+      dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+      dataGridViewCellStyle20.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+      dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
+      dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+      dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+      dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+      this.dgv_PlanDePagos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
       this.dgv_PlanDePagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
       this.dgv_PlanDePagos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CuotaDelPlan,
@@ -1127,8 +1226,8 @@ namespace entrega_cupones.Formularios
       this.dgv_PlanDePagos.Name = "dgv_PlanDePagos";
       this.dgv_PlanDePagos.ReadOnly = true;
       this.dgv_PlanDePagos.RowHeadersVisible = false;
-      dataGridViewCellStyle135.BackColor = System.Drawing.Color.Silver;
-      this.dgv_PlanDePagos.RowsDefaultCellStyle = dataGridViewCellStyle135;
+      dataGridViewCellStyle27.BackColor = System.Drawing.Color.Silver;
+      this.dgv_PlanDePagos.RowsDefaultCellStyle = dataGridViewCellStyle27;
       this.dgv_PlanDePagos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
       this.dgv_PlanDePagos.Size = new System.Drawing.Size(232, 161);
       this.dgv_PlanDePagos.TabIndex = 591;
@@ -1136,8 +1235,8 @@ namespace entrega_cupones.Formularios
       // CuotaDelPlan
       // 
       this.CuotaDelPlan.DataPropertyName = "Cuota";
-      dataGridViewCellStyle129.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
-      this.CuotaDelPlan.DefaultCellStyle = dataGridViewCellStyle129;
+      dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
+      this.CuotaDelPlan.DefaultCellStyle = dataGridViewCellStyle21;
       this.CuotaDelPlan.HeaderText = "Cuota";
       this.CuotaDelPlan.Name = "CuotaDelPlan";
       this.CuotaDelPlan.ReadOnly = true;
@@ -1146,9 +1245,9 @@ namespace entrega_cupones.Formularios
       // ImporteDeCuota
       // 
       this.ImporteDeCuota.DataPropertyName = "ImporteDeCuota";
-      dataGridViewCellStyle130.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
-      dataGridViewCellStyle130.Format = "N2";
-      this.ImporteDeCuota.DefaultCellStyle = dataGridViewCellStyle130;
+      dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
+      dataGridViewCellStyle22.Format = "N2";
+      this.ImporteDeCuota.DefaultCellStyle = dataGridViewCellStyle22;
       this.ImporteDeCuota.HeaderText = "Importe";
       this.ImporteDeCuota.Name = "ImporteDeCuota";
       this.ImporteDeCuota.ReadOnly = true;
@@ -1157,9 +1256,9 @@ namespace entrega_cupones.Formularios
       // InteresDeCuota
       // 
       this.InteresDeCuota.DataPropertyName = "Interes";
-      dataGridViewCellStyle131.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
-      dataGridViewCellStyle131.Format = "N2";
-      this.InteresDeCuota.DefaultCellStyle = dataGridViewCellStyle131;
+      dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
+      dataGridViewCellStyle23.Format = "N2";
+      this.InteresDeCuota.DefaultCellStyle = dataGridViewCellStyle23;
       this.InteresDeCuota.HeaderText = "Interes";
       this.InteresDeCuota.Name = "InteresDeCuota";
       this.InteresDeCuota.ReadOnly = true;
@@ -1169,10 +1268,10 @@ namespace entrega_cupones.Formularios
       // Amortizado
       // 
       this.Amortizado.DataPropertyName = "Amortizado";
-      dataGridViewCellStyle132.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
-      dataGridViewCellStyle132.Format = "N2";
-      dataGridViewCellStyle132.NullValue = "0";
-      this.Amortizado.DefaultCellStyle = dataGridViewCellStyle132;
+      dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
+      dataGridViewCellStyle24.Format = "N2";
+      dataGridViewCellStyle24.NullValue = "0";
+      this.Amortizado.DefaultCellStyle = dataGridViewCellStyle24;
       this.Amortizado.HeaderText = "Amortizado";
       this.Amortizado.Name = "Amortizado";
       this.Amortizado.ReadOnly = true;
@@ -1182,9 +1281,9 @@ namespace entrega_cupones.Formularios
       // AAmortizar
       // 
       this.AAmortizar.DataPropertyName = "AAmortizar";
-      dataGridViewCellStyle133.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
-      dataGridViewCellStyle133.Format = "N2";
-      this.AAmortizar.DefaultCellStyle = dataGridViewCellStyle133;
+      dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
+      dataGridViewCellStyle25.Format = "N2";
+      this.AAmortizar.DefaultCellStyle = dataGridViewCellStyle25;
       this.AAmortizar.HeaderText = "a Amortizar";
       this.AAmortizar.Name = "AAmortizar";
       this.AAmortizar.ReadOnly = true;
@@ -1194,10 +1293,10 @@ namespace entrega_cupones.Formularios
       // FechaDeVencimiento
       // 
       this.FechaDeVencimiento.DataPropertyName = "FechaDeVenc";
-      dataGridViewCellStyle134.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
-      dataGridViewCellStyle134.Format = "d";
-      dataGridViewCellStyle134.NullValue = null;
-      this.FechaDeVencimiento.DefaultCellStyle = dataGridViewCellStyle134;
+      dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
+      dataGridViewCellStyle26.Format = "d";
+      dataGridViewCellStyle26.NullValue = null;
+      this.FechaDeVencimiento.DefaultCellStyle = dataGridViewCellStyle26;
       this.FechaDeVencimiento.HeaderText = "Vence";
       this.FechaDeVencimiento.Name = "FechaDeVencimiento";
       this.FechaDeVencimiento.ReadOnly = true;
@@ -1458,6 +1557,64 @@ namespace entrega_cupones.Formularios
       // panel3
       // 
       this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+      this.panel3.Controls.Add(this.txt_Jornada);
+      this.panel3.Controls.Add(this.label53);
+      this.panel3.Controls.Add(this.bunifuCustomLabel5);
+      this.panel3.Controls.Add(this.dgv_ReciboSueldo);
+      this.panel3.Controls.Add(this.label52);
+      this.panel3.Controls.Add(this.txt_Categoria);
+      this.panel3.Controls.Add(this.label51);
+      this.panel3.Controls.Add(this.txt_Antigue);
+      this.panel3.Controls.Add(this.label50);
+      this.panel3.Controls.Add(this.txt_DifSueldo);
+      this.panel3.Controls.Add(this.txt_DifAporteSocio);
+      this.panel3.Controls.Add(this.txt_CantidadJorandaCompleta);
+      this.panel3.Controls.Add(this.txt_CantidadJornadaParcial);
+      this.panel3.Controls.Add(this.txt_CantidadEmpleados);
+      this.panel3.Controls.Add(this.label39);
+      this.panel3.Controls.Add(this.label40);
+      this.panel3.Controls.Add(this.label41);
+      this.panel3.Controls.Add(this.label42);
+      this.panel3.Controls.Add(this.label43);
+      this.panel3.Controls.Add(this.txt_Diferencia);
+      this.panel3.Controls.Add(this.textBox1);
+      this.panel3.Controls.Add(this.txt_TotalNeto);
+      this.panel3.Controls.Add(this.txt_TotalDescuentos);
+      this.panel3.Controls.Add(this.txt_TotalHaberes);
+      this.panel3.Controls.Add(this.label44);
+      this.panel3.Controls.Add(this.label45);
+      this.panel3.Controls.Add(this.label46);
+      this.panel3.Controls.Add(this.label47);
+      this.panel3.Controls.Add(this.label48);
+      this.panel3.Controls.Add(this.label49);
+      this.panel3.Controls.Add(this.txt_SueldoDeclarado);
+      this.panel3.Controls.Add(this.label38);
+      this.panel3.Controls.Add(this.txt_Osecac);
+      this.panel3.Controls.Add(this.txt_FAECyS);
+      this.panel3.Controls.Add(this.txt_AporteSocio);
+      this.panel3.Controls.Add(this.txt_AporteLey);
+      this.panel3.Controls.Add(this.txt_ObraSocial);
+      this.panel3.Controls.Add(this.txt_Ley19302);
+      this.panel3.Controls.Add(this.txt_Jubilacion);
+      this.panel3.Controls.Add(this.txt_Acuerdo2);
+      this.panel3.Controls.Add(this.txt_Acuerdo);
+      this.panel3.Controls.Add(this.txt_Presentismo);
+      this.panel3.Controls.Add(this.txt_Antiguedad);
+      this.panel3.Controls.Add(this.txt_SueldoBasico);
+      this.panel3.Controls.Add(this.label24);
+      this.panel3.Controls.Add(this.label25);
+      this.panel3.Controls.Add(this.label26);
+      this.panel3.Controls.Add(this.label27);
+      this.panel3.Controls.Add(this.label28);
+      this.panel3.Controls.Add(this.label29);
+      this.panel3.Controls.Add(this.label30);
+      this.panel3.Controls.Add(this.label31);
+      this.panel3.Controls.Add(this.label32);
+      this.panel3.Controls.Add(this.label33);
+      this.panel3.Controls.Add(this.label34);
+      this.panel3.Controls.Add(this.label35);
+      this.panel3.Controls.Add(this.label36);
+      this.panel3.Controls.Add(this.label37);
       this.panel3.Controls.Add(this.dgv_DetallePeriodo);
       this.panel3.Controls.Add(this.bunifuCustomLabel4);
       this.panel3.Location = new System.Drawing.Point(2, 447);
@@ -1465,34 +1622,815 @@ namespace entrega_cupones.Formularios
       this.panel3.Size = new System.Drawing.Size(1333, 254);
       this.panel3.TabIndex = 604;
       // 
-      // bunifuCustomLabel4
+      // txt_Jornada
       // 
-      this.bunifuCustomLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(151)))), ((int)(((byte)(119)))));
-      this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
-      this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-      this.bunifuCustomLabel4.Location = new System.Drawing.Point(4, 4);
-      this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-      this.bunifuCustomLabel4.Size = new System.Drawing.Size(1324, 22);
-      this.bunifuCustomLabel4.TabIndex = 589;
-      this.bunifuCustomLabel4.Text = "Datos de la Empresa";
-      this.bunifuCustomLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.txt_Jornada.BackColor = System.Drawing.Color.White;
+      this.txt_Jornada.Location = new System.Drawing.Point(505, 76);
+      this.txt_Jornada.Name = "txt_Jornada";
+      this.txt_Jornada.ReadOnly = true;
+      this.txt_Jornada.Size = new System.Drawing.Size(93, 20);
+      this.txt_Jornada.TabIndex = 689;
+      this.txt_Jornada.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // label53
+      // 
+      this.label53.AutoSize = true;
+      this.label53.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label53.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label53.Location = new System.Drawing.Point(419, 82);
+      this.label53.Name = "label53";
+      this.label53.Size = new System.Drawing.Size(66, 17);
+      this.label53.TabIndex = 688;
+      this.label53.Text = "Jornada:";
+      // 
+      // bunifuCustomLabel5
+      // 
+      this.bunifuCustomLabel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(151)))), ((int)(((byte)(119)))));
+      this.bunifuCustomLabel5.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
+      this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+      this.bunifuCustomLabel5.Location = new System.Drawing.Point(417, 4);
+      this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
+      this.bunifuCustomLabel5.Size = new System.Drawing.Size(613, 22);
+      this.bunifuCustomLabel5.TabIndex = 687;
+      this.bunifuCustomLabel5.Text = "Liquidacion de Sueldo Segun Escala Salarial Vigente";
+      this.bunifuCustomLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
+      // dgv_ReciboSueldo
+      // 
+      this.dgv_ReciboSueldo.AllowUserToAddRows = false;
+      this.dgv_ReciboSueldo.AllowUserToDeleteRows = false;
+      this.dgv_ReciboSueldo.AllowUserToResizeRows = false;
+      dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+      dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Black;
+      this.dgv_ReciboSueldo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
+      this.dgv_ReciboSueldo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+      dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control;
+      dataGridViewCellStyle29.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+      dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+      dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+      dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+      this.dgv_ReciboSueldo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+      this.dgv_ReciboSueldo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.dgv_ReciboSueldo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Concepto,
+            this.Unidad,
+            this.Base,
+            this.Remunerativo,
+            this.NoRemunerativo,
+            this.Descuento,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn20});
+      this.dgv_ReciboSueldo.Location = new System.Drawing.Point(1240, 28);
+      this.dgv_ReciboSueldo.Name = "dgv_ReciboSueldo";
+      this.dgv_ReciboSueldo.ReadOnly = true;
+      this.dgv_ReciboSueldo.RowHeadersVisible = false;
+      this.dgv_ReciboSueldo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+      this.dgv_ReciboSueldo.Size = new System.Drawing.Size(38, 29);
+      this.dgv_ReciboSueldo.TabIndex = 686;
+      this.dgv_ReciboSueldo.Visible = false;
+      // 
+      // Concepto
+      // 
+      this.Concepto.DataPropertyName = "Concepto";
+      this.Concepto.HeaderText = "Concepto";
+      this.Concepto.Name = "Concepto";
+      this.Concepto.ReadOnly = true;
+      this.Concepto.Width = 180;
+      // 
+      // Unidad
+      // 
+      this.Unidad.DataPropertyName = "Unidad";
+      dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle30.Format = "N2";
+      dataGridViewCellStyle30.NullValue = null;
+      this.Unidad.DefaultCellStyle = dataGridViewCellStyle30;
+      this.Unidad.HeaderText = "Unidad";
+      this.Unidad.Name = "Unidad";
+      this.Unidad.ReadOnly = true;
+      this.Unidad.Width = 60;
+      // 
+      // Base
+      // 
+      this.Base.DataPropertyName = "Base";
+      dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle31.Format = "N2";
+      dataGridViewCellStyle31.NullValue = null;
+      this.Base.DefaultCellStyle = dataGridViewCellStyle31;
+      this.Base.HeaderText = "Base";
+      this.Base.Name = "Base";
+      this.Base.ReadOnly = true;
+      this.Base.Width = 80;
+      // 
+      // Remunerativo
+      // 
+      this.Remunerativo.DataPropertyName = "Remunerativo";
+      dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle32.Format = "N2";
+      dataGridViewCellStyle32.NullValue = null;
+      this.Remunerativo.DefaultCellStyle = dataGridViewCellStyle32;
+      this.Remunerativo.HeaderText = "Remunerativo";
+      this.Remunerativo.Name = "Remunerativo";
+      this.Remunerativo.ReadOnly = true;
+      this.Remunerativo.Width = 85;
+      // 
+      // NoRemunerativo
+      // 
+      this.NoRemunerativo.DataPropertyName = "NoRemunerativo";
+      dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle33.Format = "N2";
+      dataGridViewCellStyle33.NullValue = null;
+      this.NoRemunerativo.DefaultCellStyle = dataGridViewCellStyle33;
+      this.NoRemunerativo.HeaderText = "No Remuner";
+      this.NoRemunerativo.Name = "NoRemunerativo";
+      this.NoRemunerativo.ReadOnly = true;
+      // 
+      // Descuento
+      // 
+      this.Descuento.DataPropertyName = "Descuento";
+      dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle34.Format = "N2";
+      dataGridViewCellStyle34.NullValue = null;
+      this.Descuento.DefaultCellStyle = dataGridViewCellStyle34;
+      this.Descuento.HeaderText = "Descuento";
+      this.Descuento.Name = "Descuento";
+      this.Descuento.ReadOnly = true;
+      this.Descuento.Width = 85;
+      // 
+      // dataGridViewTextBoxColumn15
+      // 
+      this.dataGridViewTextBoxColumn15.DataPropertyName = "Categoria";
+      dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.dataGridViewTextBoxColumn15.DefaultCellStyle = dataGridViewCellStyle35;
+      this.dataGridViewTextBoxColumn15.HeaderText = "Categoria";
+      this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+      this.dataGridViewTextBoxColumn15.ReadOnly = true;
+      this.dataGridViewTextBoxColumn15.Visible = false;
+      this.dataGridViewTextBoxColumn15.Width = 160;
+      // 
+      // dataGridViewTextBoxColumn9
+      // 
+      this.dataGridViewTextBoxColumn9.DataPropertyName = "Dni";
+      dataGridViewCellStyle36.Format = "N0";
+      dataGridViewCellStyle36.NullValue = null;
+      this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle36;
+      this.dataGridViewTextBoxColumn9.HeaderText = "D.N.I.";
+      this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+      this.dataGridViewTextBoxColumn9.ReadOnly = true;
+      this.dataGridViewTextBoxColumn9.Visible = false;
+      this.dataGridViewTextBoxColumn9.Width = 70;
+      // 
+      // dataGridViewTextBoxColumn2
+      // 
+      this.dataGridViewTextBoxColumn2.DataPropertyName = "Periodo";
+      dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      dataGridViewCellStyle37.Format = "MM/yyyy";
+      dataGridViewCellStyle37.NullValue = null;
+      this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle37;
+      this.dataGridViewTextBoxColumn2.HeaderText = "Periodo";
+      this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+      this.dataGridViewTextBoxColumn2.ReadOnly = true;
+      this.dataGridViewTextBoxColumn2.Visible = false;
+      this.dataGridViewTextBoxColumn2.Width = 70;
+      // 
+      // dataGridViewTextBoxColumn5
+      // 
+      this.dataGridViewTextBoxColumn5.DataPropertyName = "Rectificacion";
+      dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle38;
+      this.dataGridViewTextBoxColumn5.HeaderText = "Rect";
+      this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+      this.dataGridViewTextBoxColumn5.ReadOnly = true;
+      this.dataGridViewTextBoxColumn5.Visible = false;
+      this.dataGridViewTextBoxColumn5.Width = 50;
+      // 
+      // dataGridViewTextBoxColumn14
+      // 
+      this.dataGridViewTextBoxColumn14.DataPropertyName = "Jornada";
+      dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.dataGridViewTextBoxColumn14.DefaultCellStyle = dataGridViewCellStyle39;
+      this.dataGridViewTextBoxColumn14.HeaderText = "Jornada";
+      this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+      this.dataGridViewTextBoxColumn14.ReadOnly = true;
+      this.dataGridViewTextBoxColumn14.Visible = false;
+      this.dataGridViewTextBoxColumn14.Width = 80;
+      // 
+      // dataGridViewTextBoxColumn17
+      // 
+      this.dataGridViewTextBoxColumn17.DataPropertyName = "Antiguedad";
+      dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.dataGridViewTextBoxColumn17.DefaultCellStyle = dataGridViewCellStyle40;
+      this.dataGridViewTextBoxColumn17.HeaderText = "Antig";
+      this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+      this.dataGridViewTextBoxColumn17.ReadOnly = true;
+      this.dataGridViewTextBoxColumn17.Visible = false;
+      this.dataGridViewTextBoxColumn17.Width = 40;
+      // 
+      // dataGridViewTextBoxColumn20
+      // 
+      this.dataGridViewTextBoxColumn20.DataPropertyName = "SueldoDif";
+      dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle41.Format = "N2";
+      dataGridViewCellStyle41.NullValue = null;
+      this.dataGridViewTextBoxColumn20.DefaultCellStyle = dataGridViewCellStyle41;
+      this.dataGridViewTextBoxColumn20.HeaderText = "Dif. Sueldo";
+      this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+      this.dataGridViewTextBoxColumn20.ReadOnly = true;
+      this.dataGridViewTextBoxColumn20.Visible = false;
+      this.dataGridViewTextBoxColumn20.Width = 70;
+      // 
+      // label52
+      // 
+      this.label52.AutoSize = true;
+      this.label52.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label52.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label52.Location = new System.Drawing.Point(1121, 4);
+      this.label52.Name = "label52";
+      this.label52.Size = new System.Drawing.Size(207, 16);
+      this.label52.TabIndex = 685;
+      this.label52.Text = "Haberes Segun Escala Vigente";
+      // 
+      // txt_Categoria
+      // 
+      this.txt_Categoria.BackColor = System.Drawing.Color.White;
+      this.txt_Categoria.Location = new System.Drawing.Point(505, 51);
+      this.txt_Categoria.Name = "txt_Categoria";
+      this.txt_Categoria.ReadOnly = true;
+      this.txt_Categoria.Size = new System.Drawing.Size(285, 20);
+      this.txt_Categoria.TabIndex = 684;
+      this.txt_Categoria.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // label51
+      // 
+      this.label51.AutoSize = true;
+      this.label51.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label51.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label51.Location = new System.Drawing.Point(419, 51);
+      this.label51.Name = "label51";
+      this.label51.Size = new System.Drawing.Size(79, 17);
+      this.label51.TabIndex = 683;
+      this.label51.Text = "Categoria:";
+      // 
+      // txt_Antigue
+      // 
+      this.txt_Antigue.BackColor = System.Drawing.Color.White;
+      this.txt_Antigue.Location = new System.Drawing.Point(505, 101);
+      this.txt_Antigue.Name = "txt_Antigue";
+      this.txt_Antigue.ReadOnly = true;
+      this.txt_Antigue.Size = new System.Drawing.Size(93, 20);
+      this.txt_Antigue.TabIndex = 682;
+      this.txt_Antigue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // label50
+      // 
+      this.label50.AutoSize = true;
+      this.label50.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label50.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label50.Location = new System.Drawing.Point(419, 107);
+      this.label50.Name = "label50";
+      this.label50.Size = new System.Drawing.Size(90, 17);
+      this.label50.TabIndex = 681;
+      this.label50.Text = "Antig (años):";
+      // 
+      // txt_DifSueldo
+      // 
+      this.txt_DifSueldo.BackColor = System.Drawing.Color.White;
+      this.txt_DifSueldo.Location = new System.Drawing.Point(1204, 178);
+      this.txt_DifSueldo.Name = "txt_DifSueldo";
+      this.txt_DifSueldo.ReadOnly = true;
+      this.txt_DifSueldo.Size = new System.Drawing.Size(118, 20);
+      this.txt_DifSueldo.TabIndex = 680;
+      this.txt_DifSueldo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_DifAporteSocio
+      // 
+      this.txt_DifAporteSocio.BackColor = System.Drawing.Color.White;
+      this.txt_DifAporteSocio.Location = new System.Drawing.Point(1240, 154);
+      this.txt_DifAporteSocio.Name = "txt_DifAporteSocio";
+      this.txt_DifAporteSocio.ReadOnly = true;
+      this.txt_DifAporteSocio.Size = new System.Drawing.Size(82, 20);
+      this.txt_DifAporteSocio.TabIndex = 679;
+      this.txt_DifAporteSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_CantidadJorandaCompleta
+      // 
+      this.txt_CantidadJorandaCompleta.BackColor = System.Drawing.Color.White;
+      this.txt_CantidadJorandaCompleta.Location = new System.Drawing.Point(1253, 106);
+      this.txt_CantidadJorandaCompleta.Name = "txt_CantidadJorandaCompleta";
+      this.txt_CantidadJorandaCompleta.ReadOnly = true;
+      this.txt_CantidadJorandaCompleta.Size = new System.Drawing.Size(69, 20);
+      this.txt_CantidadJorandaCompleta.TabIndex = 678;
+      this.txt_CantidadJorandaCompleta.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_CantidadJornadaParcial
+      // 
+      this.txt_CantidadJornadaParcial.BackColor = System.Drawing.Color.White;
+      this.txt_CantidadJornadaParcial.Location = new System.Drawing.Point(1234, 130);
+      this.txt_CantidadJornadaParcial.Name = "txt_CantidadJornadaParcial";
+      this.txt_CantidadJornadaParcial.ReadOnly = true;
+      this.txt_CantidadJornadaParcial.Size = new System.Drawing.Size(88, 20);
+      this.txt_CantidadJornadaParcial.TabIndex = 677;
+      this.txt_CantidadJornadaParcial.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_CantidadEmpleados
+      // 
+      this.txt_CantidadEmpleados.BackColor = System.Drawing.Color.White;
+      this.txt_CantidadEmpleados.Location = new System.Drawing.Point(1273, 82);
+      this.txt_CantidadEmpleados.Name = "txt_CantidadEmpleados";
+      this.txt_CantidadEmpleados.ReadOnly = true;
+      this.txt_CantidadEmpleados.Size = new System.Drawing.Size(49, 20);
+      this.txt_CantidadEmpleados.TabIndex = 676;
+      this.txt_CantidadEmpleados.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // label39
+      // 
+      this.label39.AutoSize = true;
+      this.label39.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label39.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label39.Location = new System.Drawing.Point(1114, 179);
+      this.label39.Name = "label39";
+      this.label39.Size = new System.Drawing.Size(84, 17);
+      this.label39.TabIndex = 675;
+      this.label39.Text = "Dif. Sueldo: ";
+      // 
+      // label40
+      // 
+      this.label40.AutoSize = true;
+      this.label40.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label40.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label40.Location = new System.Drawing.Point(1114, 155);
+      this.label40.Name = "label40";
+      this.label40.Size = new System.Drawing.Size(120, 17);
+      this.label40.TabIndex = 674;
+      this.label40.Text = "Dif. Aporte Socio:";
+      // 
+      // label41
+      // 
+      this.label41.AutoSize = true;
+      this.label41.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label41.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label41.Location = new System.Drawing.Point(1114, 131);
+      this.label41.Name = "label41";
+      this.label41.Size = new System.Drawing.Size(114, 17);
+      this.label41.TabIndex = 673;
+      this.label41.Text = "Jornada Parcial:";
+      // 
+      // label42
+      // 
+      this.label42.AutoSize = true;
+      this.label42.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label42.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label42.Location = new System.Drawing.Point(1114, 107);
+      this.label42.Name = "label42";
+      this.label42.Size = new System.Drawing.Size(137, 17);
+      this.label42.TabIndex = 672;
+      this.label42.Text = "Joranda Completa:";
+      // 
+      // label43
+      // 
+      this.label43.AutoSize = true;
+      this.label43.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label43.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label43.Location = new System.Drawing.Point(1114, 83);
+      this.label43.Name = "label43";
+      this.label43.Size = new System.Drawing.Size(151, 17);
+      this.label43.TabIndex = 671;
+      this.label43.Text = "Cantidad Empleados:";
+      // 
+      // txt_Diferencia
+      // 
+      this.txt_Diferencia.BackColor = System.Drawing.Color.White;
+      this.txt_Diferencia.Location = new System.Drawing.Point(986, 217);
+      this.txt_Diferencia.Name = "txt_Diferencia";
+      this.txt_Diferencia.ReadOnly = true;
+      this.txt_Diferencia.Size = new System.Drawing.Size(121, 20);
+      this.txt_Diferencia.TabIndex = 670;
+      this.txt_Diferencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // textBox1
+      // 
+      this.textBox1.BackColor = System.Drawing.Color.White;
+      this.textBox1.Location = new System.Drawing.Point(1030, 119);
+      this.textBox1.Name = "textBox1";
+      this.textBox1.ReadOnly = true;
+      this.textBox1.Size = new System.Drawing.Size(77, 20);
+      this.textBox1.TabIndex = 669;
+      this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_TotalNeto
+      // 
+      this.txt_TotalNeto.BackColor = System.Drawing.Color.White;
+      this.txt_TotalNeto.Location = new System.Drawing.Point(988, 192);
+      this.txt_TotalNeto.Name = "txt_TotalNeto";
+      this.txt_TotalNeto.ReadOnly = true;
+      this.txt_TotalNeto.Size = new System.Drawing.Size(119, 20);
+      this.txt_TotalNeto.TabIndex = 668;
+      this.txt_TotalNeto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_TotalDescuentos
+      // 
+      this.txt_TotalDescuentos.BackColor = System.Drawing.Color.White;
+      this.txt_TotalDescuentos.Location = new System.Drawing.Point(1030, 168);
+      this.txt_TotalDescuentos.Name = "txt_TotalDescuentos";
+      this.txt_TotalDescuentos.ReadOnly = true;
+      this.txt_TotalDescuentos.Size = new System.Drawing.Size(77, 20);
+      this.txt_TotalDescuentos.TabIndex = 667;
+      this.txt_TotalDescuentos.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_TotalHaberes
+      // 
+      this.txt_TotalHaberes.BackColor = System.Drawing.Color.White;
+      this.txt_TotalHaberes.Location = new System.Drawing.Point(1008, 144);
+      this.txt_TotalHaberes.Name = "txt_TotalHaberes";
+      this.txt_TotalHaberes.ReadOnly = true;
+      this.txt_TotalHaberes.Size = new System.Drawing.Size(99, 20);
+      this.txt_TotalHaberes.TabIndex = 666;
+      this.txt_TotalHaberes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // label44
+      // 
+      this.label44.AutoSize = true;
+      this.label44.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label44.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label44.Location = new System.Drawing.Point(903, 218);
+      this.label44.Name = "label44";
+      this.label44.Size = new System.Drawing.Size(77, 17);
+      this.label44.TabIndex = 665;
+      this.label44.Text = "Diferencia:";
+      // 
+      // label45
+      // 
+      this.label45.AutoSize = true;
+      this.label45.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label45.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label45.Location = new System.Drawing.Point(903, 120);
+      this.label45.Name = "label45";
+      this.label45.Size = new System.Drawing.Size(128, 17);
+      this.label45.TabIndex = 664;
+      this.label45.Text = "Sueldo Declarado:";
+      // 
+      // label46
+      // 
+      this.label46.AutoSize = true;
+      this.label46.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label46.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label46.Location = new System.Drawing.Point(903, 193);
+      this.label46.Name = "label46";
+      this.label46.Size = new System.Drawing.Size(79, 17);
+      this.label46.TabIndex = 663;
+      this.label46.Text = "Total Neto:";
+      // 
+      // label47
+      // 
+      this.label47.AutoSize = true;
+      this.label47.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label47.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label47.Location = new System.Drawing.Point(903, 169);
+      this.label47.Name = "label47";
+      this.label47.Size = new System.Drawing.Size(121, 17);
+      this.label47.TabIndex = 662;
+      this.label47.Text = "Total Descuentos:";
+      // 
+      // label48
+      // 
+      this.label48.AutoSize = true;
+      this.label48.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label48.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label48.Location = new System.Drawing.Point(1093, 30);
+      this.label48.Name = "label48";
+      this.label48.Size = new System.Drawing.Size(66, 16);
+      this.label48.TabIndex = 661;
+      this.label48.Text = "Resumen";
+      // 
+      // label49
+      // 
+      this.label49.AutoSize = true;
+      this.label49.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label49.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label49.Location = new System.Drawing.Point(903, 145);
+      this.label49.Name = "label49";
+      this.label49.Size = new System.Drawing.Size(99, 17);
+      this.label49.TabIndex = 660;
+      this.label49.Text = "Total Haberes:";
+      // 
+      // txt_SueldoDeclarado
+      // 
+      this.txt_SueldoDeclarado.BackColor = System.Drawing.Color.White;
+      this.txt_SueldoDeclarado.Location = new System.Drawing.Point(990, 92);
+      this.txt_SueldoDeclarado.Name = "txt_SueldoDeclarado";
+      this.txt_SueldoDeclarado.ReadOnly = true;
+      this.txt_SueldoDeclarado.Size = new System.Drawing.Size(118, 20);
+      this.txt_SueldoDeclarado.TabIndex = 659;
+      this.txt_SueldoDeclarado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // label38
+      // 
+      this.label38.AutoSize = true;
+      this.label38.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label38.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label38.Location = new System.Drawing.Point(907, 95);
+      this.label38.Name = "label38";
+      this.label38.Size = new System.Drawing.Size(85, 17);
+      this.label38.TabIndex = 658;
+      this.label38.Text = "Sueldo Dec:";
+      // 
+      // txt_Osecac
+      // 
+      this.txt_Osecac.BackColor = System.Drawing.Color.White;
+      this.txt_Osecac.Location = new System.Drawing.Point(697, 222);
+      this.txt_Osecac.Name = "txt_Osecac";
+      this.txt_Osecac.ReadOnly = true;
+      this.txt_Osecac.Size = new System.Drawing.Size(93, 20);
+      this.txt_Osecac.TabIndex = 657;
+      this.txt_Osecac.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_FAECyS
+      // 
+      this.txt_FAECyS.BackColor = System.Drawing.Color.White;
+      this.txt_FAECyS.Location = new System.Drawing.Point(697, 198);
+      this.txt_FAECyS.Name = "txt_FAECyS";
+      this.txt_FAECyS.ReadOnly = true;
+      this.txt_FAECyS.Size = new System.Drawing.Size(93, 20);
+      this.txt_FAECyS.TabIndex = 656;
+      this.txt_FAECyS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_AporteSocio
+      // 
+      this.txt_AporteSocio.BackColor = System.Drawing.Color.White;
+      this.txt_AporteSocio.Location = new System.Drawing.Point(697, 174);
+      this.txt_AporteSocio.Name = "txt_AporteSocio";
+      this.txt_AporteSocio.ReadOnly = true;
+      this.txt_AporteSocio.Size = new System.Drawing.Size(93, 20);
+      this.txt_AporteSocio.TabIndex = 655;
+      this.txt_AporteSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_AporteLey
+      // 
+      this.txt_AporteLey.BackColor = System.Drawing.Color.White;
+      this.txt_AporteLey.Location = new System.Drawing.Point(697, 150);
+      this.txt_AporteLey.Name = "txt_AporteLey";
+      this.txt_AporteLey.ReadOnly = true;
+      this.txt_AporteLey.Size = new System.Drawing.Size(93, 20);
+      this.txt_AporteLey.TabIndex = 654;
+      this.txt_AporteLey.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_ObraSocial
+      // 
+      this.txt_ObraSocial.BackColor = System.Drawing.Color.White;
+      this.txt_ObraSocial.Location = new System.Drawing.Point(697, 126);
+      this.txt_ObraSocial.Name = "txt_ObraSocial";
+      this.txt_ObraSocial.ReadOnly = true;
+      this.txt_ObraSocial.Size = new System.Drawing.Size(93, 20);
+      this.txt_ObraSocial.TabIndex = 653;
+      this.txt_ObraSocial.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_Ley19302
+      // 
+      this.txt_Ley19302.BackColor = System.Drawing.Color.White;
+      this.txt_Ley19302.Location = new System.Drawing.Point(697, 101);
+      this.txt_Ley19302.Name = "txt_Ley19302";
+      this.txt_Ley19302.ReadOnly = true;
+      this.txt_Ley19302.Size = new System.Drawing.Size(93, 20);
+      this.txt_Ley19302.TabIndex = 652;
+      this.txt_Ley19302.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_Jubilacion
+      // 
+      this.txt_Jubilacion.BackColor = System.Drawing.Color.White;
+      this.txt_Jubilacion.Location = new System.Drawing.Point(697, 76);
+      this.txt_Jubilacion.Name = "txt_Jubilacion";
+      this.txt_Jubilacion.ReadOnly = true;
+      this.txt_Jubilacion.Size = new System.Drawing.Size(93, 20);
+      this.txt_Jubilacion.TabIndex = 651;
+      this.txt_Jubilacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_Acuerdo2
+      // 
+      this.txt_Acuerdo2.BackColor = System.Drawing.Color.White;
+      this.txt_Acuerdo2.Location = new System.Drawing.Point(505, 222);
+      this.txt_Acuerdo2.Name = "txt_Acuerdo2";
+      this.txt_Acuerdo2.ReadOnly = true;
+      this.txt_Acuerdo2.Size = new System.Drawing.Size(93, 20);
+      this.txt_Acuerdo2.TabIndex = 650;
+      this.txt_Acuerdo2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_Acuerdo
+      // 
+      this.txt_Acuerdo.BackColor = System.Drawing.Color.White;
+      this.txt_Acuerdo.Location = new System.Drawing.Point(505, 198);
+      this.txt_Acuerdo.Name = "txt_Acuerdo";
+      this.txt_Acuerdo.ReadOnly = true;
+      this.txt_Acuerdo.Size = new System.Drawing.Size(93, 20);
+      this.txt_Acuerdo.TabIndex = 649;
+      this.txt_Acuerdo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_Presentismo
+      // 
+      this.txt_Presentismo.BackColor = System.Drawing.Color.White;
+      this.txt_Presentismo.Location = new System.Drawing.Point(505, 174);
+      this.txt_Presentismo.Name = "txt_Presentismo";
+      this.txt_Presentismo.ReadOnly = true;
+      this.txt_Presentismo.Size = new System.Drawing.Size(93, 20);
+      this.txt_Presentismo.TabIndex = 648;
+      this.txt_Presentismo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_Antiguedad
+      // 
+      this.txt_Antiguedad.BackColor = System.Drawing.Color.White;
+      this.txt_Antiguedad.Location = new System.Drawing.Point(505, 150);
+      this.txt_Antiguedad.Name = "txt_Antiguedad";
+      this.txt_Antiguedad.ReadOnly = true;
+      this.txt_Antiguedad.Size = new System.Drawing.Size(93, 20);
+      this.txt_Antiguedad.TabIndex = 647;
+      this.txt_Antiguedad.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // txt_SueldoBasico
+      // 
+      this.txt_SueldoBasico.BackColor = System.Drawing.Color.White;
+      this.txt_SueldoBasico.Location = new System.Drawing.Point(505, 126);
+      this.txt_SueldoBasico.Name = "txt_SueldoBasico";
+      this.txt_SueldoBasico.ReadOnly = true;
+      this.txt_SueldoBasico.Size = new System.Drawing.Size(93, 20);
+      this.txt_SueldoBasico.TabIndex = 646;
+      this.txt_SueldoBasico.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+      // 
+      // label24
+      // 
+      this.label24.AutoSize = true;
+      this.label24.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label24.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label24.Location = new System.Drawing.Point(419, 226);
+      this.label24.Name = "label24";
+      this.label24.Size = new System.Drawing.Size(78, 17);
+      this.label24.TabIndex = 645;
+      this.label24.Text = "Acuerdo 2:";
+      // 
+      // label25
+      // 
+      this.label25.AutoSize = true;
+      this.label25.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label25.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label25.Location = new System.Drawing.Point(419, 204);
+      this.label25.Name = "label25";
+      this.label25.Size = new System.Drawing.Size(67, 17);
+      this.label25.TabIndex = 644;
+      this.label25.Text = "Acuerdo:";
+      // 
+      // label26
+      // 
+      this.label26.AutoSize = true;
+      this.label26.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label26.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label26.Location = new System.Drawing.Point(609, 229);
+      this.label26.Name = "label26";
+      this.label26.Size = new System.Drawing.Size(67, 17);
+      this.label26.TabIndex = 643;
+      this.label26.Text = "OSECAC:";
+      // 
+      // label27
+      // 
+      this.label27.AutoSize = true;
+      this.label27.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label27.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label27.Location = new System.Drawing.Point(609, 204);
+      this.label27.Name = "label27";
+      this.label27.Size = new System.Drawing.Size(56, 17);
+      this.label27.TabIndex = 642;
+      this.label27.Text = "FAECys:";
+      // 
+      // label28
+      // 
+      this.label28.AutoSize = true;
+      this.label28.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label28.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label28.Location = new System.Drawing.Point(609, 179);
+      this.label28.Name = "label28";
+      this.label28.Size = new System.Drawing.Size(75, 17);
+      this.label28.TabIndex = 641;
+      this.label28.Text = "SEC Socio:";
+      // 
+      // label29
+      // 
+      this.label29.AutoSize = true;
+      this.label29.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label29.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label29.Location = new System.Drawing.Point(609, 154);
+      this.label29.Name = "label29";
+      this.label29.Size = new System.Drawing.Size(60, 17);
+      this.label29.TabIndex = 640;
+      this.label29.Text = "SEC Ley:";
+      // 
+      // label30
+      // 
+      this.label30.AutoSize = true;
+      this.label30.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label30.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label30.Location = new System.Drawing.Point(1138, 48);
+      this.label30.Name = "label30";
+      this.label30.Size = new System.Drawing.Size(81, 16);
+      this.label30.TabIndex = 639;
+      this.label30.Text = "Descuentos";
+      // 
+      // label31
+      // 
+      this.label31.AutoSize = true;
+      this.label31.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label31.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label31.Location = new System.Drawing.Point(609, 129);
+      this.label31.Name = "label31";
+      this.label31.Size = new System.Drawing.Size(87, 17);
+      this.label31.TabIndex = 638;
+      this.label31.Text = "Obra Social:";
+      // 
+      // label32
+      // 
+      this.label32.AutoSize = true;
+      this.label32.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label32.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label32.Location = new System.Drawing.Point(609, 107);
+      this.label32.Name = "label32";
+      this.label32.Size = new System.Drawing.Size(71, 17);
+      this.label32.TabIndex = 637;
+      this.label32.Text = "Ley 19302:";
+      // 
+      // label33
+      // 
+      this.label33.AutoSize = true;
+      this.label33.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label33.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label33.Location = new System.Drawing.Point(609, 82);
+      this.label33.Name = "label33";
+      this.label33.Size = new System.Drawing.Size(78, 17);
+      this.label33.TabIndex = 636;
+      this.label33.Text = "Jubilacion:";
+      // 
+      // label34
+      // 
+      this.label34.AutoSize = true;
+      this.label34.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label34.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label34.Location = new System.Drawing.Point(1060, 14);
+      this.label34.Name = "label34";
+      this.label34.Size = new System.Drawing.Size(62, 16);
+      this.label34.TabIndex = 635;
+      this.label34.Text = "Haberes";
+      // 
+      // label35
+      // 
+      this.label35.AutoSize = true;
+      this.label35.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label35.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label35.Location = new System.Drawing.Point(419, 179);
+      this.label35.Name = "label35";
+      this.label35.Size = new System.Drawing.Size(62, 17);
+      this.label35.TabIndex = 634;
+      this.label35.Text = "Present.:";
+      // 
+      // label36
+      // 
+      this.label36.AutoSize = true;
+      this.label36.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label36.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label36.Location = new System.Drawing.Point(419, 154);
+      this.label36.Name = "label36";
+      this.label36.Size = new System.Drawing.Size(50, 17);
+      this.label36.TabIndex = 633;
+      this.label36.Text = "Antig.:";
+      // 
+      // label37
+      // 
+      this.label37.AutoSize = true;
+      this.label37.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label37.ForeColor = System.Drawing.Color.Gainsboro;
+      this.label37.Location = new System.Drawing.Point(419, 129);
+      this.label37.Name = "label37";
+      this.label37.Size = new System.Drawing.Size(53, 17);
+      this.label37.TabIndex = 632;
+      this.label37.Text = "Basico:";
       // 
       // dgv_DetallePeriodo
       // 
       this.dgv_DetallePeriodo.AllowUserToAddRows = false;
+      this.dgv_DetallePeriodo.AllowUserToDeleteRows = false;
       this.dgv_DetallePeriodo.AllowUserToResizeRows = false;
-      dataGridViewCellStyle136.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-      dataGridViewCellStyle136.ForeColor = System.Drawing.Color.Black;
-      this.dgv_DetallePeriodo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle136;
+      dataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+      dataGridViewCellStyle42.ForeColor = System.Drawing.Color.Black;
+      this.dgv_DetallePeriodo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle42;
       this.dgv_DetallePeriodo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-      dataGridViewCellStyle137.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-      dataGridViewCellStyle137.BackColor = System.Drawing.SystemColors.Control;
-      dataGridViewCellStyle137.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      dataGridViewCellStyle137.ForeColor = System.Drawing.SystemColors.WindowText;
-      dataGridViewCellStyle137.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-      dataGridViewCellStyle137.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-      dataGridViewCellStyle137.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-      this.dgv_DetallePeriodo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle137;
+      dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+      dataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.Control;
+      dataGridViewCellStyle43.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      dataGridViewCellStyle43.ForeColor = System.Drawing.SystemColors.WindowText;
+      dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+      dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+      dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+      this.dgv_DetallePeriodo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
       this.dgv_DetallePeriodo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
       this.dgv_DetallePeriodo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -1510,41 +2448,47 @@ namespace entrega_cupones.Formularios
             this.DiferenciaSueldo});
       this.dgv_DetallePeriodo.Location = new System.Drawing.Point(3, 29);
       this.dgv_DetallePeriodo.Name = "dgv_DetallePeriodo";
+      this.dgv_DetallePeriodo.ReadOnly = true;
       this.dgv_DetallePeriodo.RowHeadersVisible = false;
       this.dgv_DetallePeriodo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-      this.dgv_DetallePeriodo.Size = new System.Drawing.Size(993, 220);
+      this.dgv_DetallePeriodo.Size = new System.Drawing.Size(408, 220);
       this.dgv_DetallePeriodo.TabIndex = 595;
+      this.dgv_DetallePeriodo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DetallePeriodo_CellContentClick);
+      this.dgv_DetallePeriodo.SelectionChanged += new System.EventHandler(this.dgv_DetallePeriodo_SelectionChanged);
       // 
       // dataGridViewTextBoxColumn1
       // 
       this.dataGridViewTextBoxColumn1.DataPropertyName = "Periodo";
-      dataGridViewCellStyle138.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      dataGridViewCellStyle138.Format = "MM/yyyy";
-      dataGridViewCellStyle138.NullValue = null;
-      this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle138;
+      dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      dataGridViewCellStyle44.Format = "MM/yyyy";
+      dataGridViewCellStyle44.NullValue = null;
+      this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle44;
       this.dataGridViewTextBoxColumn1.HeaderText = "Periodo";
       this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+      this.dataGridViewTextBoxColumn1.ReadOnly = true;
       this.dataGridViewTextBoxColumn1.Visible = false;
       this.dataGridViewTextBoxColumn1.Width = 70;
       // 
       // dataGridViewTextBoxColumn3
       // 
       this.dataGridViewTextBoxColumn3.DataPropertyName = "Rectificacion";
-      dataGridViewCellStyle139.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle139;
+      dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle45;
       this.dataGridViewTextBoxColumn3.HeaderText = "Rect";
       this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+      this.dataGridViewTextBoxColumn3.ReadOnly = true;
       this.dataGridViewTextBoxColumn3.Visible = false;
       this.dataGridViewTextBoxColumn3.Width = 50;
       // 
       // DNI
       // 
       this.DNI.DataPropertyName = "Dni";
-      dataGridViewCellStyle140.Format = "N0";
-      dataGridViewCellStyle140.NullValue = null;
-      this.DNI.DefaultCellStyle = dataGridViewCellStyle140;
+      dataGridViewCellStyle46.Format = "N0";
+      dataGridViewCellStyle46.NullValue = null;
+      this.DNI.DefaultCellStyle = dataGridViewCellStyle46;
       this.DNI.HeaderText = "D.N.I.";
       this.DNI.Name = "DNI";
+      this.DNI.ReadOnly = true;
       this.DNI.Width = 70;
       // 
       // Nombre
@@ -1552,100 +2496,130 @@ namespace entrega_cupones.Formularios
       this.Nombre.DataPropertyName = "Nombre";
       this.Nombre.HeaderText = "Nombre";
       this.Nombre.Name = "Nombre";
-      this.Nombre.Width = 180;
+      this.Nombre.ReadOnly = true;
+      this.Nombre.Width = 230;
       // 
       // dataGridViewTextBoxColumn4
       // 
       this.dataGridViewTextBoxColumn4.DataPropertyName = "AporteLey";
-      dataGridViewCellStyle141.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle141.Format = "N2";
-      dataGridViewCellStyle141.NullValue = null;
-      this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle141;
+      dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle47.Format = "N2";
+      dataGridViewCellStyle47.NullValue = null;
+      this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle47;
       this.dataGridViewTextBoxColumn4.HeaderText = "Ley 2%";
       this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+      this.dataGridViewTextBoxColumn4.ReadOnly = true;
+      this.dataGridViewTextBoxColumn4.Visible = false;
       this.dataGridViewTextBoxColumn4.Width = 70;
       // 
       // dataGridViewTextBoxColumn6
       // 
       this.dataGridViewTextBoxColumn6.DataPropertyName = "AporteSocio";
-      dataGridViewCellStyle142.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle142.Format = "N2";
-      dataGridViewCellStyle142.NullValue = null;
-      this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle142;
+      dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle48.Format = "N2";
+      dataGridViewCellStyle48.NullValue = null;
+      this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle48;
       this.dataGridViewTextBoxColumn6.HeaderText = "Socio 2%";
       this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+      this.dataGridViewTextBoxColumn6.ReadOnly = true;
+      this.dataGridViewTextBoxColumn6.Visible = false;
       this.dataGridViewTextBoxColumn6.Width = 80;
       // 
       // Jornada
       // 
       this.Jornada.DataPropertyName = "Jornada";
-      dataGridViewCellStyle143.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      this.Jornada.DefaultCellStyle = dataGridViewCellStyle143;
+      dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.Jornada.DefaultCellStyle = dataGridViewCellStyle49;
       this.Jornada.HeaderText = "Jornada";
       this.Jornada.Name = "Jornada";
+      this.Jornada.ReadOnly = true;
+      this.Jornada.Visible = false;
       this.Jornada.Width = 80;
       // 
       // Categoria
       // 
       this.Categoria.DataPropertyName = "Categoria";
-      dataGridViewCellStyle144.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      this.Categoria.DefaultCellStyle = dataGridViewCellStyle144;
+      dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.Categoria.DefaultCellStyle = dataGridViewCellStyle50;
       this.Categoria.HeaderText = "Categoria";
       this.Categoria.Name = "Categoria";
+      this.Categoria.ReadOnly = true;
+      this.Categoria.Visible = false;
       this.Categoria.Width = 160;
       // 
       // dataGridViewTextBoxColumn7
       // 
       this.dataGridViewTextBoxColumn7.DataPropertyName = "Sueldo";
-      dataGridViewCellStyle145.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle145.Format = "N2";
-      dataGridViewCellStyle145.NullValue = null;
-      this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle145;
+      dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle51.Format = "N2";
+      dataGridViewCellStyle51.NullValue = null;
+      this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle51;
       this.dataGridViewTextBoxColumn7.HeaderText = "Sueldo";
       this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-      this.dataGridViewTextBoxColumn7.Width = 70;
+      this.dataGridViewTextBoxColumn7.ReadOnly = true;
+      this.dataGridViewTextBoxColumn7.Width = 85;
       // 
       // Antiguedad
       // 
       this.Antiguedad.DataPropertyName = "Antiguedad";
-      dataGridViewCellStyle146.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-      this.Antiguedad.DefaultCellStyle = dataGridViewCellStyle146;
+      dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+      this.Antiguedad.DefaultCellStyle = dataGridViewCellStyle52;
       this.Antiguedad.HeaderText = "Antig";
       this.Antiguedad.Name = "Antiguedad";
+      this.Antiguedad.ReadOnly = true;
+      this.Antiguedad.Visible = false;
       this.Antiguedad.Width = 40;
       // 
       // Escala
       // 
       this.Escala.DataPropertyName = "BasicoJubPres";
-      dataGridViewCellStyle147.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle147.Format = "N2";
-      dataGridViewCellStyle147.NullValue = null;
-      this.Escala.DefaultCellStyle = dataGridViewCellStyle147;
+      dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle53.Format = "N2";
+      dataGridViewCellStyle53.NullValue = null;
+      this.Escala.DefaultCellStyle = dataGridViewCellStyle53;
       this.Escala.HeaderText = "Escala";
       this.Escala.Name = "Escala";
+      this.Escala.ReadOnly = true;
+      this.Escala.Visible = false;
       this.Escala.Width = 70;
       // 
       // Diferencia
       // 
       this.Diferencia.DataPropertyName = "AporteSocioDif";
-      dataGridViewCellStyle148.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle148.Format = "N2";
-      dataGridViewCellStyle148.NullValue = null;
-      this.Diferencia.DefaultCellStyle = dataGridViewCellStyle148;
+      dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle54.Format = "N2";
+      dataGridViewCellStyle54.NullValue = null;
+      this.Diferencia.DefaultCellStyle = dataGridViewCellStyle54;
       this.Diferencia.HeaderText = "Dif. 2% Socio";
       this.Diferencia.Name = "Diferencia";
+      this.Diferencia.ReadOnly = true;
+      this.Diferencia.Visible = false;
       this.Diferencia.Width = 70;
       // 
       // DiferenciaSueldo
       // 
       this.DiferenciaSueldo.DataPropertyName = "SueldoDif";
-      dataGridViewCellStyle149.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-      dataGridViewCellStyle149.Format = "N2";
-      dataGridViewCellStyle149.NullValue = null;
-      this.DiferenciaSueldo.DefaultCellStyle = dataGridViewCellStyle149;
+      dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+      dataGridViewCellStyle55.Format = "N2";
+      dataGridViewCellStyle55.NullValue = null;
+      this.DiferenciaSueldo.DefaultCellStyle = dataGridViewCellStyle55;
       this.DiferenciaSueldo.HeaderText = "Dif. Sueldo";
       this.DiferenciaSueldo.Name = "DiferenciaSueldo";
+      this.DiferenciaSueldo.ReadOnly = true;
+      this.DiferenciaSueldo.Visible = false;
       this.DiferenciaSueldo.Width = 70;
+      // 
+      // bunifuCustomLabel4
+      // 
+      this.bunifuCustomLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(151)))), ((int)(((byte)(119)))));
+      this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
+      this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+      this.bunifuCustomLabel4.Location = new System.Drawing.Point(4, 4);
+      this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+      this.bunifuCustomLabel4.Size = new System.Drawing.Size(407, 22);
+      this.bunifuCustomLabel4.TabIndex = 589;
+      this.bunifuCustomLabel4.Text = "Sueldos Declarados en Periodo";
+      this.bunifuCustomLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
       // frm_VerVD
       // 
@@ -1672,6 +2646,8 @@ namespace entrega_cupones.Formularios
       this.panel4.ResumeLayout(false);
       this.panel4.PerformLayout();
       this.panel3.ResumeLayout(false);
+      this.panel3.PerformLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dgv_ReciboSueldo)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.dgv_DetallePeriodo)).EndInit();
       this.ResumeLayout(false);
 
@@ -1692,23 +2668,6 @@ namespace entrega_cupones.Formularios
     private System.Windows.Forms.Label label12;
     public System.Windows.Forms.TextBox txt_PerNoDec;
     public System.Windows.Forms.DataGridView dgv_VD;
-    private System.Windows.Forms.DataGridViewTextBoxColumn Periodo;
-    private System.Windows.Forms.DataGridViewTextBoxColumn PerNoDec;
-    private System.Windows.Forms.DataGridViewTextBoxColumn Rectificacion;
-    private System.Windows.Forms.DataGridViewTextBoxColumn AporteLey;
-    private System.Windows.Forms.DataGridViewTextBoxColumn TotalSueldoEmpleado;
-    private System.Windows.Forms.DataGridViewTextBoxColumn AporteSocio;
-    private System.Windows.Forms.DataGridViewTextBoxColumn TotalSueldoSocio;
-    private System.Windows.Forms.DataGridViewTextBoxColumn FechaDePago;
-    private System.Windows.Forms.DataGridViewTextBoxColumn ImporteDepositado;
-    private System.Windows.Forms.DataGridViewTextBoxColumn DiasDeMora;
-    private System.Windows.Forms.DataGridViewTextBoxColumn InteresCobrado;
-    private System.Windows.Forms.DataGridViewTextBoxColumn Empleados;
-    private System.Windows.Forms.DataGridViewTextBoxColumn Socios;
-    private System.Windows.Forms.DataGridViewTextBoxColumn AporteSocioDif;
-    private System.Windows.Forms.DataGridViewTextBoxColumn Capital;
-    private System.Windows.Forms.DataGridViewTextBoxColumn Interes;
-    private System.Windows.Forms.DataGridViewTextBoxColumn Total;
     private System.Windows.Forms.Button btn_CopiarSiguiente;
     private System.Windows.Forms.Button btn_EmitirActa;
     private System.Windows.Forms.Button btn_IngresoManual;
@@ -1779,6 +2738,75 @@ namespace entrega_cupones.Formularios
     private System.Windows.Forms.Panel panel3;
     private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
     public System.Windows.Forms.DataGridView dgv_DetallePeriodo;
+    private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+    private System.Windows.Forms.DataGridViewTextBoxColumn Periodo;
+    private System.Windows.Forms.DataGridViewTextBoxColumn PerNoDec;
+    private System.Windows.Forms.DataGridViewTextBoxColumn Rectificacion;
+    private System.Windows.Forms.DataGridViewTextBoxColumn AporteLey;
+    private System.Windows.Forms.DataGridViewTextBoxColumn TotalSueldoEmpleado;
+    private System.Windows.Forms.DataGridViewTextBoxColumn AporteSocio;
+    private System.Windows.Forms.DataGridViewTextBoxColumn TotalSueldoSocio;
+    private System.Windows.Forms.DataGridViewTextBoxColumn FechaDePago;
+    private System.Windows.Forms.DataGridViewTextBoxColumn ImporteDepositado;
+    private System.Windows.Forms.DataGridViewTextBoxColumn DiasDeMora;
+    private System.Windows.Forms.DataGridViewTextBoxColumn InteresCobrado;
+    private System.Windows.Forms.DataGridViewTextBoxColumn Empleados;
+    private System.Windows.Forms.DataGridViewTextBoxColumn Socios;
+    private System.Windows.Forms.DataGridViewTextBoxColumn AporteSocioDif;
+    private System.Windows.Forms.DataGridViewTextBoxColumn Capital;
+    private System.Windows.Forms.DataGridViewTextBoxColumn Interes;
+    private System.Windows.Forms.DataGridViewTextBoxColumn Total;
+    private System.Windows.Forms.TextBox txt_Osecac;
+    private System.Windows.Forms.TextBox txt_FAECyS;
+    private System.Windows.Forms.TextBox txt_AporteSocio;
+    private System.Windows.Forms.TextBox txt_AporteLey;
+    private System.Windows.Forms.TextBox txt_ObraSocial;
+    private System.Windows.Forms.TextBox txt_Ley19302;
+    private System.Windows.Forms.TextBox txt_Jubilacion;
+    private System.Windows.Forms.TextBox txt_Acuerdo2;
+    private System.Windows.Forms.TextBox txt_Acuerdo;
+    private System.Windows.Forms.TextBox txt_Presentismo;
+    private System.Windows.Forms.TextBox txt_Antiguedad;
+    private System.Windows.Forms.TextBox txt_SueldoBasico;
+    private System.Windows.Forms.Label label24;
+    private System.Windows.Forms.Label label25;
+    private System.Windows.Forms.Label label26;
+    private System.Windows.Forms.Label label27;
+    private System.Windows.Forms.Label label28;
+    private System.Windows.Forms.Label label29;
+    private System.Windows.Forms.Label label30;
+    private System.Windows.Forms.Label label31;
+    private System.Windows.Forms.Label label32;
+    private System.Windows.Forms.Label label33;
+    private System.Windows.Forms.Label label34;
+    private System.Windows.Forms.Label label35;
+    private System.Windows.Forms.Label label36;
+    private System.Windows.Forms.Label label37;
+    private System.Windows.Forms.TextBox txt_SueldoDeclarado;
+    private System.Windows.Forms.Label label38;
+    private System.Windows.Forms.TextBox txt_DifSueldo;
+    private System.Windows.Forms.TextBox txt_DifAporteSocio;
+    private System.Windows.Forms.TextBox txt_CantidadJorandaCompleta;
+    private System.Windows.Forms.TextBox txt_CantidadJornadaParcial;
+    private System.Windows.Forms.TextBox txt_CantidadEmpleados;
+    private System.Windows.Forms.Label label39;
+    private System.Windows.Forms.Label label40;
+    private System.Windows.Forms.Label label41;
+    private System.Windows.Forms.Label label42;
+    private System.Windows.Forms.Label label43;
+    private System.Windows.Forms.TextBox txt_Diferencia;
+    private System.Windows.Forms.TextBox textBox1;
+    private System.Windows.Forms.TextBox txt_TotalNeto;
+    private System.Windows.Forms.TextBox txt_TotalDescuentos;
+    private System.Windows.Forms.TextBox txt_TotalHaberes;
+    private System.Windows.Forms.Label label44;
+    private System.Windows.Forms.Label label45;
+    private System.Windows.Forms.Label label46;
+    private System.Windows.Forms.Label label47;
+    private System.Windows.Forms.Label label48;
+    private System.Windows.Forms.Label label49;
+    private System.Windows.Forms.TextBox txt_Antigue;
+    private System.Windows.Forms.Label label50;
     private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
     private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     private System.Windows.Forms.DataGridViewTextBoxColumn DNI;
@@ -1792,5 +2820,25 @@ namespace entrega_cupones.Formularios
     private System.Windows.Forms.DataGridViewTextBoxColumn Escala;
     private System.Windows.Forms.DataGridViewTextBoxColumn Diferencia;
     private System.Windows.Forms.DataGridViewTextBoxColumn DiferenciaSueldo;
+    private System.Windows.Forms.TextBox txt_Categoria;
+    private System.Windows.Forms.Label label51;
+    public System.Windows.Forms.DataGridView dgv_ReciboSueldo;
+    private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
+    private System.Windows.Forms.DataGridViewTextBoxColumn Concepto;
+    private System.Windows.Forms.DataGridViewTextBoxColumn Unidad;
+    private System.Windows.Forms.DataGridViewTextBoxColumn Base;
+    private System.Windows.Forms.DataGridViewTextBoxColumn Remunerativo;
+    private System.Windows.Forms.DataGridViewTextBoxColumn NoRemunerativo;
+    private System.Windows.Forms.DataGridViewTextBoxColumn Descuento;
+    private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+    private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+    private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+    private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+    private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+    private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+    private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+    private System.Windows.Forms.TextBox txt_Jornada;
+    private System.Windows.Forms.Label label53;
+    private System.Windows.Forms.Label label52;
   }
 }
