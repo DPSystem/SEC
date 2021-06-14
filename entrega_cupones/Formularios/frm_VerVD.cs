@@ -229,8 +229,8 @@ namespace entrega_cupones.Formularios
         txt_Jubilacion.Text = _DDJJEmpleados[index].Jubilacion.ToString("N2");
         txt_Ley19302.Text = _DDJJEmpleados[index].Ley19302.ToString("N2");
         txt_ObraSocial.Text = _DDJJEmpleados[index].ObraSocial.ToString("N2");
-        txt_AporteLey.Text = _DDJJEmpleados[index].AporteLeyDif.ToString("N2");
-        txt_AporteSocio.Text = _DDJJEmpleados[index].AporteSocioEscala.ToString("N2");
+        txt_AporteLey.Text = _DDJJEmpleados[index].AporteLey.ToString("N2");//.AporteLeyDif.ToString("N2");
+        txt_AporteSocio.Text = _DDJJEmpleados[index].AporteSocio.ToString("N2"); //.AporteSocioEscala.ToString("N2");
         txt_FAECyS.Text = _DDJJEmpleados[index].FAECys.ToString("N2");
         txt_Osecac.Text = _DDJJEmpleados[index].OSECAC.ToString("N2");
 

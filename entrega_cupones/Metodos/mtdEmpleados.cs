@@ -70,9 +70,9 @@ namespace entrega_cupones.Metodos
 
         foreach (var item in _ListadoAporteEmpleados)
         {
-          if (item.)
+          if (item.Periodo.Date == Convert.ToDateTime("01/04/2021"))
           {
-
+            int s = 0;
           }
           decimal Basico = 0;
           int AntiguedadAños = DateTime.Now.Year - item.FechaIngreso.Year;
@@ -80,9 +80,11 @@ namespace entrega_cupones.Metodos
           Basico = mtdSueldos.GetTotalHaberes(item.Jornada == "Parcial" ? (decimal)item.Escala / 2 : (decimal)item.Escala, item.Antiguedad, 0, 0);
           item.Jubilacion = mtdSueldos.DescuentoJubilacion(Basico);
           item.Ley19302 = mtdSueldos.DescuentoLey19302(Basico);
-          item.AntiguedadImporte = mtdSueldos.GetAntiguedad(Basico, AntiguedadAños);
-          item.Presentismo = mtdSueldos.GetPresentismo(Basico, AntiguedadAños);
-
+          item.AntiguedadImporte = mtdSueldos.GetAntiguedad(item.Escala, AntiguedadAños);
+          item.Presentismo = mtdSueldos.GetPresentismo(item.Escala, AntiguedadAños);
+          item.ObraSocial = mtdSueldos.DescuentoObraSocial(Basico, item.AcuerdoNR1, item.AcuerdoNR2);
+          item.AporteLey = mtdSueldos.DescuentoAporteLey(Basico, item.AcuerdoNR1, item.AcuerdoNR2);
+          item.AporteSocio = mtdSueldos.DescuentoAporteSocio(Basico, item.AporteSocio == 0 ? false : true, item.AporteSocio, item.Jornada == "S" ? true : false) ;
           //item.ObraSocial = mtdSueldos.DescuentoObraSocial(TotalHaberes, (decimal)c.AcuerdoNR1, (decimal)c.AcuerdoNR2)),
           //                      Ley19302 = mtdSueldos.DescuentoLey19302(mtdSueldos.GetTotalHaberes(a.jorp == true ? (decimal)c.Importe / 2 : (decimal)c.Importe, DateTime.Now.Year - e.SOCEMP_FECHAING.Year, 0, 0)),
           //                      AporteLeyDif = mtdSueldos.DescuentoAporteLey(mtdSueldos.GetTotalHaberes(a.jorp == true ? (decimal)c.Importe / 2 : (decimal)c.Importe, DateTime.Now.Year - e.SOCEMP_FECHAING.Year, (decimal)c.AcuerdoNR1, (decimal)c.AcuerdoNR2)),
