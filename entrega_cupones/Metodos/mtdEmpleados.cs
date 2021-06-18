@@ -34,15 +34,16 @@ namespace entrega_cupones.Metodos
                                 AporteLey = (decimal)((a.impo + a.impoaux) * 0.02),
                                 AporteSocio = (decimal)((a.item2 == true) ? (a.impo + a.impoaux) * 0.02 : 0),
                                 Jornada = a.jorp == true ? "Parcial" : "Completa",
-                                Escala = (decimal)c.Importe,//a.jorp == true ? (decimal)c.Importe / 2 : (decimal)c.Importe,
+                                Escala = a.jorp == true ? (decimal)c.Importe / 2 : (decimal)c.Importe,
                                 //BasicoJubPres = mtdSueldos.GetBasicoJubPres(mtdSueldos.GetTotalHaberes(a.jorp == true ? (decimal)c.Importe / 2 : (decimal)c.Importe, DateTime.Now.Year - e.SOCEMP_FECHAING.Year, 0, 0), a.item2, (decimal)((a.item2 == true) ? (a.impo + a.impoaux) * 0.02 : 0), a.jorp, DateTime.Now.Year - e.SOCEMP_FECHAING.Year, (decimal)(a.impo + a.impoaux)),
                                 Categoria = d.MAECAT_NOMCAT,
                                 FechaIngreso = e.SOCEMP_FECHAING,
                                 Antiguedad = DateTime.Now.Year - e.SOCEMP_FECHAING.Year,
                                 Diferencia = 0,//CalcularDiferencia((decimal)(a.impo + a.impoaux), (decimal)c.Importe, (decimal)((a.item2 == true) ? (a.impo + a.impoaux) * 0.02 : 0), a.jorp),
+
                                 //Acuerdos
-                                AcuerdoNR1 = (decimal)c.AcuerdoNR1,
-                                AcuerdoNR2 = (decimal)c.AcuerdoNR2,
+                                AcuerdoNR1 = a.jorp == true ? (decimal)c.AcuerdoNR1 / 2 : (decimal)c.AcuerdoNR1,
+                                AcuerdoNR2 = a.jorp == true ? (decimal)c.AcuerdoNR2 / 2 : (decimal)c.AcuerdoNR2,
 
                                 //Haberes
                                 //AntiguedadImporte = a.jorp == true ? mtdSueldos.GetAntiguedad((decimal)c.Importe / 2, DateTime.Now.Year - e.SOCEMP_FECHAING.Year) : mtdSueldos.GetAntiguedad((decimal)c.Importe, DateTime.Now.Year - e.SOCEMP_FECHAING.Year),
@@ -65,7 +66,7 @@ namespace entrega_cupones.Metodos
                                 //TotalDescuentos = mtdSueldos.GetTotalDescuentos(mtdSueldos.GetTotalHaberes(a.jorp == true ? (decimal)c.Importe / 2 : (decimal)c.Importe, DateTime.Now.Year - e.SOCEMP_FECHAING.Year, (decimal)c.AcuerdoNR1, (decimal)c.AcuerdoNR2), a.item2, (decimal)((a.item2 == true) ? (a.impo + a.impoaux) * 0.02 : 0), a.jorp)
 
                               }).OrderBy(x => x.Nombre);
-        
+
         _ListadoAporteEmpleados.AddRange(ListadoAportes);
 
         foreach (var item in _ListadoAporteEmpleados)
@@ -77,14 +78,20 @@ namespace entrega_cupones.Metodos
           decimal Basico = 0;
           int AntiguedadAños = DateTime.Now.Year - item.FechaIngreso.Year;
 
-          Basico = mtdSueldos.GetTotalHaberes(item.Jornada == "Parcial" ? (decimal)item.Escala / 2 : (decimal)item.Escala, item.Antiguedad, 0, 0);
+          //Basico = mtdSueldos.GetTotalHaberes(item.Jornada == "Parcial" ? (decimal)item.Escala / 2 : (decimal)item.Escala, item.Antiguedad, 0, 0);
+          Basico = mtdSueldos.GetTotalHaberes(item.Escala, item.Antiguedad, 0, 0);
           item.Jubilacion = mtdSueldos.DescuentoJubilacion(Basico);
           item.Ley19302 = mtdSueldos.DescuentoLey19302(Basico);
           item.AntiguedadImporte = mtdSueldos.GetAntiguedad(item.Escala, AntiguedadAños);
           item.Presentismo = mtdSueldos.GetPresentismo(item.Escala, AntiguedadAños);
-          item.ObraSocial = mtdSueldos.DescuentoObraSocial(Basico, item.AcuerdoNR1, item.AcuerdoNR2);
+          item.ObraSocial = mtdSueldos.DescuentoObraSocial(Basico, item.AcuerdoNR1, item.AcuerdoNR2, item.Jornada == "Parcial");
           item.AporteLey = mtdSueldos.DescuentoAporteLey(Basico, item.AcuerdoNR1, item.AcuerdoNR2);
-          item.AporteSocio = mtdSueldos.DescuentoAporteSocio(Basico, item.AporteSocio == 0 ? false : true, item.AporteSocio, item.Jornada == "S" ? true : false) ;
+          item.AporteSocio = mtdSueldos.DescuentoAporteSocio(Basico, item.AporteSocio == 0 ? false : true, item.AporteSocio, item.Jornada == "Parcial" ? true : false);
+          item.FAECys = mtdSueldos.DescuentoFAECyS(Basico, item.AcuerdoNR1, item.AcuerdoNR2);
+          item.OSECAC = mtdSueldos.DescuentoOSECAC();
+          item.TotalHaberes = Basico + item.AcuerdoNR1 + item.AcuerdoNR2;
+          item.TotalDescuentos = item.Jubilacion + item.Ley19302 + item.ObraSocial + item.AporteLey + item.AporteSocio + item.FAECys + item.OSECAC;
+
           //item.ObraSocial = mtdSueldos.DescuentoObraSocial(TotalHaberes, (decimal)c.AcuerdoNR1, (decimal)c.AcuerdoNR2)),
           //                      Ley19302 = mtdSueldos.DescuentoLey19302(mtdSueldos.GetTotalHaberes(a.jorp == true ? (decimal)c.Importe / 2 : (decimal)c.Importe, DateTime.Now.Year - e.SOCEMP_FECHAING.Year, 0, 0)),
           //                      AporteLeyDif = mtdSueldos.DescuentoAporteLey(mtdSueldos.GetTotalHaberes(a.jorp == true ? (decimal)c.Importe / 2 : (decimal)c.Importe, DateTime.Now.Year - e.SOCEMP_FECHAING.Year, (decimal)c.AcuerdoNR1, (decimal)c.AcuerdoNR2)),

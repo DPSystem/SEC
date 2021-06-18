@@ -2006,7 +2006,7 @@ namespace entrega_cupones.Formularios
       // txt_Diferencia
       // 
       this.txt_Diferencia.BackColor = System.Drawing.Color.White;
-      this.txt_Diferencia.Location = new System.Drawing.Point(986, 217);
+      this.txt_Diferencia.Location = new System.Drawing.Point(915, 220);
       this.txt_Diferencia.Name = "txt_Diferencia";
       this.txt_Diferencia.ReadOnly = true;
       this.txt_Diferencia.Size = new System.Drawing.Size(121, 20);
@@ -2016,7 +2016,7 @@ namespace entrega_cupones.Formularios
       // textBox1
       // 
       this.textBox1.BackColor = System.Drawing.Color.White;
-      this.textBox1.Location = new System.Drawing.Point(1030, 119);
+      this.textBox1.Location = new System.Drawing.Point(1245, 222);
       this.textBox1.Name = "textBox1";
       this.textBox1.ReadOnly = true;
       this.textBox1.Size = new System.Drawing.Size(77, 20);
@@ -2026,30 +2026,30 @@ namespace entrega_cupones.Formularios
       // txt_TotalNeto
       // 
       this.txt_TotalNeto.BackColor = System.Drawing.Color.White;
-      this.txt_TotalNeto.Location = new System.Drawing.Point(988, 192);
+      this.txt_TotalNeto.Location = new System.Drawing.Point(892, 103);
       this.txt_TotalNeto.Name = "txt_TotalNeto";
       this.txt_TotalNeto.ReadOnly = true;
-      this.txt_TotalNeto.Size = new System.Drawing.Size(119, 20);
+      this.txt_TotalNeto.Size = new System.Drawing.Size(101, 20);
       this.txt_TotalNeto.TabIndex = 668;
       this.txt_TotalNeto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
       // 
       // txt_TotalDescuentos
       // 
       this.txt_TotalDescuentos.BackColor = System.Drawing.Color.White;
-      this.txt_TotalDescuentos.Location = new System.Drawing.Point(1030, 168);
+      this.txt_TotalDescuentos.Location = new System.Drawing.Point(892, 77);
       this.txt_TotalDescuentos.Name = "txt_TotalDescuentos";
       this.txt_TotalDescuentos.ReadOnly = true;
-      this.txt_TotalDescuentos.Size = new System.Drawing.Size(77, 20);
+      this.txt_TotalDescuentos.Size = new System.Drawing.Size(101, 20);
       this.txt_TotalDescuentos.TabIndex = 667;
       this.txt_TotalDescuentos.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
       // 
       // txt_TotalHaberes
       // 
       this.txt_TotalHaberes.BackColor = System.Drawing.Color.White;
-      this.txt_TotalHaberes.Location = new System.Drawing.Point(1008, 144);
+      this.txt_TotalHaberes.Location = new System.Drawing.Point(892, 51);
       this.txt_TotalHaberes.Name = "txt_TotalHaberes";
       this.txt_TotalHaberes.ReadOnly = true;
-      this.txt_TotalHaberes.Size = new System.Drawing.Size(99, 20);
+      this.txt_TotalHaberes.Size = new System.Drawing.Size(101, 20);
       this.txt_TotalHaberes.TabIndex = 666;
       this.txt_TotalHaberes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
       // 
@@ -2058,7 +2058,7 @@ namespace entrega_cupones.Formularios
       this.label44.AutoSize = true;
       this.label44.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label44.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label44.Location = new System.Drawing.Point(903, 218);
+      this.label44.Location = new System.Drawing.Point(832, 221);
       this.label44.Name = "label44";
       this.label44.Size = new System.Drawing.Size(77, 17);
       this.label44.TabIndex = 665;
@@ -2069,7 +2069,7 @@ namespace entrega_cupones.Formularios
       this.label45.AutoSize = true;
       this.label45.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label45.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label45.Location = new System.Drawing.Point(903, 120);
+      this.label45.Location = new System.Drawing.Point(1118, 223);
       this.label45.Name = "label45";
       this.label45.Size = new System.Drawing.Size(128, 17);
       this.label45.TabIndex = 664;
@@ -2080,7 +2080,7 @@ namespace entrega_cupones.Formularios
       this.label46.AutoSize = true;
       this.label46.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label46.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label46.Location = new System.Drawing.Point(903, 193);
+      this.label46.Location = new System.Drawing.Point(806, 104);
       this.label46.Name = "label46";
       this.label46.Size = new System.Drawing.Size(79, 17);
       this.label46.TabIndex = 663;
@@ -2091,11 +2091,11 @@ namespace entrega_cupones.Formularios
       this.label47.AutoSize = true;
       this.label47.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label47.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label47.Location = new System.Drawing.Point(903, 169);
+      this.label47.Location = new System.Drawing.Point(805, 78);
       this.label47.Name = "label47";
-      this.label47.Size = new System.Drawing.Size(121, 17);
+      this.label47.Size = new System.Drawing.Size(82, 17);
       this.label47.TabIndex = 662;
-      this.label47.Text = "Total Descuentos:";
+      this.label47.Text = "Total Desc.:";
       // 
       // label48
       // 
@@ -2113,19 +2113,19 @@ namespace entrega_cupones.Formularios
       this.label49.AutoSize = true;
       this.label49.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label49.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label49.Location = new System.Drawing.Point(903, 145);
+      this.label49.Location = new System.Drawing.Point(805, 52);
       this.label49.Name = "label49";
-      this.label49.Size = new System.Drawing.Size(99, 17);
+      this.label49.Size = new System.Drawing.Size(80, 17);
       this.label49.TabIndex = 660;
-      this.label49.Text = "Total Haberes:";
+      this.label49.Text = "Total Bruto:";
       // 
       // txt_SueldoDeclarado
       // 
       this.txt_SueldoDeclarado.BackColor = System.Drawing.Color.White;
-      this.txt_SueldoDeclarado.Location = new System.Drawing.Point(990, 92);
+      this.txt_SueldoDeclarado.Location = new System.Drawing.Point(892, 128);
       this.txt_SueldoDeclarado.Name = "txt_SueldoDeclarado";
       this.txt_SueldoDeclarado.ReadOnly = true;
-      this.txt_SueldoDeclarado.Size = new System.Drawing.Size(118, 20);
+      this.txt_SueldoDeclarado.Size = new System.Drawing.Size(100, 20);
       this.txt_SueldoDeclarado.TabIndex = 659;
       this.txt_SueldoDeclarado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
       // 
@@ -2134,7 +2134,7 @@ namespace entrega_cupones.Formularios
       this.label38.AutoSize = true;
       this.label38.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label38.ForeColor = System.Drawing.Color.Gainsboro;
-      this.label38.Location = new System.Drawing.Point(907, 95);
+      this.label38.Location = new System.Drawing.Point(802, 129);
       this.label38.Name = "label38";
       this.label38.Size = new System.Drawing.Size(85, 17);
       this.label38.TabIndex = 658;

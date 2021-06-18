@@ -171,6 +171,16 @@ namespace entrega_cupones.Metodos
           {
             _ddjj.RemoveAll(x => x.Periodo == registro.Periodo && x.Rectificacion == registro.Rectificacion);
           }
+          else
+          {
+            if (sss > 0)
+            {
+              if (registro.ImporteDepositado == 0)
+              {
+                _ddjj.RemoveAll(x => x.Periodo == registro.Periodo && x.Rectificacion == registro.Rectificacion);
+              }
+            }
+          }
         }
       }
     }

@@ -128,6 +128,20 @@ namespace entrega_cupones.Formularios
           VDDetalle.Estado = 0;
           context.SubmitChanges();
         };
+
+        // Actualizo la tabla de VD_Inspector
+        var UpdateVD = (from a in context.VD_Inspector where a.Id == _VDId select a).SingleOrDefault();
+        UpdateVD.Desde = Convert.ToDateTime(msk_Desde.Text);
+        UpdateVD.Hasta = Convert.ToDateTime(msk_Hasta.Text);
+        UpdateVD.FechaVenc = Convert.ToDateTime(msk_Vencimiento.Text);
+        UpdateVD.TipoInteres = cbx_TipoDeInteres.SelectedIndex;
+        UpdateVD.InteresMensual = Convert.ToDecimal(txt_Interes.Text);
+        UpdateVD.InteresDiario = Convert.ToDecimal(txt_InteresDiario.Text);
+        UpdateVD.Capital = Convert.ToDecimal(txt_Deuda.Text);         //Math.Round(_ddjj.Sum(x => x.Capital), 2)
+        UpdateVD.Interes = Convert.ToDecimal(txt_TotalInteres.Text);
+        UpdateVD.Total = Convert.ToDecimal(txt_Total.Text);
+        context.SubmitChanges();
+         
       }
     }
 
@@ -235,7 +249,7 @@ namespace entrega_cupones.Formularios
         txt_Osecac.Text = _DDJJEmpleados[index].OSECAC.ToString("N2");
 
         //Totales
-        txt_TotalHaberes.Text = _DDJJEmpleados[index].TotalHaberes.ToString("N2");
+        txt_TotalHaberes.Text = _DDJJEmpleados[index].TotalHaberes.ToString("N2");  
         txt_TotalDescuentos.Text = _DDJJEmpleados[index].TotalDescuentos.ToString("N2");
         txt_TotalNeto.Text = (_DDJJEmpleados[index].TotalHaberes - _DDJJEmpleados[index].TotalDescuentos).ToString("N2");
         txt_SueldoDeclarado.Text = _DDJJEmpleados[index].Sueldo.ToString("N2");

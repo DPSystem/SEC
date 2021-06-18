@@ -35,39 +35,50 @@ namespace entrega_cupones.Metodos
       decimal desc = SueldoBasico * (decimal)0.11;
       return desc;
     }
-    
-    public static decimal DescuentoObraSocial(decimal SueldoBasico, decimal ANR1,decimal ANR2)
+
+    public static decimal DescuentoObraSocial(decimal SueldoBasico, decimal ANR1, decimal ANR2, bool JornadaParcial)
     {
-      decimal desc = (SueldoBasico + ANR1 + ANR2) * (decimal)0.03;
+      decimal desc;
+      if (JornadaParcial)
+      {
+        desc = ((SueldoBasico + ANR1 + ANR2) * 2) * (decimal)0.03;
+      }
+      else
+      {
+        desc = (SueldoBasico + ANR1 + ANR2) * (decimal)0.03;
+      }
+
+
+      //decimal desc = (SueldoBasico + ANR1 + ANR2) * (decimal)0.03;
       return desc;
     }
-    
+
     public static decimal DescuentoLey19302(decimal SueldoBasico)
     {
       decimal desc = SueldoBasico * (decimal)0.03;
       return desc;
     }
-    
-    public static decimal DescuentoAporteLey(decimal SueldoBasico,decimal ANR1, decimal ANR2)
+
+    public static decimal DescuentoAporteLey(decimal SueldoBasico, decimal ANR1, decimal ANR2)
     {
-      decimal desc = ( SueldoBasico + ANR1 + ANR2) * (decimal)0.02;
+      decimal desc = (SueldoBasico + ANR1 + ANR2) * (decimal)0.02;
       return desc;
     }
-    
+
     public static decimal DescuentoAporteSocio(decimal SueldoBasico, bool EsSocio, decimal AporteAnterior, bool JornadaParcial)
     {
       decimal desc;
       if (JornadaParcial)
       {
-        desc = EsSocio == true ? ((SueldoBasico * 2) * (decimal)0.02) - AporteAnterior : 0;
+        desc = EsSocio == true ? ((SueldoBasico * 2) * (decimal)0.02) : 0;
       }
       else
       {
-        desc = EsSocio == true ? (SueldoBasico * (decimal)0.02) - AporteAnterior : 0;
+        desc = EsSocio == true ? (SueldoBasico * (decimal)0.02) : 0;
       }
       return desc > 0 ? desc : 0; // si es positivo quiere decir que le pagan de mas, si es negativo quiere decir que es falta pagar el improte calculado
     }
-    
+
     public static decimal DescuentoAporteSocioEscala(decimal SueldoBasico, bool EsSocio, decimal AporteAnterior, bool JornadaParcial)
     {
       decimal desc;
@@ -81,13 +92,13 @@ namespace entrega_cupones.Metodos
       }
       return desc;
     }
-    
-    public static decimal DescuentoFAECyS(decimal SueldoBasico)
+
+    public static decimal DescuentoFAECyS(decimal SueldoBasico, decimal APNR1, decimal APNR2)
     {
-      decimal desc = SueldoBasico * (decimal)0.005;
+      decimal desc = (SueldoBasico + APNR1 + APNR2) * (decimal)0.005;
       return desc;
     }
-    
+
     public static decimal DescuentoOSECAC()
     {
       decimal desc = 100;
@@ -112,36 +123,36 @@ namespace entrega_cupones.Metodos
       return (GetAntiguedad(SueldoBasico, Antiguedad) + GetPresentismo(SueldoBasico, Antiguedad) + SueldoBasico) + APNR1 + APNR2;
     }
 
-    public static decimal GetTotalDescuentos(decimal SueldoBasico, bool EsSocio, decimal AporteAnterior, bool JornadaParcial,decimal ANR1,decimal ANR2)
+    public static decimal GetTotalDescuentos(decimal SueldoBasico, bool EsSocio, decimal AporteAnterior, bool JornadaParcial, decimal ANR1, decimal ANR2)
     {
       decimal descuentos =
       DescuentoJubilacion(SueldoBasico) +
-      DescuentoObraSocial(SueldoBasico,ANR1,ANR2) +
+      DescuentoObraSocial(SueldoBasico, ANR1, ANR2, JornadaParcial) +
       DescuentoLey19302(SueldoBasico) +
-      DescuentoAporteLey(SueldoBasico,ANR1,ANR2) +
+      DescuentoAporteLey(SueldoBasico, ANR1, ANR2) +
       DescuentoAporteSocioEscala(SueldoBasico, EsSocio, AporteAnterior, JornadaParcial) +
-      DescuentoFAECyS(SueldoBasico) +
+      DescuentoFAECyS(SueldoBasico, ANR1, ANR2) +
       DescuentoOSECAC();
 
       return descuentos;
     }
-    
-    public static decimal GetSueldoDif(decimal SueldoBasico, bool EsSocio, decimal AporteAnterior, bool JornadaParcial, int Antiguedad, decimal SueldoDeclarado,decimal ANR1,decimal ANR2)
+
+    public static decimal GetSueldoDif(decimal SueldoBasico, bool EsSocio, decimal AporteAnterior, bool JornadaParcial, int Antiguedad, decimal SueldoDeclarado, decimal ANR1, decimal ANR2)
     {
       decimal haberes = SueldoBasico; //GetTotalHaberes(SueldoBasico, Antiguedad);
-      decimal Descuentos = GetTotalDescuentos(SueldoBasico, EsSocio, AporteAnterior, JornadaParcial,ANR1,ANR2);
+      decimal Descuentos = GetTotalDescuentos(SueldoBasico, EsSocio, AporteAnterior, JornadaParcial, ANR1, ANR2);
       decimal Diferencia = haberes - SueldoDeclarado;//(haberes - Descuentos) - SueldoDeclarado;
 
       return Diferencia > 0 ? Diferencia : 0;
     }
-    
+
     public static decimal GetBasicoJubPres(decimal SueldoBasico, bool EsSocio, decimal AporteAnterior, bool JornadaParcial, int Antiguedad, decimal SueldoDeclarado)
     {
       decimal descuentos = SueldoBasico; //(SueldoBasico - GetTotalDescuentos(SueldoBasico, EsSocio, AporteAnterior, JornadaParcial));
 
       return descuentos;
     }
-    
+
     public static decimal CalcularDiferencia(decimal Escala, decimal AporteSocio, bool Jornada)
     {
       decimal Diferencia = 0;
