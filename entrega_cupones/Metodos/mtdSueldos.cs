@@ -82,9 +82,9 @@ namespace entrega_cupones.Metodos
       return desc;
     }
     
-    public static decimal DescuentoFAECyS(decimal SueldoBasico)
+    public static decimal DescuentoFAECyS(decimal SueldoBasico,decimal APNR1,decimal APNR2)
     {
-      decimal desc = SueldoBasico * (decimal)0.005;
+      decimal desc = (SueldoBasico + APNR1+APNR2) * (decimal)0.005;
       return desc;
     }
     
@@ -120,7 +120,7 @@ namespace entrega_cupones.Metodos
       DescuentoLey19302(SueldoBasico) +
       DescuentoAporteLey(SueldoBasico,ANR1,ANR2) +
       DescuentoAporteSocioEscala(SueldoBasico, EsSocio, AporteAnterior, JornadaParcial) +
-      DescuentoFAECyS(SueldoBasico) +
+      DescuentoFAECyS(SueldoBasico, ANR1,ANR2) +
       DescuentoOSECAC();
 
       return descuentos;

@@ -235,7 +235,7 @@ namespace entrega_cupones.Formularios
         txt_Osecac.Text = _DDJJEmpleados[index].OSECAC.ToString("N2");
 
         //Totales
-        txt_TotalHaberes.Text = _DDJJEmpleados[index].TotalHaberes.ToString("N2");
+        txt_TotalHaberes.Text = _DDJJEmpleados[index].TotalHaberes.ToString("N2");  
         txt_TotalDescuentos.Text = _DDJJEmpleados[index].TotalDescuentos.ToString("N2");
         txt_TotalNeto.Text = (_DDJJEmpleados[index].TotalHaberes - _DDJJEmpleados[index].TotalDescuentos).ToString("N2");
         txt_SueldoDeclarado.Text = _DDJJEmpleados[index].Sueldo.ToString("N2");

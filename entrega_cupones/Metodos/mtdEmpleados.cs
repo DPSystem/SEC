@@ -85,6 +85,11 @@ namespace entrega_cupones.Metodos
           item.ObraSocial = mtdSueldos.DescuentoObraSocial(Basico, item.AcuerdoNR1, item.AcuerdoNR2);
           item.AporteLey = mtdSueldos.DescuentoAporteLey(Basico, item.AcuerdoNR1, item.AcuerdoNR2);
           item.AporteSocio = mtdSueldos.DescuentoAporteSocio(Basico, item.AporteSocio == 0 ? false : true, item.AporteSocio, item.Jornada == "S" ? true : false) ;
+          item.FAECys = mtdSueldos.DescuentoFAECyS(Basico,item.AcuerdoNR1,item.AcuerdoNR2);
+          item.OSECAC = mtdSueldos.DescuentoOSECAC();
+          item.TotalHaberes = Basico +   item.AcuerdoNR1 + item.AcuerdoNR2;
+          item.TotalDescuentos = item.Jubilacion + item.Ley19302 + item.ObraSocial + item.AporteLey + item.AporteSocio + item.FAECys + item.OSECAC;
+          
           //item.ObraSocial = mtdSueldos.DescuentoObraSocial(TotalHaberes, (decimal)c.AcuerdoNR1, (decimal)c.AcuerdoNR2)),
           //                      Ley19302 = mtdSueldos.DescuentoLey19302(mtdSueldos.GetTotalHaberes(a.jorp == true ? (decimal)c.Importe / 2 : (decimal)c.Importe, DateTime.Now.Year - e.SOCEMP_FECHAING.Year, 0, 0)),
           //                      AporteLeyDif = mtdSueldos.DescuentoAporteLey(mtdSueldos.GetTotalHaberes(a.jorp == true ? (decimal)c.Importe / 2 : (decimal)c.Importe, DateTime.Now.Year - e.SOCEMP_FECHAING.Year, (decimal)c.AcuerdoNR1, (decimal)c.AcuerdoNR2)),
