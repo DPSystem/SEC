@@ -459,8 +459,6 @@ namespace entrega_cupones.Clases
     {
       using (var context = new lts_sindicatoDataContext())
       {
-
-
         var novedades = context.Novedades.Where(x => x.CUIT == cuit && x.NumeroDeAsignacion == NroDeAsignacionViejo);
 
         foreach (var item in novedades)

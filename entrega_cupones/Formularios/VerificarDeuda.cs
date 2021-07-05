@@ -129,10 +129,12 @@ namespace entrega_cupones.Formularios
 
     private void CalcularTotales()
     {
+      decimal InteresResarcitorio = 0;
+      InteresResarcitorio = Math.Round(_ddjj.Where(x => x.Acta == "" && x.DiasDeMora > 0 && x.FechaDePago != null).Sum(x => x.Capital), 2);
       txt_Total.Text = Math.Round(_ddjj.Where(x => x.Acta == "").Sum(x => x.Total), 2).ToString("N2");
       txt_Pagado.Text = Math.Round(_ddjj.Where(x => x.Acta == "").Sum(x => x.ImporteDepositado), 2).ToString("N2");
-      txt_Deuda.Text = Math.Round(_ddjj.Where(x => x.Acta == "").Sum(x => x.Capital), 2).ToString("N2");
-      txt_TotalInteres.Text = Math.Round(_ddjj.Where(x => x.Acta == "").Sum(x => x.Interes), 2).ToString("N2");
+      txt_Deuda.Text = Math.Round(_ddjj.Where(x => x.Acta == "" && x.DiasDeMora > 0 && x.FechaDePago == null).Sum(x => x.Capital), 2).ToString("N2");
+      txt_TotalInteres.Text = Math.Round(_ddjj.Where(x => x.Acta == "").Sum(x => x.Interes) + InteresResarcitorio, 2).ToString("N2");
       txt_PerNoDec.Text = _ddjj.Where(x => x.Acta == "").Count(x => x.PerNoDec == 1).ToString();
       txt_DeudaInicial.Text = txt_Total.Text;
       txt_Anticipo.Text = "";

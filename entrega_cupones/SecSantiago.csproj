@@ -141,6 +141,12 @@
     <Compile Include="Clases\ranking.cs" />
     <Compile Include="Clases\socios.cs" />
     <Compile Include="Clases\usuarios.cs" />
+    <Compile Include="Formularios\frm_ActaBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_ActaBuscar.Designer.cs">
+      <DependentUpon>frm_ActaBuscar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frm_Actas2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -451,6 +457,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Formularios\frm_ActaBuscar.resx">
+      <DependentUpon>frm_ActaBuscar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_Actas2.resx">
       <DependentUpon>frm_Actas2.cs</DependentUpon>
     </EmbeddedResource>

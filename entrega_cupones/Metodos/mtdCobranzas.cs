@@ -209,7 +209,6 @@ namespace entrega_cupones.Metodos
         }
         catch (Exception e)
         {
-
           MessageBox.Show("Get Estado Pla de Pago" + e.Message);
         }
         return _EstadoPlan.ToList();

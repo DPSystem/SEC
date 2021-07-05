@@ -20,6 +20,7 @@ namespace entrega_cupones.Metodos
     public static Empresa empresa = new Empresa();
 
     public static List<EstadoDDJJ> _ddjj = new List<EstadoDDJJ>();
+
     public static List<EstadoDDJJ> ListadoDDJJT(string cuit, DateTime desde, DateTime hasta, DateTime FechaVencimiento, int TipoInteres, decimal TazaInteres)
     {
       _ddjj.Clear();
@@ -73,6 +74,7 @@ namespace entrega_cupones.Metodos
         return _ddjj.Union(GenerarPerNoDec(desde, hasta, cuit)).OrderBy(x => x.Periodo).ToList();
       }
     }
+
     public static decimal CalcularCapital(decimal Depositado, decimal titem1, decimal titem2, DateTime? FechaDePago, DateTime FechaDeVencimientoDeActa, DateTime Periodo, int TipoDeInteres, decimal TazaDeInteres)
     {
       decimal Capital = Depositado - (titem1 + titem2);
@@ -280,7 +282,6 @@ namespace entrega_cupones.Metodos
     }
     public static string GetNroVerifDeuda(string cuit, DateTime Periodo, int Rectificacion, bool PerNoDec, DateTime? FechaDePago)
     {
-                                                   
       using (var context = new lts_sindicatoDataContext())
       {
         string vd = "";

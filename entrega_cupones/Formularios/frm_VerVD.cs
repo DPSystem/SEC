@@ -44,7 +44,7 @@ namespace entrega_cupones.Formularios
       bindingSource.DataSource = _VDDetalle;
 
       //dataGridView1.DataSource = bindingSource;
-      CalcularTotales();
+      Simulacion();
     }
 
     private void Cargar_DDJJEmpleado()
@@ -57,22 +57,33 @@ namespace entrega_cupones.Formularios
         Convert.ToInt32(dgv_VD.CurrentRow.Cells["Rectificacion"].Value)
         );
 
-      //BindingSource bindingSource2 = new BindingSource();
-      //bindingSource2.DataSource = _DDJJEmpleados;
-      //txt_SueldoDeclarado.DataBindings.Add("Text", _DDJJEmpleados, "Sueldo");
+     
       dgv_DetallePeriodo.DataSource = _DDJJEmpleados.ToList();
     }
 
     private void CalcularTotales()
     {
-      txt_Total.Text = Math.Round(_VDDetalle.Sum(x => x.Total), 2).ToString("N2");
-      txt_Pagado.Text = Math.Round(_VDDetalle.Sum(x => x.ImporteDepositado), 2).ToString("N2");
-      txt_Deuda.Text = Math.Round(_VDDetalle.Sum(x => x.DeudaGenerada), 2).ToString("N2");
-      txt_TotalInteres.Text = Math.Round(_VDDetalle.Sum(x => x.InteresGenerado), 2).ToString("N2");
-      txt_PerNoDec.Text = _VDDetalle.Count(x => x.PerNoDec == 1).ToString();
+      //txt_Total.Text = Math.Round(_VDDetalle.Sum(x => x.Total), 2).ToString("N2");
+      //txt_Pagado.Text = Math.Round(_VDDetalle.Sum(x => x.ImporteDepositado), 2).ToString("N2");
+      //txt_Deuda.Text = Math.Round(_VDDetalle.Sum(x => x.DeudaGenerada), 2).ToString("N2");
+      //txt_TotalInteres.Text = Math.Round(_VDDetalle.Sum(x => x.InteresGenerado), 2).ToString("N2");
+      //txt_PerNoDec.Text = _VDDetalle.Count(x => x.PerNoDec == 1).ToString();
+      //txt_DeudaInicial.Text = txt_Total.Text;
+      //txt_Anticipo.Text = "";
+      //txt_DeudaPlan.Text = txt_Total.Text;
+
+
+      decimal InteresResarcitorio = 0;
+      InteresResarcitorio = _VDDetalle.Where(x => x.NumeroDeActa == 0 && x.DiasDeMora > 0 && x.FechaDePago != null).Sum(x => x.DeudaGenerada);
+      txt_Total.Text = Math.Round(_VDDetalle.Where(x => x.NumeroDeActa == 0).Sum(x => x.Total), 2).ToString("N2");
+      txt_Pagado.Text = Math.Round(_VDDetalle.Where(x => x.NumeroDeActa == 0).Sum(x => x.ImporteDepositado), 2).ToString("N2");
+      txt_Deuda.Text = Math.Round(_VDDetalle.Where(x => x.NumeroDeActa == 0 && x.DiasDeMora > 0 && x.FechaDePago == null).Sum(x => x.DeudaGenerada), 2).ToString("N2");
+      txt_TotalInteres.Text = Math.Round(_VDDetalle.Where(x => x.NumeroDeActa == 0).Sum(x => x.InteresGenerado) + InteresResarcitorio, 2).ToString("N2");
+      txt_PerNoDec.Text = _VDDetalle.Where(x => x.NumeroDeActa == 0).Count(x => x.PerNoDec == 1).ToString();
       txt_DeudaInicial.Text = txt_Total.Text;
       txt_Anticipo.Text = "";
       txt_DeudaPlan.Text = txt_Total.Text;
+
     }
 
     private void btn_CalcularDeuda_Click(object sender, EventArgs e)
@@ -174,14 +185,19 @@ namespace entrega_cupones.Formularios
       mdlVDDetalle AModificar = _VDDetalle.FirstOrDefault(x => x.Id == VDId_Actual);
 
       //Comienzo a Copiar desde la Variable PeriodoACopiar a la variable PeriodoAModificar
+      
       AModificar.TotalSueldoEmpleados = CalcularDifAguinaldo(Convert.ToDateTime(ACopiar.Periodo), ACopiar.TotalAporteEmpleados, Convert.ToDateTime(AModificar.Periodo));
       AModificar.TotalSueldoSocios = CalcularDifAguinaldo(Convert.ToDateTime(ACopiar.Periodo), ACopiar.TotalAporteEmpleados, Convert.ToDateTime(AModificar.Periodo));
       AModificar.TotalAporteEmpleados = CalcularDifAguinaldo(Convert.ToDateTime(ACopiar.Periodo), ACopiar.TotalAporteEmpleados, Convert.ToDateTime(AModificar.Periodo));
-      AModificar.TotalAporteSocios = CalcularDifAguinaldo(Convert.ToDateTime(ACopiar.Periodo), ACopiar.TotalAporteEmpleados, Convert.ToDateTime(AModificar.Periodo));
+      AModificar.TotalAporteSocios = CalcularDifAguinaldo(Convert.ToDateTime(ACopiar.Periodo), ACopiar.TotalAporteSocios, Convert.ToDateTime(AModificar.Periodo));
       AModificar.DiasDeMora = mtdEmpresas.CalcularDias(Convert.ToDateTime(AModificar.Periodo), Convert.ToDateTime(msk_Vencimiento.Text));
+      AModificar.CantidadEmpleados = ACopiar.CantidadEmpleados;
+      AModificar.CantidadSocios = ACopiar.CantidadSocios;
       AModificar.DeudaGenerada = AModificar.TotalAporteSocios + AModificar.TotalAporteSocios;
       AModificar.InteresGenerado = Math.Round(mtdEmpresas.CalcularInteres(null, Convert.ToDateTime(AModificar.Periodo), AModificar.DeudaGenerada, Convert.ToDateTime(msk_Vencimiento.Text), cbx_TipoDeInteres.SelectedIndex, Convert.ToDecimal(txt_InteresDiario.Text)), 2);
       AModificar.Total = AModificar.DeudaGenerada + AModificar.InteresGenerado;
+      Simulacion();
+
     }
 
     public decimal CalcularDifAguinaldo(DateTime PerioACopiar, decimal Importe, DateTime PeriodoAModificar)
